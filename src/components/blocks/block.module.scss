@@ -1,0 +1,270 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.companieslist{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  .carousel {
+    overflow: hidden;
+    width: 95%;
+    //  height: 48em;
+      margin: 0% 0% 14% 2%; 
+      background-color: #f9f9f9;
+      box-shadow: none;
+  }
+
+.carouselItems {
+
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 27px;
+  padding: 10px;
+  background: none;
+
+}
+.textedit{
+  font-size: calc(10px + (18 - 10) * (100vw - 445px) / (1440 - 445));
+  font-weight: 500;
+}
+.imgwidth{
+  width: 25px;
+  cursor: pointer;
+}
+
+.gridMode{
+  display: grid;
+  grid-template-columns: repeat(2,1fr) ;
+}
+.flex{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(1,1fr) ;
+ align-content: center;
+}
+.icon {
+  width: 350px;
+   height:max-content;
+  flex-shrink: 0;
+  border-radius: 20px;
+padding: 10px;
+  background: #fff;
+ &:hover{
+   box-shadow: 0px 4px 50px 0px rgba(120, 143, 156, 0.25);
+ }
+  .border {
+    border: 1px solid #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 30%;
+     margin-left: 35%;
+
+  }
+}
+// .imgediting{
+  
+//   background: url(../../assets/images/plus-icon.svg)
+//   no-repeat 11.5px center;
+//   &:hover{
+//     background: url(../../assets/images/plus-icongreen.svg)
+//     no-repeat 11.5px center;
+//   }
+// }
+.flexitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+// .imgedit{
+//   background: url(../../assets/images/plus-icon.svg)
+//   no-repeat 1px center;
+//   &:hover{
+//     background: url(../../assets/images/plus-icongreen.svg)
+//     no-repeat 1px center;
+    
+//   }
+// }
+.butttonsetting{
+  font-size: 15px;
+  color: $Primary-color;
+   background: $Tertiary-color;
+  gap: 10px;
+  border: 1px solid ;
+  &:hover{
+    color:$Tertiary-color;
+  }
+
+}
+
+.btndivsetting{
+  width: 100%; 
+
+}
+.ptextss{
+  @include font18;
+  padding-left: 1%;
+  font-weight: 600;
+  color: #111111;
+  cursor: pointer;
+  &:hover{
+    color: $Primary-color;
+
+  }
+}
+.butnflex{
+  display: flex;
+  // gap: 15px;
+ justify-content: space-between;
+  width: 100%;
+}
+.starrate{
+  display: flex;
+  align-items: center;
+}
+.btnsetting{
+  border: none !important;
+  background: none;
+  border: none ;
+  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  color: $fifth-color;
+  font-weight: 500 !important;
+  height: 32px;
+  &:hover{
+    background:none;
+    border-radius: 1px;
+    border-bottom: 1px solid $fifth-color !important;
+
+  }
+}
+// .btntextflex{
+//    margin-top: 20px  !important;
+// }
+.btndivseting{
+  width: 30%;
+  
+}
+.txt{
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: inherit;
+  padding: 1%;
+}
+.butttons{
+  background: #ecfff6 !important;
+  color: #4cbe6a;
+  height: 30px;
+  
+}
+.textrating{
+  font-weight: 500;
+  color:#007456;
+  margin-left: -23px;
+  margin-bottom: 3px;
+}
+.buutttndiv{
+  // margin-top: 20px;
+  width: 30%;
+}
+.imgset{
+  width: 40%
+}
+.lasttext{
+  @include fontp1;
+  font-weight: 500;
+  color:$Primary-color;
+}
+.textt{
+ line-height: 65px;
+}
+.carousel {
+
+  .dotsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; 
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      background-color: rgb(214, 214, 214); 
+      opacity: 0.8;
+      border-radius: 50%;
+       margin: 0 10px;
+      // margin-top: -30px;
+
+      &.activeDot {
+        background-color: $Primary-color; 
+        
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+.flexdivv{
+  display: flex;
+   align-items: center;
+}
+.griddivvv{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.flexxbtn{
+  display: flex;
+  justify-content: space-between;
+   width: 100%;
+  
+ 
+
+}
+.imgst{
+  width: 100%;
+}
+.textrate{
+  font-weight: 500;
+  color:#007456;
+  margin-bottom: 3px;
+}
+.divsettt{
+  display: flex;
+ justify-content: center;
+  flex-direction: column;
+
+}
+.ptexts{
+  @include font18;
+  padding-left: 5% !important;
+  font-weight: 600;
+  color: #111111;
+  cursor: pointer;
+  &:hover{
+    color: $Primary-color;
+
+  }
+}
+.flexmaindiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.butonsetting{
+  font-size: 15px;
+  color: $Primary-color;
+  background: $Tertiary-color;
+  gap: 10px;
+  border: 1px solid ;
+  &:hover{
+    color:$Tertiary-color;
+  }
+}
+.btndivsettg{
+  width: 100%;
+}

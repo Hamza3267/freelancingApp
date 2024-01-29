@@ -1,0 +1,116 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.maincontainer {
+  height: 1050px;
+  background-color: #f4f4f4;
+}
+.subcontainer {
+  padding: 2% 3% 0% 3%;
+}
+.titleeh {
+  font-size: calc(18px + (28 - 18) * (100vw - 320px) / (1440 - 320)) !important;
+  color: #111111;
+  font-weight: 500 !important;
+  padding-bottom: 2% !important;
+  letter-spacing: 1px;
+  font-family: Inter;
+}
+.select {
+  width: 340px !important;
+  height: 50px !important;
+  font-size: large !important;
+  color: #555555 !important;
+}
+.inercontainer {
+  margin-top: 30px;
+  padding: 2%;
+  background: #fff;
+  height: 300px;
+}
+.mainhead {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+   padding-bottom: 2%;
+}
+.name1 {
+  font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
+  color: #999999;
+  font-weight: 500;
+  &:hover {
+    color: $Primary-color;
+  }
+}
+.name2 {
+  font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
+  color: #999999;
+  font-weight: 500;
+  &:hover {
+    color: $Primary-color;
+  }
+}
+.name3 {
+  font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
+  color: #999999;
+  font-weight: 500;
+  &:hover {
+    color: $Primary-color;
+  }
+}
+.namecolor{
+  font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
+  color: #111111;
+  font-weight: 500;
+  border-bottom: 3px solid black;
+}
+.heading {
+  border-bottom: 1px solid #e5e5e5;
+}
+.head {
+  font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+  color: #555555;
+  font-weight: 500;
+  padding-left: 3%;
+}
+.flexmessege {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+}
+.svgset {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-right: 3%;
+}
+.lastcommentsetting {
+  display: flex;
+  align-items: center;
+  padding: 1%;
+}
+.picsetting {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  background-color: #f9f9f9;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.titlename {
+  font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #111111 !important;
+  font-weight: 500 !important;
+  margin-top: -20px;
+}
+.descset {
+  font-family: sans-serif !important;
+  font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #999999 !important;
+  line-height: 3 !important;
+  font-weight: 500 !important;
+}

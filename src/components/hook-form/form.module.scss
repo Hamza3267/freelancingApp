@@ -1,0 +1,48 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.form{
+ 
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+.nameinput{
+    display: flex;
+    gap:5px;
+    width: 100%;
+    
+}
+.inputfield{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.inerinput{
+    width: 97%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    padding-left: 2%;
+    outline-style: none;
+}
+.messege{
+    width: 97%;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    padding-left: 2%;
+    outline-style: none;
+}
+.buton{
+    width: 57%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    padding-left: 2%;
+}
+.widthbuton{
+    // width: 50%;
+    align-self: center;
+}

@@ -1,0 +1,11 @@
+.btn {
+  background-color: #fbc02d;
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #ffb700;
+}/*# sourceMappingURL=button.module.css.map */

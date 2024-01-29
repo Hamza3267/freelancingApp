@@ -1,0 +1,83 @@
+@mixin font70 {
+    font-size: calc(26px + (70 - 26) * (100vw - 320px) / (1440 - 320));
+  }
+
+  @mixin font64 {
+    font-size: calc(14px + (64 - 14) * (100vw - 320px) / (1440 - 320));
+  }
+
+  @mixin font13 {
+    font-size: calc(11px + (13 - 11) * (100vw - 320px) / (1440 - 320));
+  }
+  @mixin font15 {
+    font-size: calc(13px + (15 - 13) * (100vw - 320px) / (1440 - 320));
+  }
+  @mixin font22 {
+    font-size: calc(14px + (22 - 14) * (100vw - 320px) / (1440 - 320));
+  }
+  @mixin font26 {
+    font-size: calc(16px + (26 - 16) * (100vw - 320px) / (1440 - 320));
+  }
+  @mixin font30 {
+    font-size: calc(18px + (29 - 18) * (100vw - 320px) / (1440 - 320));
+  }
+  @mixin font18 {
+    font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1440 - 320));
+  }
+  @mixin font14{
+    font-size: calc(14px + (18 - 8) * (100vw - 320px) / ( 1440 - 320));
+  }
+  @mixin font10 {
+    font-size: calc(8px + (10 - 8) * (100vw - 320px) / (1440 - 320));
+  }
+  @mixin fonth1 {
+    // font-size: calc(
+    //   [low screen font size]px +
+    //   ([high screen font size]px - [low screen font size]px) *
+    //   (100vw - [low screen width]px) / ([high screen width]px - [low screen width]px)
+    // );
+    font-size: calc(32px + (42 - 32) * (100vw - 445px) / (1440 - 445));
+  }
+   
+  @mixin fonth2 {
+    font-size: calc(28px + (36 - 28) * (100vw - 445px) / (1440 - 445));
+  }
+   
+  @mixin fonth3 {
+    font-size: calc(24px + (32 - 24) * (100vw - 445px) / (1440 - 445));
+  }
+   
+  @mixin fonth4 {
+    font-size: calc(20px + (26 - 20) * (100vw - 445px) / (1440 - 445));
+  }
+   
+  @mixin fonth5 {
+    font-size: calc(18px + (24 - 18) * (100vw - 445px) / (1440 - 445));
+  }
+   
+  @mixin fonth6 {
+    font-size: calc(16px + (18 - 16) * (100vw - 445px) / (1440 - 445));
+  }
+   
+  @mixin fontbody {
+    font-size: calc(14px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+  }
+   
+  @mixin fontp1 {
+    font-size: calc(14px + (18 - 14) * (100vw - 445px) / (1440 - 445));
+  }
+   
+  @mixin fontpNew {
+    font-size: calc(10px + (18 - 10) * (100vw - 445px) / (1440 - 445));
+  }
+   
+  @mixin fontp2 {
+    font-size: calc(12px + (14 - 12) * (100vw - 445px) / (1440 - 445));
+  }
+   
+  @mixin fontp3 {
+    font-size: calc(10px + (12 - 10) * (100vw - 445px) / (1440 - 445));
+  }
+  @mixin fontp4 {
+    font-size: calc(10px + (12 - 6) * (100vw - 445px) / (1440 - 445));
+  }

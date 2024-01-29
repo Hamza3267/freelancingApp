@@ -1,0 +1,140 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.blackdiv {
+  height: 30px;
+  width: 98%;
+  background: black;
+  z-index: 2;
+  display: flex;
+  padding-left: 2%;
+  align-items: center;
+}
+.firstbell {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nameee {
+  width: 100%;
+}
+.flextop {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.maindiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.text {
+  font-size: calc(32px + (42 - 32) * (100vw - 445px) / (1440 - 445)) !important;
+  font-weight: 600 !important;
+  text-align: center;
+}
+.para {
+  text-align: center;
+}
+.butondiv {
+  padding-left: 30%;
+  padding-top: 5%;
+}
+.name {
+  color: $Primary-color;
+  text-decoration: none;
+  text-align: center;
+  @include font18;
+  border: 1px solid $Primary-color;
+  border-radius: 20px;
+  width: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: $Tertiary-color;
+    background: $Primary-color;
+  }
+}
+.portion10 {
+  border-top: 0.5px solid #e5e5e5;
+}
+.divportion10flex {
+  display: flex;
+  padding: 6%;
+  align-items: center;
+}
+.butontexteit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 7%;
+}
+.btndivedit {
+  width: 200px !important;
+}
+.textmap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 30%;
+}
+.footersub {
+  display: flex;
+}
+.subdivision {
+  display: flex;
+  padding: 4%;
+}
+.textmapedit {
+  width: 40%;
+}
+.t {
+  font-size: calc(12px + (18 - 12) * (100vw - 445px) / (1440 - 445)) !important;
+  line-height: 22px !important;
+  font-weight: 400 !important;
+  color: black !important;
+}
+.p {
+  font-size: calc(12px + (18 - 12) * (100vw - 445px) / (1440 - 445)) !important;
+  line-height: 20px !important;
+  width: 90% !important;
+}
+.d {
+  font-size: calc(12px + (19 - 12) * (100vw - 445px) / (1440 - 445)) !important;
+  line-height: 22px !important;
+  font-weight: 400 !important;
+  color: black !important;
+  width: 35% !important;
+  &:hover {
+    color: $Primary-color !important;
+  }
+}
+.lastdiv {
+  border-top: 0.5px solid #e5e5e5;
+  padding-left: 3%;
+}
+.background {
+  background: $Primary-color !important;
+  height: 80px !important;
+  width: 80px !important;
+}
+.picsetting {
+  width: 60px !important;
+  height: 50px !important;
+}
+.footer {
+  border-top: 0.5px solid #e5e5e5;
+}

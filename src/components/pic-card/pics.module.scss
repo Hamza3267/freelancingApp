@@ -1,0 +1,55 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.maindiv {
+  width: 80%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+
+
+
+  .subdiv{
+    width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+}
+.dateflex {
+  display: flex;
+  gap: 10px;
+}
+.pic {
+  width: 100%;
+  transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1); 
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1); 
+  }
+}
+.date{
+    @include font18;
+    color: #555555;
+}
+.learn{
+    @include font18;
+    color: $Primary-color;
+    font-weight: 400;
+    cursor: pointer;
+    &:hover{
+        font-weight: 500;
+    }
+}
+.paragraph{
+@include font22;
+font-weight: 500;
+line-height: 1.5;
+margin: 0;
+&:hover{
+    color: $Primary-color;
+}
+}

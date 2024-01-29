@@ -1,0 +1,59 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.carouselItems{
+  border: 1px solid lightgray;
+   padding: 1%;
+   border-radius: 10px;
+ 
+}
+.textedit{
+  line-height: 20px!important;
+}
+.paragra{
+  font-size: calc(14px + (19 - 14) * (100vw - 320px) / (1440 - 320)) !important;
+  line-height: 20px!important;
+ 
+}
+.paraedit{
+  width: 200px !important;
+  font-size: calc(14px + (19 - 14) * (100vw - 320px) / (1440 - 320)) !important;
+}
+.flexx{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -40px;
+}
+.carousel {
+  position: relative;
+   width: 100%;
+  padding-left: 5.9%;
+  .maindiv {
+    display: flex;
+    gap: 30px;
+    width: calc(100% * 2.4);  // Adjust this line
+    transition: transform 0.5s ease-in-out;
+    
+  }
+
+  .arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .carouselButton {
+    width: 30px;
+    height: 30px;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+ 
+}
+.next{
+  margin-right:140px ;
+
+}

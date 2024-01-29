@@ -1,0 +1,20 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.maincontainer {
+  height: max-content;
+  background-color: #f4f4f4;
+//   padding-left: 2%;
+}
+.subcontainer {
+   
+  padding: 2% 3% 0% 3%;
+}
+.titleeh {
+  font-size: calc(18px + (28 - 18) * (100vw - 320px) / (1440 - 320)) !important;
+  color: #111111;
+  font-weight: 500 !important;
+  padding-bottom: 2% !important;
+  letter-spacing: 1px;
+  font-family: Inter;
+}

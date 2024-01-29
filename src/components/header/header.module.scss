@@ -1,0 +1,153 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.main1 {
+  padding-left: 3%;
+  width: 97%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #e5e5e5;
+  padding-bottom: 1%;
+
+}
+.main {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  padding-top: 2%;
+  width: 80%;
+  position: relative;
+  z-index: 1;
+}
+.barr{
+  // display: flex;
+  // gap: 1px;
+}
+.logoimg {
+  width: 90%;
+}
+
+.link {
+  display: flex;
+  gap: 8%;
+}
+
+.name {
+  @include fontbody;
+  width: 100%;
+  font-weight: 500;
+  line-height: 40px;
+  text-decoration: none;
+  color: #555555;
+}
+.optionsBox {
+  position: absolute;
+  z-index: 0;
+  width: 150px;
+  background: $Tertiary-color;
+  border-radius: 10px;
+  line-height: 5px;
+  padding: 1%;
+  cursor: pointer;
+}
+.nam {
+  display: grid;
+  @include fonth6;
+  font-weight: 500;
+  line-height: 25px;
+  text-decoration: none;
+  color: $fifth-color;
+  &:hover {
+    color: $Primary-color;
+  }
+}
+.list {
+  @include fonth6;
+  font-weight: 500;
+  line-height: 10px;
+  text-decoration: none;
+  color: $fifth-color;
+  &:hover {
+    color: $Primary-color;
+  }
+}
+.optionBox {
+  display: grid;
+  width: 40%;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  z-index: 0;
+  background: $Tertiary-color;
+  border-radius: 10px;
+  line-height: 5px;
+  padding: 1%;
+  gap: 1px;
+  cursor: pointer;
+}
+.buton {
+  display: flex;
+  // gap: 10px;
+  padding-top: 2%;
+  padding-right: 2%;
+  width: 20%;
+}
+.butondiv {
+  width: 100% !important;
+  z-index: 1;
+}
+.btn {
+  color: $fifth-color !important;
+  background: none !important;
+  font-size: calc(11px + (16 - 11) * (100vw - 320px) / (1440 - 320)) !important;
+  &:hover {
+    color: $Primary-color !important;
+  }
+}
+.bundiv {
+  width: 100px !important;
+}
+.divheadersetting {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+   margin-left: 255px;
+   margin-right: 50px
+}
+.pname {
+  @include fontbody;
+  max-width: 100%;
+  font-weight: 500;
+  line-height: 10px;
+  text-decoration: none;
+  color: #555555;
+  cursor: pointer;
+  &:hover {
+    color: $Primary-color;
+  }
+}
+.dietting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.optionBox {
+  width: 15%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 75%;
+  z-index: 1;
+  background: $Tertiary-color;
+  border-radius: 10px;
+  // line-height: 5px;
+  padding: 1%;
+  cursor: pointer;
+}
+.clock{
+  padding-top: 5% !important;
+}

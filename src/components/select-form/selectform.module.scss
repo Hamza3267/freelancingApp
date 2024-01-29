@@ -1,0 +1,96 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.form{
+    display: grid;
+}
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; 
+    font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
+    color: #555555;
+  }
+  
+.inputfield{
+    display: grid;
+    padding: 4%;
+    // border-bottom: 1px solid lightgray;
+}
+.inerinput{
+    height: 15px;
+    width: 15px;
+}
+.selectoptions{
+    display: grid;
+    gap: 10px;
+    padding: 4%;
+    outline-style: none;
+    border-bottom: 1px solid lightgray;
+}
+.selectbox{
+    height: 48px;
+  border-radius: 6px;
+    width: 100%;
+    border: 1px solid lightgray;
+}
+.numbox{
+    display: grid;
+    // align-items: center;
+    gap: 7px;
+    padding: 4%;
+    border-bottom: 1px solid #e5e5e5;
+}
+.label{
+    color:#999999;
+    font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
+    padding: 2%;
+    font-weight: 500;
+}
+.headerdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    border-bottom: 0.5px solid #e5e5e5;
+    height: 50px;
+}
+.flabel{
+    color: $eight-color;
+    padding: 2%;
+    font-size: calc(14px + (22 - 14) * (100vw - 320px) / (1440 - 320));
+}
+.clearButton{
+    border: none;
+    background: transparent;
+    color: $Primary-color;
+    font-size: calc(13px + (15 - 13) * (100vw - 320px) / (1440 - 320));
+    cursor: pointer;
+}
+.stara{
+    width: 7%;
+}
+.progress {
+    padding-left: 6%;
+  }
+  
+ 
+
+.progressbarr{
+    background: red;
+    border: solid 1px #82CFD0;
+    border-radius: 8px;
+    height: 7px;
+    width: 100%;
+    
+}
+.progressbarr::-webkit-progress-value {
+    background-color: blanchedalmond !important; 
+  }
+
+
+
+
+  
+
+  

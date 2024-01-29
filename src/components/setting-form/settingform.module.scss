@@ -1,0 +1,107 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+.maindivvv{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+.labelss {
+    padding-top: 4%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    gap: 36.5%;
+  }
+  .labels{
+    padding-top: 4%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    gap: 34%;
+  }
+  .label {
+    font-size: 16px;
+    color: #111111;
+    font-weight: 500;
+  }
+  .finput {
+    width: 43%;
+    height: 45px;
+    outline-style: none;
+    border: 1px solid #8d8d8d;
+    border-radius: 5px;
+    padding-left: 3%;
+  }
+  .namess {
+    display: flex;
+    gap: 10px;
+  }
+  .set{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 25% !important;
+  }
+  .editbtn{
+    font-size: calc(10px + (18 - 10) * (100vw - 445px) / (1440 - 445)) !important;
+    font-weight: 400 !important;
+  }
+  .inerinput {
+    height: 45px;
+    width: 95%;
+    border: 1px solid #8d8d8d;
+    border-radius: 5px;
+    padding-left: 4%;
+    outline-style: none;
+    margin-top: 5px;
+  }
+
+  .main{
+      
+    background: #fff;
+  
+     width: 60%;
+      height: max-content;
+    border-radius: 10px;
+    padding: 20px;
+
+  }
+  .title{
+     
+      font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #555555;
+    font-weight: 500;
+   margin-top: -10px;
+    margin: 0 auto;
+    // line-height: 1;
+  }
+  .title::before{
+    background: #fff;
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 2px solid #999;
+    border-radius: 50%;
+    margin-right: 10px;
+    // margin:  auto;
+   
+  
+  }
+  .inputContainer {
+  margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  
+    &.active {
+      max-height: 100px; 
+    }
+  }
+  .displayyy{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  
+  

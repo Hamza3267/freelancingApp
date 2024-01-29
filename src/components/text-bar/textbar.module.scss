@@ -1,0 +1,18 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.divtext {
+  margin-top: 20%;
+}
+.text {
+  @include fonth6;
+  color: #111111 !important;
+}
+.changetext {
+  @include fonth1;
+  width: 70%;
+}
+
+.dream {
+  color: $Primary-color;
+}

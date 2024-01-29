@@ -1,0 +1,58 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 45%;
+  
+  overflow-x: hidden;
+  animation: slideUp 12s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 0%;
+  }
+}
+
+.odd {
+  margin-left: 7%;
+}
+
+.even {
+  margin-right: 7%;
+}
+
+.mapp {
+  border: none;
+  border-radius: 15px;
+  opacity: 0.9;
+  padding: 4%;
+  height: 65px;
+}
+
+.title {
+  text-decoration: none;
+  color: black;
+  font-size: calc(14px + (25 - 14) * (100vw - 445px) / (1440 - 445));
+  font-weight: 500;
+}
+.wrapper{
+    line-height: 0px;
+    font-size: calc(10px + (18 - 10) * (100vw - 445px) / (1440 - 445));
+    font-weight: 400;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}

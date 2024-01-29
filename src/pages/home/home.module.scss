@@ -1,0 +1,399 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+.imgggg {
+  height: 250px;
+  width: 250px;
+}
+.blackdiv {
+  height: 30px;
+  width: 98%;
+  background: black;
+  z-index: 2;
+  // position: fixed;
+  display: flex;
+  padding-left: 2%;
+  align-items: center;
+}
+.firstbell {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nameee {
+  width: 100%;
+}
+.flextop {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.subdiv {
+  margin-left: 5%;
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    margin-left: 5%;
+  }
+}
+.flexscreen {
+  display: flex;
+  justify-content: flex-start;
+}
+.flextextcomponent {
+  width: 55%;
+}
+.portion2 {
+  height: 150px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.portio2 {
+  padding-left: 7%;
+  height: 100px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.borerline {
+  border-bottom: rgb(255, 255, 255);
+}
+.portion3 {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.borderedit {
+  background:#007456 !important;
+  width: 60px !important;
+  height: 60px !important;
+}
+.pictext {
+  gap: 10px !important;
+}
+.titleeee {
+  font-size: calc(8px + (20 - 8) * (100vw - 320px) / (1440 - 320)) !important;
+  font-weight: 600 !important;
+  line-height: 10px;
+  padding-top: 5%;
+}
+.paraed {
+  font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1440 - 320)) !important;
+}
+.picediting {
+  height: 30px !important;
+}
+.mapdiv {
+  border-radius: 20px;
+  height: 130px;
+  display: flex;
+  width: 350px;
+  align-items: center;
+  padding-left: 6%;
+  background: #edf2ef;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
+.mapedit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+.btnedit {
+  width: 13.7% !important;
+  margin-top: 20px;
+}
+.btndit {
+  background: none !important;
+  color: $Primary-color !important;
+  border-radius: 1px !important;
+  height: 20px !important;
+
+  &:hover {
+    border-bottom: 1px solid $Primary-color !important;
+  }
+}
+.portion4 {
+  height: 870px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+.textmove {
+  display: flex;
+  justify-content: center;
+}
+.divwidth {
+  padding: 2.5%;
+}
+.carosaldivset {
+  display: flex !important;
+}
+.portion5 {
+  background: #f9f9f9;
+  height: 700px;
+}
+.p5editing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.portion6 {
+  background: #faf6eb;
+}
+.flexsubdiv {
+  display: flex;
+  padding: 6%;
+}
+.textmapping {
+  padding-left: 5%;
+  width: 50%;
+}
+.tittleedit {
+  font-size: calc(20px + (28 - 20) * (100vw - 445px) / (1440 - 445)) !important;
+  line-height: 30px !important;
+}
+.paraeedit{
+  font-size: calc(14px + (18 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #555555 !important;
+  line-height: 30px !important;
+  margin-top: 60px;
+}
+.paraedit {
+  margin-top: 60px;
+  line-height: 30px !important;
+}
+.nummap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ 
+//  height: 250px;
+width: 90%;
+margin: 0 auto;
+}
+.innerdiv{
+  width: 100%;
+}
+.editingtext {
+  font-size: calc(32px + (46 - 32) * (100vw - 445px) / (1440 - 445)) !important;
+  color: $Primary-color !important;
+  margin: 0 auto;
+  // line-height: 1;
+}
+.editingpara{
+  font-size: calc(14px + (20 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  //  line-height: 2;
+   margin-top: 30px;
+}
+.btndivedit {
+  width: 45% !important;
+}
+.portion7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  overflow: hidden;
+}
+.edittitle {
+  font-size: calc(28px + (36 - 28) * (100vw - 445px) / (1440 - 445)) !important;
+  font-weight: 600 !important;
+  line-height: 85% !important;
+  text-align: center;
+}
+.paracont {
+  text-align: center;
+}
+.flexcontainer {
+  width: 35%;
+}
+.poriton8 {
+  height: 300px;
+  padding: 10% 3% 7% 3%;
+}
+.subbdiv {
+  background: #faf6eb;
+  border-radius: 20px;
+  height: 430px;
+  margin-left: 0px;
+}
+.flexbox {
+  display: flex;
+}
+.flextext {
+  padding: 9% 2% 5% 7%;
+}
+.titlredit {
+  font-size: calc(14px + (20 - 14) * (100vw - 320px) / (1440 - 320)) !important;
+  font-weight: 400 !important;
+  line-height: 39px !important;
+  color: #555555;
+}
+.paraediting {
+  font-size: calc(20px + (26 - 20) * (100vw - 445px) / (1440 - 445)) !important;
+  font-weight: 600 !important;
+  color: $eight-color !important;
+  line-height: 29px !important;
+}
+.decedit {
+  font-size: calc(14px + (20 - 14) * (100vw - 320px) / (1440 - 320)) !important;
+  font-weight: 100 !important;
+  line-height: 19px !important ;
+  color: #555555 !important;
+  width: 85% !important;
+}
+.pic {
+  width: 93%;
+  padding-top: 8.5%;
+}
+.portion9 {
+  padding-left: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+}
+
+.mappingcard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.btnd {
+  width: 20% !important;
+  padding-top: 1%;
+}
+.butun {
+  color: $Primary-color !important;
+  background: white !important;
+  border: 1px solid $Primary-color !important;
+
+  &:hover {
+    background: $Primary-color !important;
+    color: $Tertiary-color !important;
+    border: 1px solid $Primary-color !important;
+  }
+}
+.background {
+  background: $Primary-color !important;
+  height: 80px !important;
+  width: 80px !important;
+}
+.picsetting {
+  width: 60px !important;
+  height: 50px !important;
+}
+.titleditting {
+  font-size: calc(24px + (32 - 24) * (100vw - 445px) / (1440 - 445)) !important;
+}
+.paragraaph {
+  font-size: calc(10px + (19 - 10) * (100vw - 445px) / (1440 - 445)) !important;
+  width: 100% !important;
+}
+.maindivediting {
+  gap: 30px !important;
+}
+.portion10 {
+  border-top: 0.5px solid #e5e5e5;
+}
+.divportion10flex {
+  display: flex;
+  padding: 6%;
+  align-items: center;
+}
+.butontexteit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 7%;
+}
+.btndivedit {
+  width: 200px !important;
+}
+.textmap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 30%;
+}
+.footer {
+  border-top: 0.5px solid #e5e5e5;
+}
+.footersub {
+  display: flex;
+}
+.subdivision {
+  display: flex;
+  padding: 4%;
+}
+.textmapedit {
+  width: 40%;
+}
+.t {
+  font-size: calc(12px + (18 - 12) * (100vw - 445px) / (1440 - 445)) !important;
+  line-height: 22px !important;
+  font-weight: 400 !important;
+  color: black !important;
+}
+.p {
+  font-size: calc(12px + (18 - 12) * (100vw - 445px) / (1440 - 445)) !important;
+  line-height: 20px !important;
+  width: 90% !important;
+}
+.d {
+  font-size: calc(12px + (19 - 12) * (100vw - 445px) / (1440 - 445)) !important;
+  line-height: 22px !important;
+  font-weight: 400 !important;
+  color: black !important;
+  width: 35% !important;
+  &:hover {
+    color: $Primary-color !important;
+  }
+}
+.lastdiv {
+  border-top: 0.5px solid #e5e5e5;
+  padding-left: 3%;
+}

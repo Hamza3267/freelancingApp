@@ -1,0 +1,75 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.blackdiv {
+  height: 30px;
+  width: 99%;
+  background: black;
+  z-index: 2;
+  display: flex;
+  padding-left: 1%;
+  align-items: center;
+}
+.firstbell {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.first {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+// contactbar.module.scss
+
+@keyframes bellVibration {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-45deg);
+  }
+  45% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  60% {
+    transform: rotate(25deg);
+  }
+  70% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}
+
+.bellimage {
+  animation: bellVibration 0.5s linear infinite;
+  animation-play-state: paused;
+}
+
+.active {
+  animation-play-state: running;
+}
+
+.nameee {
+  width: 100%;
+}
+.flextop {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+}

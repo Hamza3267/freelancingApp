@@ -1,0 +1,16 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.divv{
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+.input{
+    border: none;
+    outline-style:none ;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+}

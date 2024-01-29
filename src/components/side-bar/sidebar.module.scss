@@ -1,0 +1,73 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.background {
+  width: 270px;
+  height: 600px;
+  overflow-y:auto;
+color: #fff;
+border-right: 1px solid #fff;
+
+  .subdiv {
+    .imgdiv {
+      padding: 11% 0% 0% 15%;
+    }
+    .imgset {
+      width: 90px;
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 1px;               /* width of the entire scrollbar */
+}
+.svggg {
+  padding-top: 5%;
+  padding: 11% 0% 0% 8%;
+  display: flex;
+  flex-direction: column;
+  // gap: 2px;
+}
+.postjob{
+   
+   
+    margin: 0 auto;
+    background: rgba(0,116,86,0.05);;
+    width: 70%;
+    padding: 2%;
+    border-radius: 15px;
+    // height: 50px;
+}
+.title{
+    font-family: Inter;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    letter-spacing: inherit !important;
+    line-height: inherit !important;
+    color: #111111;
+    text-align: center;
+}
+.para{
+    font-size: 16px !important;
+    line-height: inherit !important;
+    color: #000000 !important;
+    text-align: center;
+    width: 70% !important;
+    margin: 0 auto;
+   
+}
+.divbtn{
+    margin-top: -30px !important;
+    width: 80%;
+    margin: 0 auto;
+}
+.btnedit{
+
+}
+.lastdiv{
+    padding-top: 10%;
+}
+.imgsett{
+    width: 20px;
+    height: 17px;
+    margin-right: 10px;
+}

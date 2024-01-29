@@ -1,0 +1,77 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.container{
+    width: 87%;
+    height: 70px;
+    border-radius: 30px;
+    border: none;  
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    background-color: $Tertiary-color;
+    gap: 10px;
+    padding-left: 1%;
+}
+.box{
+    display: flex;
+   align-items: center;  
+   gap: 10px;
+}
+.img{
+    width: 5%;
+    height: 25px;
+}
+.icon{
+    width: 6%;
+  height: 15px;
+    margin-left: 2.3%;
+  
+}
+.inbox{
+    height: 66px;
+      width: 100%;
+      font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1440 - 320));
+    font-weight: 400;
+      border: 1px solid $nine-color;
+     outline-style:none ;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+ 
+   
+}
+.selectbox{
+     height: 68px;
+      width: 100%;
+      font-size: calc(10px + (16 - 10) * (100vw - 320px) / (1440 - 320));
+    color:rgb(139, 138, 138);
+     border: 1px solid lightgray;
+    outline-style:none ;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+   
+}
+.btn{
+    width: 21% !important;
+   
+}
+.flexdiv{
+    display: flex;
+    gap: 5px;
+}
+.p{
+    font-size: calc(14px + (15 - 10) * (100vw - 445px) / (1440 - 445)) !important;
+    color: #111111;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover{
+        color: $Primary-color;
+        
+    }
+}
+.pop{
+    font-size: calc(14px + (15 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #555555;
+}

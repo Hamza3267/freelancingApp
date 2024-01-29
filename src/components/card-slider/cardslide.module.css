@@ -1,0 +1,58 @@
+.maincontainer {
+  border: 1px solid black;
+  width: 480px;
+  height: 400px;
+  margin-left: 80px;
+  margin-top: 100px;
+}
+
+.cardslider {
+  height: 100px;
+  margin-left: 10px;
+}
+
+.h3div {
+  margin-left: 50px;
+}
+
+.text {
+  color: gray;
+  font-size: 25px;
+  font-family: Sans-serif;
+  font-weight: lighter;
+  width: 400px;
+}
+
+.textt {
+  color: gray;
+  margin-top: -20px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.h3divv {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.leftarrow {
+  position: absolute;
+  left: 50px;
+}
+
+.rightarrow {
+  position: absolute;
+  right: 30px;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -200px;
+}
+
+.mappingslide {
+  display: flex;
+  overflow-x: hidden;
+}/*# sourceMappingURL=cardslide.module.css.map */

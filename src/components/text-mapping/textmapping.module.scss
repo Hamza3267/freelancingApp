@@ -1,0 +1,47 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.p {
+  width: 100%;
+  height: 10px;
+  @include fonth4;
+  font-weight: 700;
+  line-height: 59px;
+  color: $eight-color;
+  @media screen and (max-width: 450px) {
+    font-size: 46px !important;
+    height: 10px;
+    display: flex;
+  }
+}
+.p1 {
+  width: 100%;
+  // height: 10px;
+  @include font22;
+  font-weight: 400;
+  line-height: 59px;
+  color: #555555;
+  @media screen and (max-width: 450px) {
+    font-size: 46px !important;
+    height: 30px;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 46px !important;
+    height: 20px;
+  }
+}
+.p2 {
+  width: 100%;
+  height: 30px;
+  font-family: Poppins;
+  @include fontp2;
+  font-weight: 500;
+  line-height: 15px;
+  color: $Primary-color;
+  @media screen and (max-width: 450px) {
+    line-height: 15px;
+    height: 36px !important;
+    font-size: 15px;
+    display: flex;
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.maindiv{
+     display: flex;
+    //  align-items: center;
+    justify-content: center;
+      gap: 20px;
+}
+.subdiv{
+    display: flex;
+    flex-direction:column ;
+    gap: 10px;
+}
+.imgdiv{
+    border-radius: 40px;
+      width: 70px;
+    height: 60px;
+    background: #f2f8f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pic{
+   width: 50%;
+   height: 30px
+}
+
+.tittle{
+     @include font22;
+    font-weight: 400;
+    width: 100%;
+}
+.para{
+    @include font15;
+    width:85%;
+    color: #555555;
+    
+}

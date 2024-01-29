@@ -1,0 +1,132 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.subdiv {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: -10px 10px;
+}
+
+.svgcla {
+  fill: #999999;
+  color: #555555;
+  cursor: pointer;
+  border-radius: 20px;
+
+  width: 85%;
+  height: 40px;
+  padding: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-top:3% ;
+  letter-spacing: 0.5px;
+  &:hover {
+    fill: $Primary-color;
+    color: $Primary-color;
+    background: #0074560d;
+  }
+}
+.svgdash {
+  fill: $Primary-color;
+  color: $Primary-color;
+  background: #0074560d;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 85%;
+  height: 40px;
+  padding: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-top:3% ;
+  letter-spacing: 0.5px;
+}
+.icon1 {
+  width: 60px;
+  height: 60px;
+  line-height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  background: #b3e5fb;
+}
+.icon2 {
+  width: 60px;
+  height: 60px;
+  line-height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  background: #cabffd;
+}
+.icon3 {
+  width: 60px;
+  height: 60px;
+  line-height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  background: #febc9c;
+}
+.icon4 {
+  width: 60px;
+  height: 60px;
+  line-height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  background: #b7e4cb;
+}
+.persondiv {
+  border: 1px solid #999999;
+  width: 160px;
+  border-radius: 10px;
+  background: #f2f2f2;
+}
+.personseting {
+  width: 97px;
+  height: 33px;
+  display: flex;
+
+  gap: 5px;
+  font-size: 16px;
+  color: #111111;
+  align-items: center;
+  padding: 5px 5px;
+}
+.act {
+  background: #111111;
+  fill: #f2f2f2;
+  color: white !important;
+  width: 97px;
+  height: 33px;
+  display: flex;
+  gap: 5px;
+  font-size: 16px;
+  align-items: center;
+  padding: 5px 5px;
+  border-radius: 15px;
+}
+.maindiv{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.textt{
+  font-size: calc(14px + (14 - 10) * (100vw - 445px) / (1440 - 445));
+  color: #111111;
+  cursor: pointer;
+  width: 100%;
+  &:hover{
+    color: $Primary-color;
+  }
+}
+.text{
+  font-size: calc(14px + (14 - 10) * (100vw - 445px) / (1440 - 445));
+  color: #555555;
+  width: 100%;
+}
+.cam{
+  fill: #111111;
+  &:hover{
+    fill: $Primary-color;
+  }
+}

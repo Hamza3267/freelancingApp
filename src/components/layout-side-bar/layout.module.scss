@@ -1,0 +1,31 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.flexdiv{
+    display: flex;
+   
+}
+.setting{
+    width:fit-content !important;
+}
+.side{
+    width: 270px;
+    height: 600px;
+    overflow-y: auto;
+    color: #fff;
+    position: fixed;
+    border-right: 1px solid #fff;
+    top: 0px;
+    height: 100vh;
+   
+}
+.headdiv{
+
+    flex: 1;
+    margin-left: 270px;
+}
+.buttonsetting{
+    margin-left:200px !important;
+    // margin-right: 40px;
+    width: 300px !important;
+}
