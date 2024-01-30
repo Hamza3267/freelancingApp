@@ -51,14 +51,16 @@
 .title {
   text-align: center;
   font-size: calc(22px + (34 - 22) * (100vw - 445px) / (1440 - 445)) !important;
-  font-weight: 600;
+  font-weight: 600 !important;
+  line-height: 1 !important;
 }
 
 .para {
-  text-align: center;
-  width: 34%;
-  line-height: 2;
-  margin: 0 auto;
+  font-size: calc(10px + (18 - 10) * (100vw - 445px) / (1440 - 445)) !important;
+  text-align: center !important;
+  width: 28% !important;
+  line-height: 1 !important;
+  margin: 0 auto !important;
 }
 
 .contactusdiv {
@@ -70,13 +72,13 @@
 }
 
 .titlecomp {
-  font-size: calc(14px + (18 - 14) * (100vw - 445px) / (1440 - 445));
-  font-weight: 500;
-  margin-top: -70px;
+  font-size: calc(14px + (18 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  font-weight: 500 !important;
+  margin-top: -70px !important;
 }
 
 .paracomp {
-  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
+  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
 }
 
 .imgset {

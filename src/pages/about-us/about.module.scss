@@ -47,27 +47,27 @@
   height: 80px;
 }
 .title {
-  @include fontbody;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-align: center;
-  line-height: 10px !important;
+  font-size: calc(14px + (16 - 10) * (100vw - 445px) / (1440 - 445)) !important ;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  text-align: center !important;
+  line-height:1 !important;
 }
 .parag{
-  font-size: calc(18px + (29 - 18) * (100vw - 320px) / (1440 - 320));
+  font-size: calc(18px + (29 - 18) * (100vw - 320px) / (1440 - 320)) !important;
 
-width: 40%;
-text-align: center;
-margin: 0 auto;
-  color: #111111;
+width: 40% !important;
+text-align: center !important;
+margin: 0 auto !important;
+  color: #111111 !important;
   font-weight: 700 !important;
-  line-height: 1;
+  line-height: 1 !important;
 }
 .para {
-  font-size: calc(24px + (32 - 24) * (100vw - 445px) / (1440 - 445));
-  color: $eight-color;
-   font-weight: 500;
-  text-align: center;
+  font-size: calc(24px + (32 - 24) * (100vw - 445px) / (1440 - 445)) !important;
+  color: $eight-color !important;
+   font-weight: 500 !important;
+  text-align: center !important;
 }
 .mapimg {
   display: flex;
@@ -82,11 +82,12 @@ margin: 0 auto;
   padding: 6%;
 }
 .para2 {
-  font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1440 - 320));
-  color: $eight-color;
-  font-weight: 400;
-  text-align: center;
-  line-height: 30px;
+  font-size: calc(14px + (28 - 14) * (100vw - 320px) / (1440 - 320)) !important;
+  color: $eight-color !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
+ 
 }
 .textdiv {
   width: 47%;
@@ -123,15 +124,15 @@ margin: 0 auto;
   }
 }
 .editingtext {
-  font-size: calc(18px + (48 - 18) * (100vw - 445px) / (1440 - 445)) !important;
+  font-size: calc(18px + (56 - 18) * (100vw - 445px) / (1440 - 445)) !important;
   color: $Primary-color !important;
-  font-weight: 500;
+  font-weight: 600 !important;
 }
 .editingpara{
   font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1440 - 320)) !important;
-  text-align: center;
-  font-weight: 500;
-  color: #111111;
+  text-align: center !important;
+  font-weight: 500 !important;
+  color: #111111 !important;
 }
 
 .portion3 {
@@ -144,25 +145,25 @@ margin: 0 auto;
 }
 .maindivv {
   width: 360px !important;
-  height: 500px;
+  height: 500px !important;
 }
 .borderppic {
   border-radius: 180px !important;
   width: 360px !important;
 }
 .date {
-  padding-left: 32%;
-  color: $eight-color;
-  font-weight: 600;
+  padding-left: 32% !important;
+  color: $eight-color !important;
+  font-weight: 600 !important;
   font-size: calc(14px + (22 - 14) * (100vw - 320px) / (1440 - 320)) !important;
 }
 .paragraph {
   text-align: center !important;
   font-size: calc(10px + (18 - 10) * (100vw - 320px) / (1440 - 320)) !important;
-  font-weight: 400;
-  color: #555555;
+  font-weight: 400 !important;
+  color: #555555 !important;
   &:hover{
-    color: #555555;
+    color: #555555 !important;
   }
 }
 .picbutonflex {
@@ -170,7 +171,7 @@ margin: 0 auto;
   justify-content: center;
 }
 .btndi {
-  width: 20%;
+  width: 20% !important;
 }
 .btndivset {
   display: flex;
@@ -179,12 +180,13 @@ margin: 0 auto;
 
 }
 .btnedit {
-  font-size: calc(12px + (18 - 12) * (100vw - 320px) / (1440 - 320));
-  background: none;
-  color: $Primary-color;
-  border: 1px solid $Primary-color;
+  font-size: calc(12px + (18 - 12) * (100vw - 320px) / (1440 - 320)) !important;
+  background: none !important;
+  color: $Primary-color !important;
+  border: 1px solid $Primary-color !important;
   &:hover {
-    color: $Tertiary-color;
+    background: $Primary-color !important;
+    color: $Tertiary-color !important;
   }
 }
 .portion4 {
@@ -195,11 +197,11 @@ margin: 0 auto;
   padding-top: 4%;
 }
 .paradesc{
-  font-size: calc(18px + (29 - 18) * (100vw - 320px) / (1440 - 320));
-  color: #111111;
-  text-align: center;
-  line-height: 1;
-  font-weight: 500;
+  font-size: calc(18px + (29 - 18) * (100vw - 320px) / (1440 - 320)) !important;
+  color: #111111 !important;
+  text-align: center !important;
+  line-height: 1 !important;
+  font-weight: 500 !important;
 }
 .settingarrow{
   position: absolute;
@@ -230,7 +232,7 @@ margin: 0 auto;
      
       // height: 400px;
      
-        padding-left: 3%;
+        padding-left: 3% !important;
     }
   }
   .buidimgdiv {
@@ -245,45 +247,45 @@ margin: 0 auto;
  
 }
 .titltle{
-  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
-  font-weight: 500;
-  line-height: 2;
+  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  font-weight: 500 !important;
+  line-height: 2 !important;
 }
 .paradescribe{
-  font-size: calc(18px + (29 - 18) * (100vw - 320px) / (1440 - 320));
-  color: #111111;
-  width: 55%;
-  line-height: 1;
-  font-weight: 600;
+  font-size: calc(18px + (29 - 18) * (100vw - 320px) / (1440 - 320)) !important;
+  color: #111111 !important;
+  width: 55% !important;
+  line-height: 1 !important;
+  font-weight: 600 !important;
 }
 .imgwidth {
   height: 550px;
 }
 
 .picbtnwidth {
-  width: fit-content;
+  width: 30% !important;
  
 }
 .picbtnseting {
 
-  background: none;
+  background: none !important;
   // border: 1px solid red;
-  color: black;
-  margin-left: -10px;
-  font-size: calc(10px + (18 - 10) * (100vw - 320px) / (1440 - 320));
+  color: black !important;
+  margin-left: -10px !important;
+  font-size: calc(10px + (18 - 10) * (100vw - 320px) / (1440 - 320)) !important;
   gap: 5px !important;
   border: none !important;
-  font-weight: 600;
+  font-weight: 600 !important;
   &:hover {
-    background: none;
+    background: none !important;
   }
 }
 .txtpara{
-  font-size: calc(10px + (18 - 10) * (100vw - 320px) / (1440 - 320));
-  width: 60%;
-   line-height: 1;
-    padding-left: 5%;
-   margin-top: -55px;
+  font-size: calc(10px + (18 - 10) * (100vw - 320px) / (1440 - 320)) !important;
+  width: 60% !important;
+   line-height: 1 !important;
+    padding-left: 5% !important;
+   margin-top: -55px !important;
 }
 .btndivsett {
   display: flex;
@@ -293,30 +295,30 @@ margin: 0 auto;
   padding-top: 5%;
 }
 .lasttitle{
-  font-size: calc(10px + (18 - 10) * (100vw - 320px) / (1440 - 320));
-  color: $Tertiary-color;
+  font-size: calc(10px + (18 - 10) * (100vw - 320px) / (1440 - 320)) !important;
+  color: $Tertiary-color !important;
   font-weight: 500;
-  text-align: center;
-  line-height: 1;
+  text-align: center !important;
+  line-height: 1 !important;
 }
 .lastpara{
-  font-size: calc(20px + (28 - 20) * (100vw - 445px) / (1440 - 445));
+  font-size: calc(20px + (28 - 20) * (100vw - 445px) / (1440 - 445)) !important;
  text-align: center !important;
- font-weight: 500;
- width: 80%;
+ font-weight: 500 !important;
+ width: 80% !important;
  margin: 0 auto;
- line-height: 1;
-  color: $Tertiary-color;
+ line-height: 1 !important;
+  color: $Tertiary-color !important;
 }
 
 .btndsett {
-  width: 20%;
+  width: 20% !important;
 }
 .btninnerset {
-  font-size: calc(8px + (15 - 8) * (100vw - 320px) / (1440 - 320));
+  font-size: calc(8px + (15 - 8) * (100vw - 320px) / (1440 - 320)) !important;
   color: $eight-color !important;
-  background: $Tertiary-color;
-  border: none;
+  background: $Tertiary-color !important;
+  border: none !important;
   &:hover {
     background: $fifth-color !important;
   }

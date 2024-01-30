@@ -87,20 +87,20 @@ padding: 10px;
 //   }
 // }
 .butttonsetting{
-  font-size: 15px;
-  color: $Primary-color;
-   background: $Tertiary-color;
-  gap: 10px;
-  margin: 2px 6px;
-  border: 1px solid ;
+  font-size: 15px !important;
+  color: $Primary-color !important;
+   background: $Tertiary-color !important;
+  gap: 10px !important;
+  margin: 2px 6px !important;
+  border: 1px solid !important;
   &:hover{
-    color:$Tertiary-color;
+    color:$Tertiary-color !important;
   }
 
 }
 
 .btndivsetting{
-  width: 100%; 
+  width: 100% !important; 
 
 }
 .ptextss{
@@ -127,37 +127,37 @@ padding: 10px;
 }
 .btnsetting{
    border: none !important;
-  background: none;
+  background: none !important;
   font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
-  color: $fifth-color;
+  color: $fifth-color !important;
   font-weight: 500 !important;
   
-  height: 32px;
+  height: 32px !important;
   &:hover{
-    background:none;
-    border-radius: 1px;
+    background:none !important;
+    border-radius: 1px !important;
     border-bottom: 1px solid $fifth-color !important;
 
   }
 }
 .btnset{
     border: none !important;
-    background: none;
-    border: none ;
+    background: none !important;
+    border: none !important;
     font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
-    color: $Primary-color;
+    color: $Primary-color !important;
      font-weight: 500 !important;
-    height: 32px;
+    height: 32px !important;
     &:hover{
-      background:none;
-      border-radius: 1px;
+      background:none !important;
+      border-radius: 1px !important;
       border-bottom: 1px solid $fifth-color !important;
   
     }
   }
   .setingnamebtndiv{
     // border: 1px solid red;
-    margin-left: -15px;
+    margin-left: -15px !important;
     
   
   }
@@ -172,8 +172,8 @@ padding: 10px;
 //   padding-top: 5%;
 }
 .btntextgrid {
-    display: grid;
-    width: fit-content;
+    display: grid !important;
+    width: fit-content !important;
     grid-template-columns: repeat(4,30%);
     padding-top: 4%;
     gap: 10px;
@@ -200,22 +200,22 @@ padding: 10px;
 }
 .txt{
   font-family: Inter !important;
-  font-size: 15px;
-  font-weight: normal;
-  letter-spacing: inherit;
+  font-size: 15px !important;
+  font-weight: normal !important;
+  letter-spacing: inherit !important;
    
-   height: 10px;
-   line-height: 1;
+   height: 10px !important;
+   line-height: 1 !important;
 //   margin-top: 100px !important;
 }
 .textdiv{
     // margin-top: 5px;
-    padding: 1%;
+    padding: 1% !important;
 }
 .butttons{
   background: #ecfff6 !important;
-  color: #4cbe6a;
-  height: 30px;
+  color: #4cbe6a !important;
+  height: 30px !important;
   
 }
 .infocandidate{

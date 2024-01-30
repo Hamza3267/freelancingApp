@@ -178,10 +178,7 @@ const CardSlider = ({
                         </div>
                       </div>
                     </div>
-                      {/* <SvgButton 
-                      title={"Follow"}
-                      imgset={style.imgedit}
-                      /> */}
+                   
                       <div>
                     <Button
                      imgset={style.imgediting}

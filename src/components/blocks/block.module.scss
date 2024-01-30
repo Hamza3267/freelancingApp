@@ -9,7 +9,7 @@
   .carousel {
     overflow: hidden;
     width: 95%;
-    //  height: 48em;
+   
       margin: 0% 0% 14% 2%; 
       background-color: #f9f9f9;
       box-shadow: none;
@@ -25,8 +25,8 @@
 
 }
 .textedit{
-  font-size: calc(10px + (18 - 10) * (100vw - 445px) / (1440 - 445));
-  font-weight: 500;
+  font-size: calc(10px + (18 - 10) * (100vw - 445px) / (1440 - 445)) !important;
+  font-weight: 500 !important;
 }
 .imgwidth{
   width: 25px;
@@ -63,43 +63,27 @@ padding: 10px;
 
   }
 }
-// .imgediting{
-  
-//   background: url(../../assets/images/plus-icon.svg)
-//   no-repeat 11.5px center;
-//   &:hover{
-//     background: url(../../assets/images/plus-icongreen.svg)
-//     no-repeat 11.5px center;
-//   }
-// }
+
 .flexitem {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-// .imgedit{
-//   background: url(../../assets/images/plus-icon.svg)
-//   no-repeat 1px center;
-//   &:hover{
-//     background: url(../../assets/images/plus-icongreen.svg)
-//     no-repeat 1px center;
-    
-//   }
-// }
+
 .butttonsetting{
-  font-size: 15px;
-  color: $Primary-color;
-   background: $Tertiary-color;
-  gap: 10px;
-  border: 1px solid ;
+  font-size: 15px !important;
+  color: $Primary-color !important;
+   background: $Tertiary-color !important;
+  gap: 10px !important;
+  border: 1px solid !important;
   &:hover{
-    color:$Tertiary-color;
+    color:$Tertiary-color !important;
   }
 
 }
 
 .btndivsetting{
-  width: 100%; 
+  width: 100% !important; 
 
 }
 .ptextss{
@@ -125,15 +109,15 @@ padding: 10px;
 }
 .btnsetting{
   border: none !important;
-  background: none;
-  border: none ;
+  background: none !important;
+  border: none !important;
   font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
-  color: $fifth-color;
+  color: $fifth-color !important;
   font-weight: 500 !important;
-  height: 32px;
+  height: 32px !important;
   &:hover{
-    background:none;
-    border-radius: 1px;
+    background:none !important;
+    border-radius: 1px !important;
     border-bottom: 1px solid $fifth-color !important;
 
   }
@@ -142,7 +126,7 @@ padding: 10px;
 //    margin-top: 20px  !important;
 // }
 .btndivseting{
-  width: 30%;
+  width: 30% !important;
   
 }
 .txt{
@@ -154,8 +138,8 @@ padding: 10px;
 }
 .butttons{
   background: #ecfff6 !important;
-  color: #4cbe6a;
-  height: 30px;
+  color: #4cbe6a !important;
+  height: 30px !important;
   
 }
 .textrating{
@@ -165,8 +149,8 @@ padding: 10px;
   margin-bottom: 3px;
 }
 .buutttndiv{
-  // margin-top: 20px;
-  width: 30%;
+  
+  width: 30% !important;
 }
 .imgset{
   width: 40%

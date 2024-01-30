@@ -30,18 +30,18 @@
   margin-right: 16px;
 }
 .name {
-  font-size: calc(20px + (28 - 20) * (100vw - 445px) / (1440 - 445));
-  color: #111111;
-  font-weight: 500;
+  font-size: calc(20px + (28 - 20) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #111111 !important;
+  font-weight: 500 !important;
 }
 .btnsetting {
-  width: 100%;
+  width: 100% !important;
 }
 .btnseting {
-  width: 25%;
+  width: 25% !important;
 }
 .btnclasss {
-  font-weight: 500;
+  font-weight: 500 !important;
   background: none !important;
   color: $Primary-color !important;
   font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
@@ -81,45 +81,45 @@
 }
 .butttonsetting {
   font-size: 16px !important;
-  font-weight: 400;
-  color: $Primary-color;
-  background: $Tertiary-color;
-  gap: 10px;
-  border: 1px solid;
+  font-weight: 400 !important;
+  color: $Primary-color !important;
+  background: $Tertiary-color !important;
+  gap: 10px !important; 
+  border: 1px solid !important;
   &:hover {
-    color: $Tertiary-color;
+    color: $Tertiary-color !important;
   }
 }
 .midbuton {
   font-size: 16px !important;
-  font-weight: 400;
-  color: #111111;
-  background: $Tertiary-color;
-  gap: 10px;
+  font-weight: 400 !important;
+  color: #111111 !important;
+  background: $Tertiary-color !important;
+  gap: 10px !important;
   border: 1px solid #ddd !important;
   &:hover {
-    color: $Tertiary-color;
+    color: $Tertiary-color !important;
   }
 }
 
 .btndivsetting {
-  width: 15%;
+  width: 15% !important;
 }
 .titlee {
   font-weight: 500 !important;
   font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1440 - 320)) !important;
 }
 .para {
-  color: #555555;
+  color: #555555 !important;
   font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
 }
 .list {
-  margin-top: -50px;
-  color: #555555;
-  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
-  font-weight: 400;
-  border-bottom: 0.5px solid #e5e5e5;
-  padding-bottom: 5%;
+  margin-top: -50px !important;
+  color: #555555 !important;
+  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  font-weight: 400 !important;
+  border-bottom: 0.5px solid #e5e5e5 !important;
+  padding-bottom: 5% !important;
 }
 .pic {
   width: 40%;
@@ -149,7 +149,7 @@
   font-weight: 600 !important;
 }
 .btnouter {
-  width: 20%;
+  width: 20% !important; 
 }
 .portion4 {
   margin-top: 10px;
@@ -161,9 +161,9 @@
 }
 .tie {
   font-size: calc(18px + (24 - 18) * (100vw - 445px) / (1440 - 445)) !important;
-  letter-spacing: 1px;
-  font-weight: 500;
-  color: #111111;
+  letter-spacing: 1px !important;
+  font-weight: 500 !important;
+  color: #111111 !important;
 }
 .innerdiv4 {
   padding-left: 3%;
@@ -286,10 +286,10 @@
   font-weight: 400;
 }
 .lastt {
-  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
-  color: #555555;
-  font-weight: 500;
-  display: block;
+  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #555555 !important;
+  font-weight: 500 !important;
+  display: block !important;
 }
 .progressbarr {
   height: 8px;
@@ -338,10 +338,10 @@
   padding-left: 8%;
 }
 .price {
-  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
-  color: $Primary-color;
-  font-weight: 500;
-  display: block;
+  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  color: $Primary-color !important;
+  font-weight: 500 !important;
+  display: block !important;
 }
 .divportion10flex {
   display: flex;
@@ -349,10 +349,10 @@
   align-items: center;
 }
 .butontexteit {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding-left: 7%;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding-left: 7% !important;
 }
 .btndivedit {
   width: 200px !important;

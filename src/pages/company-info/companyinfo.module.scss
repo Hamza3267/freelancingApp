@@ -16,6 +16,7 @@
   padding: 0% 2% 2% 2%;
 }
 .maindivv {
+ 
   background: #f4f4f4;
   display: flex;
   padding-left: 2%;
@@ -34,28 +35,28 @@
   padding: 2%;
 }
 .picsetting {
-  width: 64px;
-  height: 64px;
-  object-fit: cover;
-  background-color: #f9f9f9;
-  text-align: center;
-  line-height: 60px;
-  border-radius: 50%;
-  margin-right: 16px;
+  width: 64px !important;
+  height: 64px !important;
+  object-fit: cover !important;
+  background-color: #f9f9f9 !important;
+  text-align: center !important;
+  line-height: 60px !important;
+  border-radius: 50% !important;
+  margin-right: 16px !important;
 }
 .name {
-  font-size: calc(20px + (28 - 20) * (100vw - 445px) / (1440 - 445));
-  color: #111111;
-  font-weight: 500;
+  font-size: calc(20px + (28 - 20) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #111111 !important;
+  font-weight: 500 !important;
 }
 .btnsetting {
-  width: 100%;
+  width: 100% !important;
 }
 .btnseting {
-  width: 25%;
+  width: 25% !important;
 }
 .btnclasss {
-  font-weight: 500;
+  font-weight: 500 !important;
   background: none !important;
   color: $Primary-color !important;
   font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
@@ -63,12 +64,12 @@
 .btnclass {
   background: none !important;
   color: #555555 !important;
-  font-weight: 400;
+  font-weight: 400 !important;
   font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
 }
 .starset {
   width: 20px !important;
-  height: 20px;
+  height: 20px !important;
 }
 .divflex {
   margin-top: -20px;
@@ -90,51 +91,53 @@
 }
 .butttonsetting {
   font-size: 16px !important;
-  font-weight: 400;
-  color: $Primary-color;
-  background: $Tertiary-color;
-  gap: 10px;
-  border: 1px solid;
+  font-weight: 400 !important;
+  color: $Primary-color !important;
+  background: $Tertiary-color !important;
+  gap: 10px !important;
+  border: 1px solid !important;
   &:hover {
-    color: $Tertiary-color;
+    background: $Primary-color !important;
+    color: $Tertiary-color !important; 
   }
 }
 .midbuton {
   font-size: 16px !important;
-  font-weight: 400;
-  color: #111111;
-  background: $Tertiary-color;
-  gap: 10px;
+  font-weight: 400 !important;
+  color: #111111 !important;
+  background: $Tertiary-color !important;
+  gap: 10px !important;
   border: 1px solid #ddd !important;
   &:hover {
-    color: $Tertiary-color;
+    background: $Primary-color !important;
+    color: $Tertiary-color !important;
   }
 }
 .btndivsetting {
-  width: 15%;
+  width: 15% !important;
 }
 .titlee {
   font-weight: 500 !important;
   font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1440 - 320)) !important;
 }
 .para {
-  color: #555555;
+  color: #555555 !important;
   font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
 }
 .list {
-  color: #555555;
-  font-size: calc(8px + (18 - 8) * (100vw - 445px) / (1440 - 445));
-  display: grid;
-  width: 100%;
-  padding-left: 1%;
-  line-height: 1.5;
-  font-weight: 400;
-  border-bottom: 0.5px solid #e5e5e5;
-  padding-bottom: 5%;
+  color: #555555 !important;
+  font-size: calc(8px + (18 - 8) * (100vw - 445px) / (1440 - 445)) !important;
+  display: grid !important;
+  width: 100% !important; 
+  padding-left: 1% !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+  border-bottom: 0.5px solid #e5e5e5 !important;
+  padding-bottom: 5% !important;
 }
 .pic {
-  width: 40%;
-  padding-left: 20%;
+  width: 40% !important;
+  padding-left: 20% !important;
 }
 
 .portion2 {
@@ -163,7 +166,7 @@
   font-weight: 600 !important;
 }
 .btnouter {
-  width: 20%;
+  width: 20% !important;
 }
 .innercont{
   width: 620px !important;
@@ -186,9 +189,9 @@
 }
 .tie {
   font-size: calc(18px + (24 - 18) * (100vw - 445px) / (1440 - 445)) !important;
-  letter-spacing: 1px;
-  font-weight: 500;
-  color: #111111;
+  letter-spacing: 1px !important;
+  font-weight: 500 !important;
+  color: #111111 !important;
 }
 .innerdiv4 {
   padding-left: 3%;
@@ -230,34 +233,34 @@
   border-radius: 50%;
 }
 .fist {
-  font-size: calc(12px + (16 - 12) * (100vw - 445px) / (1440 - 445));
-  color: #111111;
-  font-weight: 500;
+  font-size: calc(12px + (16 - 12) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #111111 !important;
+  font-weight: 500 !important;
 }
 .first {
-  font-size: calc(16px + (18 - 16) * (100vw - 445px) / (1440 - 445));
-  color: #111111;
-  font-weight: 500;
-  line-height: 26px;
-  padding-left: 4%;
+  font-size: calc(16px + (18 - 16) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #111111 !important;
+  font-weight: 500 !important;
+  line-height: 26px !important;
+  padding-left: 4% !important;
 }
 
 .second {
-  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
-  font-weight: 500;
-  color: $Primary-color;
-  margin-top: -7px;
+  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  font-weight: 500 !important;
+  color: $Primary-color !important;
+  margin-top: -7px !important;
 }
 .date {
-  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
-  color: #555555;
-  margin-top: -7px;
+  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #555555 !important;
+  margin-top: -7px !important;
 }
 .last {
-  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
-  color: #555555;
-  margin-top: 2px;
-  width: 100%;
+  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #555555 !important;
+  margin-top: 2px !important;
+  width: 100% !important;
 }
 .portion5 {
   margin-top: 10px;
@@ -289,10 +292,10 @@
   padding: 2%;
 }
 .butneditngs {
-  border: none;
-  background: none;
-  font-size: 25px;
-  color: #fff;
+  border: none !important;
+  background: none !important;
+  font-size: 25px !important;
+  color: #fff !important;
 }
 .flexbtnstar {
   display: flex;
@@ -313,10 +316,10 @@
   font-weight: 400;
 }
 .lastt {
-  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
-  color: #555555;
-  font-weight: 500;
-  display: block;
+  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #555555 !important;
+  font-weight: 500 !important;
+  display: block !important;
 }
 .progressbarr {
   height: 8px;
@@ -365,10 +368,10 @@
   padding-left: 8%;
 }
 .price {
-  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
-  color: $Primary-color;
-  font-weight: 500;
-  display: block;
+  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  color: $Primary-color !important;
+  font-weight: 500 !important;
+  display: block !important;
 }
 .divportion10flex {
   display: flex;
@@ -448,24 +451,24 @@
   width: 100% !important;
 }
 .cardflex {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr) !important;
 }
 .cardset {
-  display: flex;
-  justify-content: center;
+  display: flex !important;
+  justify-content: center !important;
 }
 .photosportion {
   height: 300px;
 }
 .imgsett {
-  width: 100%;
-  height: 250px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  width: 100% !important;
+  height: 250px !important;
+  border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
 }
 .profile {
-  width: 94%;
+  width: 94% !important;
 }
 .logoediting{
   display: flex;
@@ -475,7 +478,7 @@
   padding-bottom: 2%;
 }
 .imagee{
-  height: 25px;
-  width: 25px;
-  cursor: pointer;
+  height: 25px !important;
+  width: 25px !important;
+  cursor: pointer !important;
 }
