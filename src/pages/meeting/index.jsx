@@ -98,6 +98,7 @@ const Meeting = () => {
               />
             </div>
           </div>
+          {active &&
           <div className={style.card}>
                 {meetingitems.map((e,index)=>(
           <div className={style.innerdiv} key={index}>
@@ -125,6 +126,12 @@ const Meeting = () => {
           </div>
           ))}
             </div>
+          }
+          {active1 &&
+          <div>
+            not typed data sorry !!
+            </div>
+              }
         </div>
         <div className={style.copyright}>
           <TextMap
