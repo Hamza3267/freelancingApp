@@ -87,6 +87,7 @@
   gap: 10px !important; 
   border: 1px solid !important;
   &:hover {
+    background: $Primary-color !important;
     color: $Tertiary-color !important;
   }
 }
@@ -98,6 +99,7 @@
   gap: 10px !important;
   border: 1px solid #ddd !important;
   &:hover {
+    background: $Primary-color !important;
     color: $Tertiary-color !important;
   }
 }
