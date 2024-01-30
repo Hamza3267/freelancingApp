@@ -180,7 +180,14 @@
   margin: 0 auto;
 }
 .portion6 {
+  width: 100%;
   background: #faf6eb;
+}
+.picedit{
+  width: 60%;
+  @media screen and (max-width:1200px) {
+    width: 0% !important;
+  }
 }
 .flexsubdiv {
   display: flex;

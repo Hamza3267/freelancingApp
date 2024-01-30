@@ -10,7 +10,7 @@ const LayoutStyle = ({children}) => {
         <SideBar />
       </div>
       <div className={style.headdiv}>
-        <Header  mainheader={style.setting} headerbutonsettiing={style.buttonsetting}/>
+        <Header  mainheader={style.setting} headerbutonsettiing={style.buttonsetting} picheaderset={style.loginset} headers={style.headername}/>
       {children}
       </div>
     </div>

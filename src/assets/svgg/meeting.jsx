@@ -1,8 +1,14 @@
 import React from 'react'
 import style from './clocksvg.module.scss'
+import { useNavigate } from "react-router-dom";
 const Meeting = ({settiing}) => {
+  const navigate = useNavigate();
+
+  const handleApp = () => {
+    navigate("/meeting");
+  };
   return (
-    <div className={style.svgcla}> 
+    <div className={style.svgcla} onClick={() => handleApp()}> 
     <div className={`${style.subdiv} ${settiing}`}>
   
     <svg width="20" height="20" viewBox="0 0 20 20" fill="#" xmlns="http://www.w3.org/2000/svg">

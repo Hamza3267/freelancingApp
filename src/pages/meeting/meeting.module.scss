@@ -1,0 +1,163 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.maincontainer {
+  height: max-content;
+  background-color: #f4f4f4;
+}
+.subcontainer {
+  padding: 2% 3% 0% 3%;
+}
+.titleeh {
+  font-size: calc(18px + (28 - 18) * (100vw - 320px) / (1440 - 320)) !important;
+  color: #111111;
+  font-weight: 500 !important;
+  padding-bottom: 2% !important;
+  letter-spacing: 1px;
+  font-family: Inter;
+}
+.innerdiv {
+   margin-top: 7%;
+   padding: 1% 2% 2% 7%;
+    border-radius: 10px;
+    height: max-content;
+    background: #fff;
+    width: 90%;
+    height: max-content;
+   
+  }
+.mainhead {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 2%;
+}
+.name1 {
+  font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
+  color: #999999;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    color: $Primary-color;
+  }
+}
+.name2 {
+  font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
+  color: #999999;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    color: $Primary-color;
+  }
+}
+.namecolor {
+  font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
+  color: $Primary-color;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 1px solid $Primary-color;
+}
+
+.editwidthbtn{
+    width: 150px !important;
+}
+.btnsetting{
+    font-size: calc(8px + (18 - 8) * (100vw - 320px) / ( 1440 - 320)) !important;
+    font-weight: 100 !important;
+   
+    width: 100% !important;
+}
+.flexmainhead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgset{
+    width: 12px;
+    height: 15px;
+}
+.date{
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #555555;
+}
+.datetimeflex{
+    display: flex;
+    align-items: center;
+  
+    gap: 5px;
+}
+.namebox{
+     font-size: calc(10px + (18 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #111111;
+    font-weight: 500;
+    line-height: 0;
+    // margin-top: -2px;
+    letter-spacing: 0.5px;
+
+}
+.meetingwith{
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #999999;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  line-height: 3;
+}
+.namecandidate{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #555555;
+}
+.flexlastitems{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.setcam{
+    height: 15px;
+    margin-top:6px ;
+}
+.settime{
+    margin-top:5px ;
+    height: 18px;
+}
+.meetingwithzoom{
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #999999;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    // margin-top: 0px;
+}
+.expired{
+    color: #999999;
+    background: #eeeeee;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 50px;
+    display: inline-block;
+     margin-left: -20px;
+   z-index: 1;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    column-gap: 10px;
+}
+
+.descsetting {
+    font-family: sans-serif !important;
+    font-size: calc(12px + (18 - 12) * (100vw - 445px) / (1440 - 445)) !important;
+    color: #999999 !important;
+    line-height: 4 !important;
+   
+  }
+  .copyright {
+    display: flex;
+     align-items:last baseline ;
+    justify-content: flex-end;
+    // margin-top: -20px;
+     margin-right: 50px;
+  } 

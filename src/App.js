@@ -19,6 +19,9 @@ const Candidate = lazy(()=> import ('./pages/candidates'))
 const Package = lazy(() => import('./pages/packages'))
 const CompanyList = lazy(()=> import('./pages/company-name'))
 const Setting = lazy(()=> import('./pages/settings'))
+const PostJob = lazy(()=> import('./pages/post-job'))
+const Meeting = lazy(()=> import('./pages/meeting'))
+const Messege = lazy(()=> import('./pages/messege'))
 function App() {
 
   
@@ -46,6 +49,9 @@ function App() {
           <Route path="/package" element={<Package />} />
           <Route path="/company-name" element={<CompanyList />} />
           <Route path="/setting" element={<Setting />} />
+          <Route path="/postjob" element={<PostJob />} />
+          <Route path="/meeting" element={<Meeting />} />
+          <Route path="/messege" element={<Messege/>} />
         </Routes>
       </Suspense>
     </BrowserRouter>

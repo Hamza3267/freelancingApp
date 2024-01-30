@@ -55,7 +55,7 @@ const pagesitem = [
   },
 ];
 
-const Nav = ({ mainheader, headerbutonsettiing, activeimg }) => {
+const Nav = ({ mainheader, headerbutonsettiing, activeimg,picheaderset,headers }) => {
 
   const [opencompany, setOpencompany] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
@@ -108,7 +108,7 @@ const Nav = ({ mainheader, headerbutonsettiing, activeimg }) => {
             </div>
           )}
           <div className={style.barr}style={{  width: "100%" }}>
-            <div className={style.link}>
+            <div className={`${style.link} ${headers}`}>
               <div className={style.companyLink}>
                 <NavLink to="/" className={style.name}>
                   Home
@@ -190,7 +190,7 @@ const Nav = ({ mainheader, headerbutonsettiing, activeimg }) => {
         </div>
 
          {formData &&
-          <div className={style.divheadersetting}>
+          <div className={`${style.divheadersetting} ${picheaderset}`}>
             <img src={bell} alt="" style={{ width: "30px" }} />
 
             <div
@@ -221,7 +221,9 @@ const Nav = ({ mainheader, headerbutonsettiing, activeimg }) => {
               </div>
               )} 
             </div>
+            <NavLink to={'/postjob'} className={style.navstyle}>
             <Button title={"Post a Job"} btndiv={style.bundiv} />
+            </NavLink>
           </div>
           } 
           {!formData &&
@@ -237,7 +239,10 @@ const Nav = ({ mainheader, headerbutonsettiing, activeimg }) => {
               onClose={closeModal}
              
             />
+            <NavLink to={'/postjob'} className={style.navstyle}>
             <Button title={"Post a Job"} btndiv={style.butondiv} />
+
+            </NavLink>
           </div>
             }
       </div>

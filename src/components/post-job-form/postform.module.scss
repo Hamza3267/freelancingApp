@@ -1,0 +1,267 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.basic{
+    font-size: calc(14px + (20 - 14) * (100vw - 320px) / (1440 - 320));
+    color:#111111;
+    font-weight: 500;
+  }
+  .innerdiv {
+    padding: 0.5% 2% 1% 3%;
+     height: max-content;
+     background: #fff;
+     width: 145%;
+     height: max-content;
+      border-radius: 6px;
+   }
+   .label{
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #111111;
+    line-height: 2;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+ 
+   }
+   .inerinput{
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    outline-style: none;
+    height: 45px;
+    width: 97%;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding-left: 3%;
+   
+   }
+   .labelss{
+    padding-top: 2%;
+    display: flex;
+     gap: 20px;
+   }
+   .selectflex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   }
+   .inerbox{
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    outline-style: none;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding-left: 3%;
+   }
+   .labels{
+    display: flex;
+    align-items: center;
+    width:100%;
+    gap: 20px;
+   }
+   .lbl{
+    display: flex;
+    align-items: center;
+    width:100%;
+ 
+    gap: 10px;
+   }
+   .salarydiv{
+     margin-top: 10px;
+    padding: 0.1% 2% 1% 3%;
+    height: max-content;
+    background: #fff;
+    width: 145%;
+    height: max-content;
+     border-radius: 6px;
+   }
+   .inerinputrange{
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    outline-style: none;
+    height: 45px;
+    width: 49%;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding-left: 3%;
+   }
+   .labeltype{
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   }
+   .labeel{
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #111111;
+    line-height: 2;
+    font-weight: 500;
+    display: inline-block;
+     margin-top: -10px;
+    margin-bottom: 5px;
+ 
+   }
+   .labelmap{
+    padding-top: 2%;
+    display: flex;
+    gap: 20px;
+   }
+   .labellocat{
+   
+    display: flex;
+    gap: 20px;
+   }
+   .imageload{
+
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #111111;
+   }
+   .loaderdiv{
+    margin-top: 10px;
+    border: 1.5px dotted #ddd ;
+    border-radius: 10px;
+    background: #f4f4f4;
+    width: 100%;
+    height: 200px;
+   }
+   .imgsetting{
+    top: 50%;
+     left: 50%;
+    position: relative;
+    cursor: pointer;
+   }
+   .texttype{
+    top: 60%;
+     left: 30%;
+    position: relative;
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    color:#007456;
+    
+   }
+   .span{
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    color:#111111;  
+   }
+   .description{
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    color:#999999;  
+    text-align: center;
+    position: relative;
+    left: 25%;
+   }
+   .texttypee{
+    top: 45%;
+     left: 10%;
+   position: relative;
+   font-size: calc(10px + (18 - 10) * (100vw - 445px) / (1440 - 445));
+   color:#007456;
+   font-weight: 500;
+   }
+   .imgs{
+    top: 25%;
+     left: 40%;
+    position: relative;
+    cursor: pointer;
+   }
+   .divimage{
+    margin-top: 10px;
+    border: 1.5px dotted #ddd ;
+    border-radius: 10px;
+    background: #f4f4f4;
+    height: 150px;
+    width: 25%;
+   }
+   .imgdesc{
+    font-size: calc(10px + (15 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #999999;
+    width: 17%;
+    text-align: center;
+   }
+   .divimgg{
+    padding-left: 4%;
+   }
+   .salarydivvv{
+    margin-top: 10px;
+    padding: 0.1% 4% 1% 4%;
+    height: max-content;
+    background: #fff;
+    width: 142%;
+    height: max-content;
+     border-radius: 6px;
+   }
+   .labeeel{
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #111111;
+    line-height: 2;
+    font-weight: 500;
+    display: inline-block;
+     margin-top: -100px;
+    margin-bottom: 5px;
+ 
+   }
+   .lastdivv{
+    margin-top: -30px;
+   }
+   .main{
+    display: flex;
+    gap: 240px;
+   }
+   .profiledesc{
+    padding: 10%;
+    width: 100%;
+    background: #fff;
+    height: max-content;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    margin-top: -40px;
+   }
+   .basicc{
+    font-size: calc(14px + (28 - 14) * (100vw - 320px) / (1440 - 320));
+    color:#111111;
+    font-weight: 500;
+    margin-top: -6px;
+  }
+  .piccc {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    background-color: #f9f9f9;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  .h4div{
+    margin-top:4px;
+    font-size: calc(18px + (24 - 18) * (100vw - 445px) / (1440 - 445));
+    color: #111111;
+    font-weight: 500;
+  
+  }
+  .companyname{
+    font-size: calc(10px + (17 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #555555;
+    width: 60%;
+    margin-top: -25px;
+  }
+  .span1{
+    color: #111111;
+    font-weight: 400;
+  }
+  .span2{
+    color: #007456;
+  }
+.last{
+  background: rgba(0,116,86,0.05);
+  color: #007456;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 50px;
+   display: inline-block;
+ margin-top: -10px;
+}
+.quality{
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}

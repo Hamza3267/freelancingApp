@@ -26,6 +26,7 @@ const Signup = () => {
 
               <div className={style.labelss}>
                 <label className={style.label}>First Name</label>
+                
                 <label className={style.label}>Last Name</label>
               </div>
               <div className={style.namess}>

@@ -18,3 +18,53 @@
   letter-spacing: 1px;
   font-family: Inter;
 }
+.divsetting{
+  width: 8% !important;
+  }
+.divsetting2{
+width: 14% !important;
+}
+.divsetting3{
+  width: 14% !important;
+  }
+.btnset1{
+  font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445)) !important;
+  background: none !important;
+  font-weight: 600 !important;
+  color: $Primary-color !important;
+  &:hover{
+    border-radius: 0% !important;
+    border-bottom: 1px solid $Primary-color !important;
+  }
+}
+.btnset2{
+  font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445)) !important;
+  border: 1px solid #e5e5e5 !important;
+  background: #f3f0f0 !important;
+  color: #111111 !important;
+  &:hover{
+    background: $Primary-color !important;
+    color: #fff !important;
+  }
+}
+.flexbutton{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.innerdiv {
+   padding: 1%;
+    height: max-content;
+    background: #fff;
+    width: 63%;
+    height: max-content;
+     border-radius: 6px;
+  }
+  .basic{
+    font-size: calc(14px + (20 - 14) * (100vw - 320px) / (1440 - 320));
+    color:#111111;
+    font-weight: 500;
+  }
+ 
+  
+ 
