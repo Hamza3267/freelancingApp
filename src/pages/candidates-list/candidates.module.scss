@@ -54,13 +54,16 @@
   justify-content: center;
   padding-top: 6%;
 }
-.title {
-  color: $Tertiary-color;
-  text-align: center;
-  font-weight: 600;
-  line-height: 6;
-  font-size: calc(14px + (40 - 14) * (100vw - 320px) / (1440 - 320));
-}
+
+  .title {
+ 
+    color: $Tertiary-color !important;
+   text-align: center !important;
+   font-weight: 600 !important;
+   line-height: 6 !important;
+   font-size: calc(14px + (40 - 14) * (100vw - 320px) / (1440 - 320)) !important;
+ }
+
 .midportion {
   background: #f4f4f4;
   padding: 3%;
