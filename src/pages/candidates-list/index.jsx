@@ -42,13 +42,14 @@ const Candidate = () => {
 
    <Layout>
       <div style={overlaystyle} className={style.maindiv}>
+        <div>
         <TextMap
           title={"Hire people for your business"}
           titleclass={style.title}
         />
+      </div>
         <div className={style.searchdiv}>
-          <Search 
-          
+          <Search          
           />
         </div>
       </div>

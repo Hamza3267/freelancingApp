@@ -1,137 +1,137 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
-.main{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    row-gap: 50px;
-    column-gap: 68px;
-  
-    transition: transform 0.5s ease;
-    // margin-left: 30px;
-}
-.maincontainer{
-    padding: 2%;
-width: 550px;
-height: max-content;
-border: 1px solid rgba(252,185,0,1) ;
-display: flex;
-flex-direction: column;
-gap: 30px;
-border-radius: 10px;
-transition: transform 0.5s ease;
-transition: box-shadow 0.3s ease;
-&:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-}
-.subdiv{
-    display: flex;
-     align-items: center;
-    //  justify-content: center;
-    padding-left: 10px;
-    gap: 10px;
-}
-.textdiv{
-    display: flex;
-    flex-direction: column;
-}
-.texthover{
-    @include font18;
-    font-weight: 600;
-    width: 100%;
-    &:hover{
-        color:$Primary-color
-    }
-}
-.texthoverr{
-    @include font18;
-    font-weight: 600;
-    width: 100%;
-    color:$Primary-color;
-    cursor: pointer;
-    &:hover{
-       border-bottom: 1px solid $Primary-color;
-    }
-}
-.para{
-    @include font18;
-    width:90%;
-    color: #555555;
-}
-.flexdiv{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.picslevel{
-    display: flex;
-    gap: 10px;
-}
-.buttonwidth{
-    width: 100%;
-   
-    padding-left: 10px;
-}
-.btnseting{
-    background: #f5ecff !important;
-    color: #6c4cbe;
-    height: 30px;
-    
-}
-.picbtnwidth{
-    width: 100%;
+.main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 50px;
+  column-gap: 68px;
+  transition: transform 0.5s ease;
  
 }
-.picbtnseting{
-    background: #0074560d !important;
-    color: #007456;
-    height: 30px;
+.maincontainer {
+  padding: 2%;
+  width: 550px;
+  height: fit-content;
+  border: 1px solid rgba(252, 185, 0, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  @media (max-width:500px) {
+    width: 370px;
+  }
+  @media (max-width:400px) {
+    width: 350px;
+  }
+  @media (max-width:350px) {
+    width: 280px;
+  }
 }
-.btnflex{
-    display: flex;
-    gap: 10px;
-    
+
+.subdiv {
+  display: flex;
+  align-items: center;
+  //  justify-content: center;
+  padding-left: 10px;
+  gap: 10px;
 }
-.buttonwid{
-    width: 100%;
-    
+.textdiv {
+  display: flex;
+  flex-direction: column;
 }
-.btnwidths{
-    width: 80%;
-   
+.texthover {
+  @include font18;
+  font-weight: 600;
+  width: 100%;
+  &:hover {
+    color: $Primary-color;
+  }
 }
-.lasttext{
-    padding: 3% 0% 2% 1%;
-    width: 100%;
-    font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1440 - 320));
-    font-weight: 500;
-    color:rgb(117, 115, 115);
+.texthoverr {
+  @include font18;
+  font-weight: 600;
+  width: 100%;
+  color: $Primary-color;
+  cursor: pointer;
+  &:hover {
+    border-bottom: 1px solid $Primary-color;
+  }
+}
+.para {
+  @include font18;
+  width: 90%;
+  color: #555555;
+}
+.flexdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.picslevel {
+  display: flex;
+  gap: 10px;
+}
+.buttonwidth {
+  width: 100%;
+
+  padding-left: 10px;
+}
+.btnseting {
+  background: #f5ecff !important;
+  color: #6c4cbe;
+  height: 30px;
+}
+.picbtnwidth {
+  width: 100%;
+}
+.picbtnseting {
+  background: #0074560d !important;
+  color: #007456;
+  height: 30px;
+}
+.btnflex {
+  display: flex;
+  gap: 10px;
+}
+.buttonwid {
+  width: 100%;
+}
+.btnwidths {
+  width: 80%;
+}
+.lasttext {
+  padding: 3% 0% 2% 1%;
+  width: 100%;
+  font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1440 - 320));
+  font-weight: 500;
+  color: rgb(117, 115, 115);
 }
 .dotsContainer {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    padding-top:40px 
-    ;  
-  }
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 40px;
+}
 .dot {
-    width: 7px;
-    height: 7px;
-    background-color: #ccc;
-    border-radius: 50%;
-    
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  
-  
-    &:hover {
-      background-color: #888;
-    }
+  width: 7px;
+  height: 7px;
+  background-color: #ccc;
+  border-radius: 50%;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #888;
   }
-  
-  .activeDot {
-    background-color: #333;
-  }
-  
+}
+
+.activeDot {
+  background-color: #333;
+}

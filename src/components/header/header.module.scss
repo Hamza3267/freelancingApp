@@ -2,114 +2,123 @@
 @import "../../styles/fontsize.scss";
 
 .main1 {
-  padding-left: 3%;
-  // padding-right: 20%;
-  width: 97%;
-  display: flex;
+  padding: 0% 2% 2% 2%;
+  width: 90%;
   align-items: center;
-  // justify-content: space-between;
-  border-bottom: 0.5px solid #e5e5e5;
-  padding-bottom: 1%;
-  @media screen and (max-width:500px) {
-    width:30% ;
-  }
-  @media screen and (max-width:800px) {
-    width:40% !important ;
-  }
-  @media screen and (max-width:1000px) {
-    width:60% ;
-  }
+  display: flex;
+  // border-bottom: 0.5px solid #e5e5e5;
+
+  // @media screen and (max-width:500px) {
+  //   width:30% !important;
+  // }
+  // @media screen and (max-width:800px) {
+  //   width:40% !important;
+  // }
+  // @media screen and (max-width:1000px) {
+  //   width:60% !important;
+  // }
 
 }
 .main {
-  display: flex;
-  align-items: center;
-  gap: 5%;
+   width: 100%;
+    display: flex;
+   align-items: center;
+   gap: 30px;
   padding-top: 2%;
-  width: 100% !important;
-  position: relative;
-  z-index: 1;
+  @media screen and (max-width:800px) {
+    gap: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  @media screen and (max-width:500px) {
+   gap: 5px !important;
+   display: flex !important;
+   align-items: center !important;
+ }
+
 }
-.barr{
-  // display: flex;
-  // gap: 1px;
-}
+
 .logoimg {
   width: 90%;
 }
 
-.link {
-  display: flex;
+ .link {
+  width: 100%;
+   display: flex;
   align-items: center;
- 
-  gap: 7%;
-  padding-right: 15%
+   gap: 50px;
+ @media screen and (max-width:800px) {
+   gap: 20px !important;
+   display: flex !important;
+   align-items: center !important;
+ }
+ @media screen and (max-width:500px) {
+  gap: 5px !important;
+  display: flex !important;
+  align-items: center !important;
+}
 }
 
 .name {
-  @include fontbody;
-  width: 100%;
+  font-size: calc(7px + (16 - 7) * (100vw - 445px) / (1440 - 445));
   font-weight: 500;
-  line-height: 40px;
+  // line-height: 40px;
   text-decoration: none;
   color: #555555;
 }
-.optionsBox {
-  position: absolute;
-  z-index: 0;
-  width: 150px;
-  background: $Tertiary-color;
-  border-radius: 10px;
-  line-height: 5px;
-  padding: 1%;
-  cursor: pointer;
-}
-.nam {
-  display: grid;
-  @include fonth6;
-  font-weight: 500;
-  line-height: 25px;
-  text-decoration: none;
-  color: $fifth-color;
-  &:hover {
-    color: $Primary-color;
-  }
-}
-.list {
-  @include fonth6;
-  font-weight: 500;
-  line-height: 10px;
-  text-decoration: none;
-  color: $fifth-color;
-  &:hover {
-    color: $Primary-color;
-  }
-}
-.optionBox {
-  display: grid;
-  width: 40%;
-  grid-template-columns: repeat(2, 1fr);
-  position: absolute;
-  z-index: 0;
-  background: $Tertiary-color;
-  border-radius: 10px;
-  line-height: 5px;
-  padding: 1%;
-  gap: 1px;
-  cursor: pointer;
-}
-.buton {
+// .optionsBox {
+//   position: absolute;
+//   z-index: 0;
+//   width: 150px;
+//   background: $Tertiary-color;
+//   border-radius: 10px;
+//   line-height: 5px;
+//   padding: 1%;
+//   cursor: pointer;
+// }
+
+// .list {
+//   @include fonth6;
+//   font-weight: 500;
+//   line-height: 10px;
+//   text-decoration: none;
+//   color: $fifth-color;
+//   &:hover {
+//     color: $Primary-color;
+//   }
+// }
+// .optionBox {
+//   display: grid;
+//   width: 40%;
+//   grid-template-columns: repeat(2, 1fr);
+//   position: absolute;
+//   z-index: 0;
+//   background: $Tertiary-color;
+//   border-radius: 10px;
+//   line-height: 5px;
+//   padding: 1%;
+//   gap: 1px;
+//   cursor: pointer;
+// }
+.buton{
+  margin-top: 20px !important;
+  width: 100%;
   display: flex;
-  // gap: 10px;
-  padding-top: 2%;
-  // padding-right: 2%;
-  width: 30%;
+  align-items: center;
+  gap: 30px;
+ 
 }
+// .btndivvset{
+//   width: 100%;
+//   display: flex;
+// }
 .butondiv {
-  width: 100px !important;
-  z-index: 1;
+    width: max-content !important;
+  
 }
+
 .btn {
+  
   color: $fifth-color !important;
   background: none !important;
   font-size: calc(11px + (16 - 11) * (100vw - 320px) / (1440 - 320)) !important;
@@ -117,59 +126,52 @@
     color: $Primary-color !important;
   }
 }
-.bundiv {
-  width: 100px !important;
-}
-.divheadersetting {
-  // width: 100% !important;
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  gap: 10px;
-    // margin-left: 35%;
-    // margin-right: 50px;
-    padding-right: 4%;
-   @media screen and (max-width:900px) {
-    width: 30% !important;
-    margin-left: 85% !important;
-   }
-}
-.pname {
-  @include fontbody;
-  max-width: 100%;
-  font-weight: 500;
-  line-height: 10px;
-  text-decoration: none;
-  color: #555555;
-  cursor: pointer;
-  &:hover {
-    color: $Primary-color;
-  }
-}
-.dietting {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.optionBox {
-  width: 15%;
-  height: max-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  left: 75%;
-  z-index: 1;
-  background: $Tertiary-color;
-  border-radius: 10px;
-  // line-height: 5px;
-  padding: 1%;
-  cursor: pointer;
-}
-.clock{
-  padding-top: 5% !important;
-}
+// .bundiv {
+//   width: 100% !important;
+// }
+// .divheadersetting {
+//    width: 100%;
+//   display: flex;
+//   align-items: center;
+//    gap: 10px;
+  
+// }
+// .pname {
+//   @include fontbody;
+//   width: fit-content !important;
+//   font-weight: 500;
+//   line-height: 10px;
+//   text-decoration: none;
+//   color: #555555;
+//   cursor: pointer;
+//   &:hover {
+//     color: $Primary-color;
+//   }
+// }
+// .dietting {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+// }
+// .optionBox {
+//   width: 15%;
+//   height: max-content;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   position: absolute;
+//   left: 75%;
+//   z-index: 1;
+//   background: $Tertiary-color;
+//   border-radius: 10px;
+//   // line-height: 5px;
+//   padding: 1%;
+//   cursor: pointer;
+// }
+// .clock{
+//   padding-top: 5% !important;
+// }
 .navstyle{
   text-decoration: none;
 }

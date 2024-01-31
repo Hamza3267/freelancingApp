@@ -26,6 +26,7 @@ const ContactBar = () => {
               style={{ height: "25px" }}
               className={`${style.bellimage} ${isActive ? style.active : ""}`}
             />
+            <div className={style.namediv}>
             <text
               className={style.nameee}
               style={{
@@ -37,6 +38,7 @@ const ContactBar = () => {
             >
               Subscribe for job alerts by email!
             </text>
+            </div>
           </div>
 
           <div className={style.flextop}>

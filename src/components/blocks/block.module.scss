@@ -5,12 +5,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width:500px) {
+    display: none !important;
+  }
 }
   .carousel {
     overflow: hidden;
     width: 95%;
    
-      margin: 0% 0% 14% 2%; 
+      margin: 0% 0% 0% 2%; 
       background-color: #f9f9f9;
       box-shadow: none;
   }
@@ -36,12 +39,16 @@
 .gridMode{
   display: grid;
   grid-template-columns: repeat(2,1fr) ;
+  @media screen and (max-width:800px) {
+    grid-template-columns: repeat(1,1fr) ;
+  }
 }
 .flex{
   width: 80%;
   display: grid;
   grid-template-columns: repeat(1,1fr) ;
  align-content: center;
+ 
 }
 .icon {
   width: 350px;
@@ -123,9 +130,7 @@ padding: 10px;
 
   }
 }
-// .btntextflex{
-//    margin-top: 20px  !important;
-// }
+
 .btndivseting{
   width: 30% !important;
   

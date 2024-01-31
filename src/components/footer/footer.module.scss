@@ -5,6 +5,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+   @media (max-width:500px) {
+    display:none
+  }
+
 }
 .flex {
   display: flex;
@@ -25,13 +29,19 @@
   }
 }
 .titleditting {
-  font-size: calc(24px + (32 - 24) * (100vw - 445px) / (1440 - 445)) !important;
+  font-size: calc(28px + (32 - 28) * (100vw - 445px) / (1440 - 445)) !important;
   font-weight: 500 !important;
   letter-spacing: 0;
+  @media (max-width:500px) {
+    text-align: center !important;
+  }
 }
 .paragraaph {
-  font-size: calc(10px + (19 - 10) * (100vw - 445px) / (1440 - 445)) !important;
+  font-size: calc(16px + (19 - 16) * (100vw - 445px) / (1440 - 445)) !important;
   width: 100% !important;
+  @media (max-width:500px) {
+    text-align: center !important;
+  }
 }
 .picture {
   &:hover {
@@ -39,21 +49,46 @@
   }
 }
 .portion10 {
+  margin-top: 20px;
+  width: 100%;
   border-top: 0.5px solid #e5e5e5;
 }
 .divportion10flex {
   display: flex;
   padding: 6%;
   align-items: center;
+  @media (max-width:800px) {
+    display: grid;
+    padding-top: 1% !important;
+  }
+}
+.maindivediting{
+  display: grid !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 .butontexteit {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-left: 7%;
+  @media (max-width:800px) {
+    display: grid;
+
+  }
+}
+.setinput{
+  @media (max-width:800px) {
+    width: 70% !important;
+   margin-top: 30px;
+   margin-left: 50px;
+  }
 }
 .btndivedit {
   width: 200px !important;
+ @media (max-width:800px) {
+  margin: 0 auto !important;
+ }
 }
 .textmap {
   display: grid;
@@ -62,6 +97,10 @@
 }
 .footersub {
   display: flex;
+  // @media (max-width:500px) {
+  //   display: grid !important;
+  //   grid-template-columns: repeat(3,1fr) !important;
+  // }
 }
 .subdivision {
   display: flex;
@@ -99,10 +138,15 @@
   background: $Primary-color !important;
   height: 80px !important;
   width: 80px !important;
+  @media (max-width:800px) {
+    margin-left: 130px;
+  }
+ 
 }
 .picsetting {
   width: 60px !important;
   height: 50px !important;
+ 
 }
 .footer {
   border-top: 0.5px solid #e5e5e5;

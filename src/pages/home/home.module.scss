@@ -1,15 +1,11 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10%;
-}
-.imgggg {
-  height: 250px;
-  width: 250px;
+.overlay {
+  height: 700px;
+  @media (max-width: 500px) {
+    height: max-content !important;
+  }
 }
 .blackdiv {
   height: 30px;
@@ -55,12 +51,20 @@
 .flexscreen {
   display: flex;
   justify-content: flex-start;
+  @media (max-width: 500px) {
+    display: grid;
+  }
 }
 .flextextcomponent {
   width: 55%;
+  max-width: 100%;
+  @media (max-width: 500px) {
+    width: 100% !important;
+    padding-left: 3%;
+  }
 }
 .portion2 {
-  height: 150px;
+  height: max-content;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -70,6 +74,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   @media screen and (max-width: 500px) {
+    margin-top: 10px !important;
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -89,7 +94,7 @@
   align-items: center;
 }
 .borderedit {
-  background:#007456 !important;
+  background: #007456 !important;
   width: 60px !important;
   height: 60px !important;
 }
@@ -121,9 +126,16 @@
   &:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
+
+  @media (max-width: 500px) {
+    width: 70%;
+    margin-left: 50px !important;
+  }
 }
 .mapedit {
+  height: max-content;
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 
@@ -132,13 +144,15 @@
     gap: 10px;
   }
   @media screen and (max-width: 500px) {
+    height: 300px;
+    overflow: auto;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
 }
 .btnedit {
   width: 13.7% !important;
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 .btndit {
   background: none !important;
@@ -151,7 +165,7 @@
   }
 }
 .portion4 {
-  height: 870px;
+  height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,7 +184,15 @@
 }
 .portion5 {
   background: #f9f9f9;
-  height: 700px;
+  height: max-content;
+}
+.titclas {
+  font-size: calc(20px + (28 - 20) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #111111 !important;
+}
+.parclas {
+  font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #555555 !important;
 }
 .p5editing {
   display: flex;
@@ -182,11 +204,12 @@
 .portion6 {
   width: 100%;
   background: #faf6eb;
+  height: max-content;
 }
-.picedit{
-  width: 60%;
-  @media screen and (max-width:1200px) {
-    width: 0% !important;
+.picedit {
+  width: 100%;
+  @media screen and (max-width: 1200px) {
+    display: none;
   }
 }
 .flexsubdiv {
@@ -200,12 +223,33 @@
 .tittleedit {
   font-size: calc(20px + (28 - 20) * (100vw - 445px) / (1440 - 445)) !important;
   line-height: 30px !important;
+  text-align: center !important;
+  @media (max-width: 500px) {
+    line-height: 17px !important;
+    width: 300px !important;
+  }
+  @media (max-width: 350px) {
+    line-height: 20px !important;
+    width: 260px !important;
+    text-align: center !important;
+  }
 }
-.paraeedit{
+.paraeedit {
+  width: 100% !important;
   font-size: calc(14px + (18 - 14) * (100vw - 445px) / (1440 - 445)) !important;
   color: #555555 !important;
   line-height: 30px !important;
   margin-top: 60px;
+  @media (max-width: 500px) {
+    line-height: 20px !important;
+    width: 300px !important;
+    text-align: center !important;
+  }
+  @media (max-width: 350px) {
+    line-height: 20px !important;
+    width: 260px !important;
+    text-align: center !important;
+  }
 }
 .paraedit {
   margin-top: 60px;
@@ -214,60 +258,94 @@
 .nummap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
- 
-//  height: 250px;
-width: 90%;
-margin: 0 auto;
-}
-.innerdiv{
+  gap: 10px;
+  height: fit-content !important;
+
   width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 500px) {
+    padding-left: 30%;
+  }
+}
+.innerdiv {
+  width: 100%;
+
+  height: 100px;
 }
 .editingtext {
-  font-size: calc(32px + (46 - 32) * (100vw - 445px) / (1440 - 445)) !important;
+  font-size: calc(30px + (46 - 30) * (100vw - 445px) / (1440 - 445)) !important;
   color: $Primary-color !important;
   margin: 0 auto;
   // line-height: 1;
 }
-.editingpara{
-  font-size: calc(14px + (20 - 14) * (100vw - 445px) / (1440 - 445)) !important;
-  //  line-height: 2;
-   margin-top: 30px;
+.editingpara {
+  width: 100% !important;
+  font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445)) !important;
+  margin-top: 30px !important;
+
+  @media (max-width: 500px) {
+    width: 100px !important;
+  }
 }
 .btndivedit {
   width: 45% !important;
+  @media (max-width: 500px) {
+    padding-left: 26%;
+  }
 }
 .portion7 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 500px;
+  height: max-content;
   overflow: hidden;
 }
 .edittitle {
-  font-size: calc(28px + (36 - 28) * (100vw - 445px) / (1440 - 445)) !important;
+  font-size: calc(20px + (36 - 20) * (100vw - 445px) / (1440 - 445)) !important;
   font-weight: 600 !important;
   line-height: 85% !important;
   text-align: center;
+  @media (max-width: 500px) {
+    width: 200px !important;
+    line-height: 1 !important;
+  }
 }
 .paracont {
   text-align: center;
+  @media (max-width: 500px) {
+    width: 200px !important;
+  }
+}
+.paracoont {
+ 
+  text-align: center !important;
+  @media (max-width: 500px) {
+    
+    width: 200px !important;
+    line-height: 1 !important;
+
+  }
 }
 .flexcontainer {
   width: 35%;
 }
 .poriton8 {
-  height: 300px;
+  height: max-content;
   padding: 10% 3% 7% 3%;
 }
 .subbdiv {
   background: #faf6eb;
   border-radius: 20px;
-  height: 430px;
+  height: max-content;
   margin-left: 0px;
 }
 .flexbox {
   display: flex;
+  @media (max-width: 500px) {
+    display: grid;
+  }
 }
 .flextext {
   padding: 9% 2% 5% 7%;
@@ -301,18 +379,35 @@ margin: 0 auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 700px;
+  height: max-content;
 }
 
 .mappingcard {
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
+  @media (max-width:800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width:500px) {
+    
+    grid-template-columns: repeat(1, 1fr);
+   margin-left: 60px !important;
+  }
+  @media (max-width:400px) {
+    
+    grid-template-columns: repeat(1, 1fr);
+   margin-left: 41px !important;
+  }
 }
 .btnd {
   width: 20% !important;
   padding-top: 1%;
+  @media (max-width:500px) {
+    width: 50% !important;
+  }
 }
 .butun {
   color: $Primary-color !important;

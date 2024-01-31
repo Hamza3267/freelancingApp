@@ -72,7 +72,7 @@ return (
         paraedit={style.paraedit}
         logo={pic}
       />
-      <img src={logo} alt="" />
+      <img src={logo} alt="" className={style.image}/>
       </div>
     </div>
  ))}

@@ -13,4 +13,14 @@
     height: 40px;
     border-radius: 20px;
     margin-left: 10px;
+    @media (max-width:800px) {
+        width:200px !important;
+
+
+    }
+    @media (max-width:400px) {
+        width:170px !important;
+        
+
+    }
 }

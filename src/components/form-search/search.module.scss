@@ -3,13 +3,33 @@
 
 .form {
   width: 85%;
-  height: 70px;
+  height: max-content;
   border-radius: 40px;
   background: $Tertiary-color;
+  @media screen and (max-width:700px) {
+     width: 60% !important;
+   border-radius: 1px !important;
+    background: none !important;
+    margin-top: -100px;
+  }
+  @media screen and (max-width:500px) {
+    width: 30% !important;
+  border-radius: 1px !important;
+   background: none !important;
+   margin-top: -40px;
+ }
 }
 .inputfield {
-  display: flex;
-  padding: 1%;
+  max-width: 100% !important;
+  @media screen and (max-width:1900px) {
+    display: flex;
+    padding: 1%;
+  }
+  @media screen and (max-width:700px) {
+    display: grid !important;
+    width: 40% !important;
+  }
+ 
 }
 .inerinput {
   width: 100%;
@@ -21,12 +41,28 @@
   border-left: none;
   padding-left: 2%;
   outline-style: none;
+  @media screen and (max-width:700px) {
+    width: 500px !important;
+    border-bottom: 2px solid #e5e5e5 !important;
+    padding-left: 2% !important;
+    border-radius: 5px;;
+  }
+  @media screen and (max-width:500px) {
+    width: 250px !important;
+    border-bottom: 2px solid #e5e5e5 !important;
+    padding-left: 2% !important;
+    
+  }
 }
 .widthbuton {
   width: 100%;
   align-self: center;
+  @media screen and (max-width:500px) {
+    width: 200px !important;
+  }
 }
 .butn {
-  padding-left: 1%;
+  padding-left: 13%;
   width: 60%;
+  margin-top: 10px;
 }

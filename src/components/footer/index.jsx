@@ -81,7 +81,7 @@ const Foter = () => {
             maindivedit={style.maindivediting}
           />
           <div className={style.butontexteit}>
-            <Input />
+            <Input inputdiv={style.setinput}/>
             <Button title={"Subscribe"} btndiv={style.btndivedit} />
           </div>
         </div>

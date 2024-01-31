@@ -105,11 +105,13 @@ const InfoCandidate = () => {
                 <div className={style.maincontainer} key={index}>
                   <div className={style.subdiv}>
                     <div className={style.flexnamebn}>
+                      <div className={style.imag}>
                       <Image
                         img={e.pic}
                         imgsetting={style.picsetting}
                         imgdiv={style.picdiv}
                       />
+                      </div>
                       <div>
                         <h1 className={style.name}>{e.name}</h1>
 
@@ -136,7 +138,7 @@ const InfoCandidate = () => {
                             btnimg={e.star}
                             imgset={style.starset}
                             btndiv={style.btnseting}
-                            btnClass={style.btnclass}
+                            btnClass={style.btnclss}
                           />
                         </div>
                       </div>
@@ -190,7 +192,9 @@ const InfoCandidate = () => {
                   <div className={style.portion2}>
                     <div>
                       <TextMap title={"Videos"} titleclass={style.titlee} />
-                      <ReactPlayer url="https://www.youtube.com/watch?v=LXb3EKWsInQ" />
+                     <div className={style.videooo}>
+                      <ReactPlayer url="https://www.youtube.com/watch?v=LXb3EKWsInQ" className={style.videooo}/>
+                  </div>
                     </div>
                   </div>
                   <div className={style.portion3}>

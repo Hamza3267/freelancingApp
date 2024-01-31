@@ -2,13 +2,16 @@
 @import "../../styles/fontsize.scss";
 
 .blackdiv {
-  height: 30px;
+  height: max-content;
   width: 99%;
   background: black;
-  z-index: 2;
-  display: flex;
+
   padding-left: 1%;
-  align-items: center;
+
+  @media (max-width: 500px) {
+    height: 80px;
+    width: 99%;
+  }
 }
 .firstbell {
   width: 100%;
@@ -22,7 +25,6 @@
   align-items: center;
 }
 
-// contactbar.module.scss
 
 @keyframes bellVibration {
   0% {
@@ -56,20 +58,32 @@
 .active {
   animation-play-state: running;
 }
-
+.namediv{
+  width: 97%;
+}
 .nameee {
-  width: 100%;
+ width: 150px !important;
+font-size: 12px;
+  @media (max-width: 500px) {
+    width: 160px;
+  }
 }
 .flextop {
   display: flex;
   align-items: center;
-  width: 30%;
+
+ 
 }
 .contact {
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 97%;
   padding-left: 3%;
-  padding-right: 3%;
+   padding-right: 3%;
+  @media (max-width: 500px) {
+    display: grid;
+    padding-right:0% !important;
+
+  }
 }

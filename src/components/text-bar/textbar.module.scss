@@ -6,11 +6,18 @@
 }
 .text {
   @include fonth6;
+  width: 100% !important;
   color: #111111 !important;
+  @media (max-width:500px) {
+     width:370px !important;
+  }
 }
 .changetext {
   @include fonth1;
+  max-width: 100%;
   width: 70%;
+ 
+
 }
 
 .dream {

@@ -60,7 +60,7 @@
   }
    
   @mixin fontbody {
-    font-size: calc(14px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
   }
    
   @mixin fontp1 {

@@ -67,6 +67,7 @@ const CardSlider = ({
   buttons,
   carousall,
   dots,
+  
  
 }) => {
   const navigate = useNavigate();
@@ -96,12 +97,12 @@ const CardSlider = ({
     <>
       <div className={`${style.carousel} ${carousall}`}>
         <div className={style.companieslist}>
-         
+        
             <text className={style.textedit}>
               {" "}
               {filteredSlides.length} Companies
             </text>
-          
+  
           {buttons && (
             <div>
               <img

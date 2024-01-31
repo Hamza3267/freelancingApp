@@ -2,13 +2,29 @@
 @import "../../styles/fontsize.scss";
 
 .carouselItems{
+  width: 100%;
   border: 1px solid lightgray;
    padding: 1%;
    border-radius: 10px;
+   
+   @media (max-width:500px) {
+   margin-left: 4% !important;
+   
+  
+  }
  
 }
+.image{
+  width: 100%;
+  @media (max-width:800px) {
+    width: 40% !important;
+    margin: 0 auto;
+  }
+}
 .textedit{
+  font-size: calc(10px + (18 - 10) * (100vw - 445px) / (1440 - 445)) !important;
   line-height: 20px!important;
+  color: #111111 !important;
 }
 .paragra{
   font-size: calc(14px + (19 - 14) * (100vw - 320px) / (1440 - 320)) !important;
@@ -23,11 +39,15 @@
   display: flex;
   justify-content: space-between;
   margin-top: -40px;
+  @media (max-width:800px) {
+    display: grid;
+  }
 }
 .carousel {
   position: relative;
    width: 100%;
   padding-left: 5.9%;
+ 
   .maindiv {
     display: flex;
     gap: 30px;

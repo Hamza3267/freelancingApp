@@ -55,13 +55,17 @@ const pagesitem = [
   },
 ];
 
-const Nav = ({ mainheader, headerbutonsettiing, activeimg,picheaderset,headers }) => {
-
+const Nav = ({
+  mainheader,
+  headerbutonsettiing,
+  activeimg,
+  picheaderset,
+  headers,
+}) => {
   const [opencompany, setOpencompany] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
   const [active, setActive] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
- 
 
   const formData = JSON.parse(localStorage.getItem("signInData"));
   const formSignupData = JSON.parse(localStorage.getItem("signupData"));
@@ -89,7 +93,6 @@ const Nav = ({ mainheader, headerbutonsettiing, activeimg,picheaderset,headers }
     setOpencompany(false);
   };
 
-
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -107,7 +110,7 @@ const Nav = ({ mainheader, headerbutonsettiing, activeimg,picheaderset,headers }
               <img src={Frame} alt="" className={style.logoimg} />
             </div>
           )}
-          <div className={style.barr}style={{  width: "100%" }}>
+          <div className={style.barr} style={{ width: "100%" }}>
             <div className={`${style.link} ${headers}`}>
               <div className={style.companyLink}>
                 <NavLink to="/" className={style.name}>
@@ -189,62 +192,60 @@ const Nav = ({ mainheader, headerbutonsettiing, activeimg,picheaderset,headers }
           </div>
         </div>
 
-         {formData &&
-          <div className={`${style.divheadersetting} ${picheaderset}`}>
-            <img src={bell} alt="" style={{ width: "30px" }} />
+        <div className={style.btndivvset}>
+          {formData && (
+            <div className={`${style.divheadersetting} ${picheaderset}`}>
+              <img src={bell} alt="" style={{ width: "8%" }} />
 
-            <div
-              // className={style.dietting}
-              onMouseEnter={MouseEnter}
-              onMouseLeave={MouseLeave}
-            >
-              <div   className={style.dietting}>
-              <img src={img} alt="" style={{ width: "30px" }} />
-              <p className={style.pname}>{formSignupData.fname}</p>
-              </div>
-              {active && (
-              <div 
-              className={style.optionBox}
-              onMouseEnter={MouseEnter}
-              onMouseLeave={MouseLeave}
+              <div
+                // className={style.dietting}
+                onMouseEnter={MouseEnter}
+                onMouseLeave={MouseLeave}
               >
-             <Clock  settiing={style.clock}/>
-            <Job settiing={style.clock}/>
-            <Applicant settiing={style.clock}/>
-            <Candidate settiing={style.clock}/>
-            <Package settiing={style.clock}/>
-            <Messege settiing={style.clock} />
-            <Meeting settiing={style.clock}/>
-            <Company settiing={style.clock}/>
-            <Setting settiing={style.clock}/>
-            <Logout settiing={style.clock}/>
+                <div className={style.dietting}>
+                  <img src={img} alt="" style={{ width: "10%" }} />
+                  <p className={style.pname}>{formSignupData.fname}</p>
+                </div>
+                {active && (
+                  <div
+                    className={style.optionBox}
+                    onMouseEnter={MouseEnter}
+                    onMouseLeave={MouseLeave}
+                  >
+                    <Clock settiing={style.clock} />
+                    <Job settiing={style.clock} />
+                    <Applicant settiing={style.clock} />
+                    <Candidate settiing={style.clock} />
+                    <Package settiing={style.clock} />
+                    <Messege settiing={style.clock} />
+                    <Meeting settiing={style.clock} />
+                    <Company settiing={style.clock} />
+                    <Setting settiing={style.clock} />
+                    <Logout settiing={style.clock} />
+                  </div>
+                )}
               </div>
-              )} 
+              <NavLink to={"/postjob"} className={style.navstyle}>
+                <Button title={"Post a Job"} btndiv={style.bundiv} />
+              </NavLink>
             </div>
-            <NavLink to={'/postjob'} className={style.navstyle}>
-            <Button title={"Post a Job"} btndiv={style.bundiv} />
-            </NavLink>
-          </div>
-          } 
-          {!formData &&
-          <div className={`${style.buton} ${headerbutonsettiing}`}>
-            <Button
-              title={"Login"}
-              btndiv={style.butondiv}
-              btnClass={style.btn}
-              onClick={openModal}
-            />
-            <LoginPage
-              isOpen={isModalOpen}
-              onClose={closeModal}
-             
-            />
-            <NavLink to={'/postjob'} className={style.navstyle}>
-            <Button title={"Post a Job"} btndiv={style.butondiv} />
+          )}
 
-            </NavLink>
-          </div>
-            }
+          {!formData && (
+            <div className={`${style.buton} ${headerbutonsettiing}`}>
+              <Button
+                title={"Login"}
+                btndiv={style.butondiv}
+                btnClass={style.btn}
+                onClick={openModal}
+              />
+              <LoginPage isOpen={isModalOpen} onClose={closeModal} />
+              <NavLink to={"/postjob"} className={style.navstyle}>
+                <Button title={"Post a Job"} btndiv={style.butondiv} />
+              </NavLink>
+            </div>
+          )}
+        </div>
       </div>
     </>
   );

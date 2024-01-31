@@ -14,8 +14,8 @@
     animation-play-state: paused;
   }
 
-  @media screen and (max-width: 500px) {
-    width: 0%;
+  @media screen and (max-width: 600px) {
+   display: none;
   }
 }
 

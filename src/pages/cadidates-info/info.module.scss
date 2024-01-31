@@ -1,11 +1,13 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
-
 .maindivv {
   background: #f4f4f4;
   display: flex;
   padding-left: 2%;
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
 }
 
 .maincontainer {
@@ -33,9 +35,16 @@
   font-size: calc(20px + (28 - 20) * (100vw - 445px) / (1440 - 445)) !important;
   color: #111111 !important;
   font-weight: 500 !important;
+  @media (max-width:400px) {
+    padding-bottom: 10px !important;
+    text-align: center;
+  }
 }
 .btnsetting {
   width: 100% !important;
+  @media screen and (max-width: 440px) {
+    width: 120px !important;
+  }
 }
 .btnseting {
   width: 25% !important;
@@ -45,22 +54,56 @@
   background: none !important;
   color: $Primary-color !important;
   font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  @media (max-width:400px) {
+    // margin-left: -20px !important;
+  }
 }
 .btnclass {
   background: none !important;
   color: #555555 !important;
   font-weight: 400;
   font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  @media (max-width:350px) {
+     margin-left: 30px !important;
+  }
+}
+.btnclss {
+  background: none !important;
+  color: #555555 !important;
+  font-weight: 400;
+  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  @media (max-width:450px) {
+    margin-left: -15px !important;
+ }
+  @media (max-width:350px) {
+     margin-left: 10px !important;
+  }
 }
 .starset {
   width: 20px !important;
   height: 20px;
 }
+.imag{
+  @media (max-width:400px) {
+    display: none;
+  }
+}
 .divflex {
   margin-top: -20px;
   margin-left: -10px;
   display: flex;
+  align-items: center;
   width: 100%;
+   @media (max-width:500px) {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+     margin-left: -30px !important;
+    
+   }
+   @media (max-width:350px) {
+    grid-template-columns: repeat(2,1fr);
+   
+  }
 }
 .flexnamebn {
   display: flex;
@@ -78,13 +121,19 @@
   height: max-content;
   padding-bottom: 6%;
   border-bottom: 0.5px solid #e5e5e5;
+  @media (max-width:500px) {
+    width: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 10px;
+  }
 }
 .butttonsetting {
   font-size: 16px !important;
   font-weight: 400 !important;
   color: $Primary-color !important;
   background: $Tertiary-color !important;
-  gap: 10px !important; 
+  gap: 10px !important;
   border: 1px solid !important;
   &:hover {
     background: $Primary-color !important;
@@ -106,14 +155,22 @@
 
 .btndivsetting {
   width: 15% !important;
+  @media (max-width:500px) {
+    width: 100px !important;
+    padding-left: 30px !important;
+  }
 }
 .titlee {
   font-weight: 500 !important;
-  font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1440 - 320)) !important;
+  font-size: calc(17px + (24 - 17) * (100vw - 320px) / (1440 - 320)) !important;
 }
 .para {
   color: #555555 !important;
-  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+  @media (max-width: 500px) {
+    font-size: 10px;
+   font-weight: 500 !important;
+  }
 }
 .list {
   margin-top: -50px !important;
@@ -136,6 +193,9 @@
   width: 90%;
   padding: 2%;
 }
+.videooo {
+  width: 100% !important;
+}
 .portion3 {
   margin-top: 10px;
   height: auto;
@@ -151,7 +211,7 @@
   font-weight: 600 !important;
 }
 .btnouter {
-  width: 20% !important; 
+  width: 20% !important;
 }
 .portion4 {
   margin-top: 10px;
@@ -311,6 +371,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-bottom: 0.5px solid #e5e5e5;
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .flexbn {
   display: flex;
@@ -335,6 +398,10 @@
   background: #fff;
   border-radius: 10px;
   width: 50%;
+  @media screen and (max-width: 800px) {
+    display: none !important;
+    background: none !important;
+  }
 }
 .portion8subdiv {
   padding-left: 8%;
@@ -364,7 +431,7 @@
   grid-template-columns: repeat(4, 1fr);
   width: 30%;
 }
-.footer{
+.footer {
   border-top: 0.5px solid #e5e5e5;
 }
 .footersub {

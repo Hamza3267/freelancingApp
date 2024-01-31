@@ -28,7 +28,7 @@ const overlyStyle = {
   backgroundImage: `url(${backgroundpic})`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  height: "700px",
+  // height: "max-content",
   overflow: "hidden",
 };
 
@@ -126,7 +126,7 @@ const Home = () => {
     <>
     
       <Layout>
-      <div style={overlyStyle} class>
+      <div style={overlyStyle} className={style.overlay}>
         <div className={style.subdiv}>
          
           <div className={style.flexscreen}>
@@ -201,6 +201,8 @@ const Home = () => {
           <TextMap
             title={"Featured companies actively hiring "}
             paragraph={"Over 100 million jobs"}
+            titleclass={style.titclas}
+            paragraphclass={style.parclas}
           />
           <Button
             title={"View all categories"}
@@ -212,8 +214,11 @@ const Home = () => {
       </div>
       <div className={style.portion6}>
         <div className={style.flexsubdiv}>
+          <div className={style.imagecont}>
           <img src={girlpic} alt="girl" className={style.picedit} />
+          </div>
           <div className={style.textmapping}>
+            <div className={style.textcompdiv}>
             <TextMap
               title={
                 "Discover why more companies are using Civi to make hiring easy"
@@ -224,6 +229,7 @@ const Home = () => {
               titleclass={style.tittleedit}
               paragraphclass={style.paraeedit}
             />
+            </div>
             <div className={style.nummap}>
               {numberitems.map((e, index) => (
                 <div className={style.innerdiv}>
@@ -289,7 +295,7 @@ const Home = () => {
             title={"Latest from our blog"}
             paragraph={"Get interesting insights, articles, and news"}
             titleclass={style.edittitle}
-            paragraphclass={style.paracont}
+            paragraphclass={style.paracoont}
           />
         </div>
         <div className={style.mappingcard}>

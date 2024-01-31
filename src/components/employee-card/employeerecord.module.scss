@@ -5,6 +5,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 500px) {
+      display: none;
+  }
+    
 }
   .carousel {
     overflow: hidden;
@@ -13,6 +17,7 @@
       margin: 0% 0% 14% 2%; 
       background-color: #f9f9f9;
       box-shadow: none;
+     
   }
 
 .carouselItems {
@@ -33,14 +38,23 @@
   cursor: pointer;
 }
 .gridMode{
+  width: 90% !important;
   display: grid;
   grid-template-columns: repeat(2,1fr) ;
+  @media screen and (max-width:800px) {
+    width: 90% !important;
+    grid-template-columns: repeat(1,1fr) !important;
+  }
 }
 .flex{
-  width: 95%;
+  width: 95% !important;
   display: grid;
   grid-template-columns: repeat(1,1fr) ;
  align-content: center;
+ @media screen and (max-width:800px) {
+  width: 100px !important;
+
+}
 }
 .icon {
   width: 800px;
@@ -104,6 +118,9 @@ padding: 10px;
   // gap: 15px;
  justify-content: space-between;
   width: 100%;
+  @media (max-width:350px) {
+    width: 70%;
+  }
 }
 .starrate{
   display: flex;
@@ -161,11 +178,15 @@ padding: 10px;
     grid-template-columns: repeat(4,30%);
     padding-top: 4%;
     gap: 10px;
+    // @media (max-width:350px) {
+    //   grid-template-columns:repeat(1,1fr) !important;
+    // }
   }
   
   .btntextgrid > :nth-child(2) {
     grid-column: span 3;
    margin: 0 auto;
+
   }
 
 .btndivseting{
@@ -202,10 +223,7 @@ padding: 10px;
   height: 30px !important;
   
 }
-.infocandidate{
-    // background-color: rgba(0,116,86,0.05);
-    
-}
+
 .info{
     color: #007456;
      width: max-content;
@@ -305,7 +323,11 @@ padding: 10px;
     margin-right: 16px;
 }
 .imgst{
-  width: 100%;
+  width: 100% !important;
+  @media screen and (max-width:800px) {
+    width: 20px !important;
+  
+  }
 }
 .textrate{
   font-weight: 500;

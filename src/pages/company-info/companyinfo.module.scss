@@ -18,7 +18,7 @@
 .maindivv {
  
   background: #f4f4f4;
-  display: flex;
+    display: flex;
   padding-left: 2%;
 }
 
@@ -76,6 +76,9 @@
   margin-left: -10px;
   display: flex;
   width: 100%;
+  @media (max-width:400px) {
+    margin-left: -25px !important;
+  }
 }
 .flexnamebn {
   display: flex;
@@ -88,6 +91,7 @@
   height: max-content;
   padding-bottom: 6%;
   border-bottom: 0.5px solid #e5e5e5;
+
 }
 .butttonsetting {
   font-size: 16px !important;
@@ -115,6 +119,9 @@
 }
 .btndivsetting {
   width: 15% !important;
+  @media (max-width:800px) {
+    width: 100px !important;
+  }
 }
 .titlee {
   font-weight: 500 !important;
@@ -170,13 +177,26 @@
 }
 .innercont{
   width: 620px !important;
+  @media (max-width:800px) {
+    width: 550px !important;
+  }
+  @media (max-width:500px) {
+    width: 330px !important;
+  }
+  @media (max-width:400px) {
+    width: 300px !important;
+  }
+
 }
 .editinglastbtntext{
   display: flex;
    align-items: center;
   margin: 10 auto;
-
    gap: 28%;
+   @media (max-width:500px) {
+    display: grid;
+    gap: 10px !important;
+   }
  
 }
 .portion4 {
@@ -339,6 +359,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-bottom: 0.5px solid #e5e5e5;
+  @media (max-width:500px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .flexbn {
   display: flex;
@@ -363,6 +386,10 @@
   background: #fff;
   border-radius: 10px;
   width: 70%;
+  @media (max-width:800px) {
+    display: none;
+  }
+
 }
 .portion8subdiv {
   padding-left: 8%;
@@ -459,7 +486,7 @@
   justify-content: center !important;
 }
 .photosportion {
-  height: 300px;
+  height: max-content;
 }
 .imgsett {
   width: 100% !important;

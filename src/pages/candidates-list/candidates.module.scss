@@ -46,23 +46,56 @@
 
 .maindiv {
   margin-top: -35px;
-  height: 350px;
+  height: max-content;
+  padding-bottom: 3%;
 }
 .searchdiv {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 6%;
+  @media (max-width:500px) {
+    margin-left: -100px;
+    
+  }
+  @media (max-width:330px) {
+    margin-left: -130px;
+    
+  }
+}
+.title {
+ 
+  color: $Tertiary-color !important;
+  text-align: center !important;
+  font-weight: 600 !important;
+  line-height: 5 !important;
+  font-size: 40px !important;
+
+  // @media screen and (max-width: 800px) {
+  //   color: $Tertiary-color !important;
+  //   text-align: center !important;
+  //   font-weight: 500 !important;
+  //   line-height: 3 !important;
+  //   font-size: 40px !important;
+  // }
+
+  @media screen and (max-width: 500px) {
+   
+    font-size: 23px  !important;
+    line-height: 3 !important;
+    text-align: center !important;
+    margin-left: 50px;
+  }
+  @media screen and (max-width: 330px) {
+    text-align: center !important;
+    font-size: 20px !important ;
+    line-height: 3 !important;
+    // margin-top: 10px !important;
+    margin-left: 18px !important;
+  }
+
 }
 
-  .title {
- 
-    color: $Tertiary-color !important;
-   text-align: center !important;
-   font-weight: 600 !important;
-   line-height: 6 !important;
-   font-size: calc(14px + (40 - 14) * (100vw - 320px) / (1440 - 320)) !important;
- }
 
 .midportion {
   background: #f4f4f4;
@@ -83,11 +116,17 @@
   width: 30%;
   height: 880px;
   padding: 3%;
+  @media screen and (max-width:500px) {
+   display: none;
+  }
 }
 
 .box {
   width: 95% !important;
   height: max-content !important;
+  @media (max-width:350px) {
+    width:90% !important
+  }
 }
 .flexibility {
   display: flex;
