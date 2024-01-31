@@ -4,14 +4,34 @@ import Button from "../../components/buttons";
 import { useForm } from "react-hook-form";
 import Person from "../../assets/svgg/person";
 import Employ from "../../assets/svgg/employee";
-const Signup = () => {
-    const { register, handleSubmit } = useForm();
+const Signup = ({handleLogin}) => {
+    const { register, handleSubmit,reset } = useForm({
+      defaultValues: {
+        fname: "",
+        lname: "",
+        username: "",
+        phone: "",
+        email: "",
+        pasword: "",
+      }
+    });
     
 
     const handleFormSubmit = (data) => {
       console.log(data);
       localStorage.setItem('signupData', JSON.stringify(data));
+      reset({
+        fname:"",
+        lname:"",
+        username:"",
+        phone:"",
+        email:"",
+        pasword:"",
+      })
+     
+handleLogin();
     };
+   
   return (
     <form
           onSubmit={handleSubmit((data) => handleFormSubmit(data))}
@@ -86,6 +106,7 @@ const Signup = () => {
                   title={"Sign up"}
                   btndiv={style.widthbuton}
                   btnClass={style.btnset}
+                  // onClick={()=>handleReset()}
                 />
               </div>
             </div>

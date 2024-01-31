@@ -48,7 +48,7 @@ const LoginPage = ({ isOpen, onClose }) => {
           </h3>
         </div>
         {login && <SignIn />}
-        {signup && <Signup />}
+        {signup && <Signup handleLogin={handleLogin}/>}
       </div>
     </div>
   );
