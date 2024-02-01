@@ -137,7 +137,7 @@ const InfoCandidate = () => {
                             title={e.rating}
                             btnimg={e.star}
                             imgset={style.starset}
-                            btndiv={style.btnseting}
+                            btndiv={style.btnsettting}
                             btnClass={style.btnclss}
                           />
                         </div>

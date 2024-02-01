@@ -5,8 +5,8 @@
   background: #f4f4f4;
   display: flex;
   padding-left: 2%;
-  @media screen and (max-width: 700px) {
-    display: block;
+  @media screen and (max-width: 500px) {
+    width: 90%;
   }
 }
 
@@ -48,6 +48,10 @@
 }
 .btnseting {
   width: 25% !important;
+  @media (max-width:500px) {
+ 
+    width: fit-content !important;
+  }
 }
 .btnclasss {
   font-weight: 500 !important;
@@ -96,8 +100,9 @@
   width: 100%;
    @media (max-width:500px) {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-     margin-left: -30px !important;
+    grid-template-columns: repeat(2,1fr);
+    //  margin-left: -50px !important;
+    
     
    }
    @media (max-width:350px) {
@@ -138,6 +143,13 @@
   &:hover {
     background: $Primary-color !important;
     color: $Tertiary-color !important;
+  }
+}
+.btnsettting{
+  width: 15% !important;
+  @media (max-width:500px) {
+    width: 100px !important;
+ 
   }
 }
 .midbuton {
