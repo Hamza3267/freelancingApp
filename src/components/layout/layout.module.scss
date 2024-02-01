@@ -1,0 +1,12 @@
+.main{
+    display: none;
+    @media (max-width:500px) {
+        display: block;
+    }
+}
+.headbar{
+    display: none;
+    @media (max-width:500px) {
+        display: block;
+    }
+}

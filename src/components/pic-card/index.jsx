@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./pics.module.scss";
 
-const PicCard = ({ pic, date, learn, para,picborder, maincontainer,paragraphsetting, datesetting }) => {
+const PicCard = ({ pic, date, learn, para,picborder, maincontainer,paragraphsetting, datesetting ,picsetting}) => {
   return (
     <div className={`${style.maindiv} ${maincontainer}`}>
       <div className={`${style.subdiv} ${picborder}`}>
-        <img src={pic} alt="zoompicc" className={style.pic} />
+        <img src={pic} alt="zoompicc" className={`${style.pic} ${picsetting}`} />
       </div>
       <div className={style.dateflex}>
         <p className={`${style.date} ${datesetting}`}>{date}</p>

@@ -1,21 +1,7 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
-.blackdiv {
-  height: 30px;
-  width: 98%;
-  background: black;
-  z-index: 2;
-  display: flex;
-  padding-left: 2%;
-  align-items: center;
-}
-.firstbell {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+
 .nameee {
   width: 100%;
 }
@@ -71,16 +57,10 @@
   line-height: 5 !important;
   font-size: 40px !important;
 
-  // @media screen and (max-width: 800px) {
-  //   color: $Tertiary-color !important;
-  //   text-align: center !important;
-  //   font-weight: 500 !important;
-  //   line-height: 3 !important;
-  //   font-size: 40px !important;
-  // }
 
   @media screen and (max-width: 500px) {
-   
+  
+   width: 80% !important;
     font-size: 23px  !important;
     line-height: 3 !important;
     text-align: center !important;

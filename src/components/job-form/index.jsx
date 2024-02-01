@@ -4,7 +4,7 @@ import style from "./jobform.module.scss";
 import { useForm } from "react-hook-form";
 
 import search from "../../assets/images/searchjobicon.png";
-const JobForm = ({inputset,selectsetting,openn}) => {
+const JobForm = ({inputset,selectsetting,openn,sortdivinput}) => {
   const { register, handleSubmit } = useForm();
   return (
     <form onSubmit={handleSubmit((data) => console.log(data))}>
@@ -38,7 +38,7 @@ const JobForm = ({inputset,selectsetting,openn}) => {
           </div>
             }
         </div>
-        <div className={style.sortitmes}>
+        <div className={`${style.sortitmes} ${sortdivinput}`}>
           <label className={style.label}>Sort by</label>
           <select
             {...register("newestjob")}

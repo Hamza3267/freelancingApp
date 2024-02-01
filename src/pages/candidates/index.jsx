@@ -80,7 +80,7 @@ const CandidatesFollow = () => {
               Invite
             </text>
           </div>
-          <JobForm selectsetting={style.select} inputset={style.inputt} />
+          <JobForm selectsetting={style.select} inputset={style.inputt}  sortdivinput={style.sortportion}/>
           <div className={style.inercontainer}>
             <div className={style.heading}>
               <p className={style.head}> Name</p>

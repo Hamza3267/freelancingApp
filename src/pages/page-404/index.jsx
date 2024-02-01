@@ -16,7 +16,9 @@ const Page404 = () => {
             titleclass={style.text}
             paragraphclass={style.para}
           />
+          <div className={style.imgdiv}>
           <img src={pic} alt="" className={style.pic} />
+          </div>
           <div className={style.butondiv}>
             <NavLink to="/" className={style.name}>
               Go to home page

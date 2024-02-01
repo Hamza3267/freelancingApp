@@ -80,13 +80,16 @@ const About = () => {
           <TextMap
             title={"ABOUT US"}
             paragraph={"We are transforming the way healthcare hires"}
-            titleclass={style.title}
+            titleclass={style.title1}
             paragraphclass={style.para}
           />
           <div className={style.mapimg}>
             {picitems.map((e, index) => (
               <Image img={e.img} key={index} />
             ))}
+          </div>
+          <div className={style.midpic}>
+            <Image img={pic2} imgsetting={style.imgset} />
           </div>
         </div>
         <div className={style.portion2}>
@@ -96,7 +99,7 @@ const About = () => {
               paragraph={
                 "We mission is to empower every healthcare professional to find their perfect job opportunity, faster and easier than ever before."
               }
-              titleclass={style.title}
+              titleclass={style.title2}
               paragraphclass={style.para2}
             />
           </div>
@@ -117,12 +120,11 @@ const About = () => {
           </div>
         </div>
         <div className={style.portion3}>
-          <TextMap
-            title={"OUR LEADERS"}
-            paragraph={"Championing change across our company"}
-            titleclass={style.title}
-            paragraphclass={style.parag}
-          />
+          <div className={style.portion3subdiv}>
+            <span className={style.title}>OUR LEADERS</span>
+            <span className={style.parag}>Championing change across our company</span>
+        
+          </div>
           <div className={style.picbutonflex}>
             <div className={style.mappingcard}>
               {hoverpicitems.map((e, index) => (
@@ -134,6 +136,7 @@ const About = () => {
                   paragraphsetting={style.paragraph}
                   maincontainer={style.maindivv}
                   picborder={style.borderppic}
+                  picsetting={style.picsett}
                   key={index}
                 />
               ))}
@@ -168,6 +171,7 @@ const About = () => {
                 paragraph={"Find us at our global hubs"}
                 titleclass={style.titltle}
                 paragraphclass={style.paradescribe}
+                textdivv={style.textmapdiv}
               />
               <div className={style.settingsdivbuton}>
                 <Button
@@ -221,7 +225,6 @@ const About = () => {
             </div>
           </div>
         </div>
-     
       </Layout>
     </>
   );

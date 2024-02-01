@@ -40,6 +40,9 @@
     padding-top: 2%;
     padding-bottom: 2%;
     width: 25% !important;
+    @media (max-width:500px) {
+      width: 30% !important;
+    }
   }
   .editbtn{
     font-size: calc(10px + (18 - 10) * (100vw - 445px) / (1440 - 445)) !important;

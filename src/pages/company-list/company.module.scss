@@ -1,21 +1,7 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
-.blackdiv {
-  height: 30px;
-  width: 98%;
-  background: black;
-  z-index: 2;
-  display: flex;
-  padding-left: 2%;
-  align-items: center;
-}
-.firstbell {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+
 .nameee {
   width: 100%;
 }
@@ -36,13 +22,20 @@
 .maindiv {
    height: 300px;
    margin-top: -35px;
+   @media (max-width:500px) {
+    margin-top: -20px !important;
+   }
 }
 
 .searchdiv {
   display: flex;
   align-items: center;
-  justify-content: center;
+    justify-content: center;
   padding-top: 6%;
+  @media (max-width:500px) {
+  //  padding-top: 10% !important;
+    width: 60% !important;
+  }
 }
 .title {
  
@@ -50,7 +43,14 @@
   text-align: center !important;
   font-weight: 600 !important;
   line-height: 6 !important;
-  font-size: calc(14px + (40 - 14) * (100vw - 320px) / (1440 - 320)) !important;
+  font-size: calc(20px + (40 - 20) * (100vw - 320px) / (1440 - 320)) !important;
+  @media (max-width:500px) {
+    line-height: 3 !important;
+    width: 80% !important;
+    margin-left: 50px;
+   
+    
+  }
 }
 .midportion {
   background: #f4f4f4;

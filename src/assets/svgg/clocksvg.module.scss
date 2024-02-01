@@ -105,13 +105,18 @@
   padding: 5px 5px;
   border-radius: 15px;
 }
+.urgent{
+ 
+  width: 200px;
+}
 .maindiv{
+ 
   display: flex;
   align-items: center;
   gap: 10px;
 }
 .textt{
-  font-size: calc(14px + (14 - 10) * (100vw - 445px) / (1440 - 445));
+  font-size: calc(18px + (18 - 18) * (100vw - 445px) / (1440 - 445));
   color: #111111;
   cursor: pointer;
   width: 100%;
@@ -120,7 +125,7 @@
   }
 }
 .text{
-  font-size: calc(14px + (14 - 10) * (100vw - 445px) / (1440 - 445));
+  font-size: calc(14px + (14 - 14) * (100vw - 445px) / (1440 - 445));
   color: #555555;
   width: 100%;
 }

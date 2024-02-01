@@ -3,6 +3,9 @@
 
 .divtext {
   margin-top: 20%;
+  @media (max-width:500px) {
+    margin-top: 5%!important;
+  }
 }
 .text {
   @include fonth6;

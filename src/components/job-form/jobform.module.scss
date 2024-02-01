@@ -6,7 +6,9 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-  
+  @media (max-width:500px) {
+    display: grid ;
+  }
 }
 .selectbox{
     width: 120px;
@@ -17,6 +19,7 @@
     border: 0.5px solid #e5e5e5;
     border-radius: 5px;
     color: #555555;
+  
 }
 .selectboox{
     width: 100%;
@@ -53,6 +56,9 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    @media (max-width:500px) {
+        display: grid;
+    }
 }
 .label{
     font-family: Inter;
@@ -68,4 +74,7 @@
 display: flex;
 align-items: center;
 gap: 3px;
+// @media (max-width:500px) {
+//     width: 50% !important;
+// }
 }

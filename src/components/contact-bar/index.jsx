@@ -28,7 +28,7 @@ const ContactBar = () => {
             />
             <div className={style.namediv}>
             <text
-              className={style.nameee}
+              className={style.name}
               style={{
                 color: "white",
                 paddingLeft: "1%",
@@ -45,7 +45,7 @@ const ContactBar = () => {
             <div className={style.first}>
               <img src={phone} alt="" style={{ height: "20px" }} />
               <text
-                className={style.nameee}
+                className={style.namee}
                 style={{
                   color: "white",
                   paddingLeft: "1%",

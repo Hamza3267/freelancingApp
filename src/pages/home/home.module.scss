@@ -4,7 +4,9 @@
 .overlay {
   height: 700px;
   @media (max-width: 500px) {
-    height: max-content !important;
+    height: 380px !important;
+    width: fit-content;
+   
   }
 }
 .blackdiv {
@@ -64,6 +66,7 @@
   }
 }
 .portion2 {
+  padding-top: 1%;
   height: max-content;
   display: grid;
   align-items: center;

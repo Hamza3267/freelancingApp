@@ -137,6 +137,7 @@ const Home = () => {
             <MsgSlider />
           </div>
         </div>
+      
       </div>
       <div className={style.portion2}>
         {pictextitems.map((e, index) => (

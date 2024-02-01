@@ -42,9 +42,7 @@ const Company = () => {
           titleclass={style.title}
         />
         <div className={style.searchdiv}>
-          <Search 
-          
-          />
+          <Search />
         </div>
       </div>
       <div className={style.midportion}>

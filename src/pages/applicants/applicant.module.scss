@@ -29,6 +29,15 @@
     padding: 2%;
     background: #fff;
     height: 300px;
+    @media (max-width:500px) {
+      width: 350px !important;
+      overflow-x: auto !important;
+    }
+  }
+  .sortportion{
+    @media (max-width:500px) {
+      width: 250px !important;
+    }
   }
   .flexcontainer{
     display: flex;
@@ -51,15 +60,22 @@
         height: 25px;
     }
   }
+  .textdivh3{
+    @media (max-width:500px) {
+      width: 200px;
+    }
+  
+  }
   .h3con{
-    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    font-size: calc(16px + (16 - 16) * (100vw - 445px) / (1440 - 445));
     color: #111111;
     font-weight: 500;
     letter-spacing: inherit;
     line-height: 1.5;
+   
   }
   .text{
-    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    font-size: calc(16px + (16 - 16) * (100vw - 445px) / (1440 - 445));
     color: #999999;
     font-weight: 500;
     .span{
@@ -67,7 +83,7 @@
     }
   }
   .name{
-    font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
+    font-size: calc(16px + (16 - 16) * (100vw - 445px) / (1440 - 445));
     color: $Primary-color;
     font-weight: 500;
   }
@@ -118,6 +134,9 @@
     gap: 310px;
     border-bottom: 1px solid #e5e5e5;
     padding: 1%;
+    @media (max-width:500px) {
+      gap: 330px;
+    }
   }
   .headingname{
     font-size: calc(12px + (16 - 12) * (100vw - 445px) / (1440 - 445));

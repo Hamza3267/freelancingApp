@@ -18,6 +18,7 @@ import Meeting from "../../assets/svgg/meeting";
 import Company from "../../assets/svgg/company";
 import Setting from "../../assets/svgg/setting";
 import Logout from "../../assets/svgg/logout";
+import SideHeader from "../side-header";
 
 const pagesitem = [
   {
@@ -66,7 +67,7 @@ const Nav = ({
   const [showOptions, setShowOptions] = useState(false);
   const [active, setActive] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+// const [isopen ,setisopen] = useState(false)
   const formData = JSON.parse(localStorage.getItem("signInData"));
   const formSignupData = JSON.parse(localStorage.getItem("signupData"));
 
@@ -103,10 +104,13 @@ const Nav = ({
 
   return (
     <>
-      <div className={`${style.main1} ${mainheader}`}>
+        <div className={style.main2}>
+        <SideHeader />
+      </div>
+     <div className={`${style.main1} ${mainheader}`}>
         <div className={style.main}>
           {activeimg && (
-            <div>
+            <div className={style.imaff}>
               <img src={Frame} alt="" className={style.logoimg} />
             </div>
           )}
@@ -123,9 +127,12 @@ const Nav = ({
                   Cats
                 </a>
               </div>
+              <div
+                className={style.companyLink}>
               <a href="/jobs" className={style.name}>
                 Jobs
               </a>
+              </div>
               <div
                 className={style.companyLink}
                 onMouseEnter={Mousein}
@@ -140,15 +147,17 @@ const Nav = ({
                     onMouseEnter={Mousein}
                     onMouseLeave={Mouseout}
                   >
-                    <NavLink className={style.nam} to="/company">
+                    <NavLink className={style.list} to="/company">
                       International jobs
                     </NavLink>
                   </div>
                 )}
               </div>
+              <div className={style.companyLink}>
               <NavLink to="/candidates" className={style.name}>
                 Candidates
               </NavLink>
+              </div>
 
               <div
                 className={style.companyLink}
@@ -164,19 +173,21 @@ const Nav = ({
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                   >
-                    <NavLink className={style.nam} to="/contactus">
+                    <div className={style.divcont}>
+                    <NavLink className={style.list} to="/contactus">
                       Contact us
                     </NavLink>
-                    <NavLink className={style.nam} to="/aboutus">
+                    <NavLink className={style.list} to="/aboutus">
                       About us
                     </NavLink>
+                    </div>
                     {pagesitem.map((e, index) => (
                       <p key={index} className={style.list}>
                         {e.text}
                       </p>
                     ))}
 
-                    <NavLink className={style.name} to="/page404">
+                    <NavLink className={style.list} to="/page404">
                       Page 404
                     </NavLink>
                   </div>
@@ -191,19 +202,19 @@ const Nav = ({
             </div>
           </div>
         </div>
-
         <div className={style.btndivvset}>
           {formData && (
             <div className={`${style.divheadersetting} ${picheaderset}`}>
-              <img src={bell} alt="" style={{ width: "8%" }} />
+              <img src={bell} alt="" style={{ width: "10%" }} />
 
               <div
                 // className={style.dietting}
+                className={style.companyLink}
                 onMouseEnter={MouseEnter}
                 onMouseLeave={MouseLeave}
               >
                 <div className={style.dietting}>
-                  <img src={img} alt="" style={{ width: "10%" }} />
+                  <img src={img} alt="" style={{ width: "20%" }} />
                   <p className={style.pname}>{formSignupData.fname}</p>
                 </div>
                 {active && (
@@ -233,6 +244,7 @@ const Nav = ({
 
           {!formData && (
             <div className={`${style.buton} ${headerbutonsettiing}`}>
+              <div className={style.flexbutons}>
               <Button
                 title={"Login"}
                 btndiv={style.butondiv}
@@ -243,10 +255,12 @@ const Nav = ({
               <NavLink to={"/postjob"} className={style.navstyle}>
                 <Button title={"Post a Job"} btndiv={style.butondiv} />
               </NavLink>
+              </div>
             </div>
           )}
         </div>
       </div>
+    
     </>
   );
 };

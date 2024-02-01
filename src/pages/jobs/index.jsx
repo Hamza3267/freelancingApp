@@ -4,7 +4,7 @@ import Layout from "../../components/layout-side-bar";
 import JobForm from "../../components/job-form";
 import Svg from "../../assets/svgg/urgenticon";
 import dots from "../../assets/images/dots.png";
-import black from '../../assets/images/black arrow.png'
+import black from "../../assets/images/black arrow.png";
 import TextMap from "../../components/text-mapping";
 const jobitems = [
   {
@@ -69,7 +69,13 @@ const Jobs = () => {
       <div className={style.maincontainer}>
         <div className={style.subcontainer}>
           <h2 className={style.titleeh}>Manage jobs</h2>
-          <JobForm  openn={true}/>
+          <div className={style.jobformdiv}>
+            <JobForm
+              openn={true}
+              selectsetting={style.setselectfield}
+              sortdivinput={style.sortportion}
+            />
+          </div>
           <div className={style.innerdiv}>
             <div className={style.mainnnn}>
               <div>
@@ -117,31 +123,32 @@ const Jobs = () => {
             ))}
 
             <div className={style.lastcont}>
-
               <div className={style.lastbox}>
-
                 <div className={style.divlast}>
-                <select className={style.selectbox}>
-                  <option value="1">10</option>
-                  <option value="1">10</option>
-                  <option value="1">10</option>
-                </select>
-                </div >
-
-                <div className={style.divlasttext}>
-                <text className={style.lasttext}>1 - 10 of 22 items  </text>
+                  <select className={style.selectbox}>
+                    <option value="1">10</option>
+                    <option value="1">10</option>
+                    <option value="1">10</option>
+                  </select>
                 </div>
 
+                <div className={style.divlasttext}>
+                  <text className={style.lasttext}>1 - 10 of 22 items </text>
+                </div>
               </div>
               <div className={style.numlst}>
                 <div>
-                <text className={style.lasttet}><span style={{color:"#007456"}}>1</span> 2 3  </text>
+                  <text className={style.lasttet}>
+                    <span style={{ color: "#007456" }}>1</span> 2 3{" "}
+                  </text>
                 </div>
-               <div className={style.lastarrowdiv}style={{marginRight:"19%"}}>
-                <img src={black} alt=""  className={style.lastarrow}/>
+                <div
+                  className={style.lastarrowdiv}
+                  style={{ marginRight: "19%" }}
+                >
+                  <img src={black} alt="" className={style.lastarrow} />
                 </div>
               </div>
-
             </div>
           </div>
         </div>

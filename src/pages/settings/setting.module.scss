@@ -36,21 +36,28 @@
     width: 75%;
     height: max-content;
     border-radius: 10px;
-   
+    @media (max-width:500px) {
+      width: 94% !important;
+     }
    
   }
   .innerdivv {
    margin-top: 20px;
     background: #fff;
+    max-width: 100%;
     width: 71%;
     height: max-content;
     border-radius: 10px;
     padding: 2%;
-   
+   @media (max-width:500px) {
+    width: 90% !important;
+   }
    
   }
   .formdiv{
      padding: 0.5% 0% 0% 5%;
+ 
+   
   }
   .mainhead {
     cursor: pointer;

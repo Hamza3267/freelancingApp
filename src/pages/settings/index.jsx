@@ -45,66 +45,59 @@ const Setting = () => {
               Payout
             </text>
           </div>
-              {active &&
-          <div>
-            <div className={style.innerdiv}>
-              <div className={style.formdiv}>
-                <h6 className={style.h6setting}>Personal info</h6>
-                <h6 className={style.h6photo}>Your photo</h6>
-                <div className={style.flexprofile}>
-                  <img src={profile} alt="" className={style.picedit} />
-                  <p className={style.photodesc}>
-                    {" "}
-                    Update your photo manually, if the photo is not set the
-                    default Avatar will be the same as your login email account.
-                  </p>
+          {active && (
+            <div>
+              <div className={style.innerdiv}>
+                <div className={style.formdiv}>
+                  <h6 className={style.h6setting}>Personal info</h6>
+                  <h6 className={style.h6photo}>Your photo</h6>
+                  <div className={style.flexprofile}>
+                    <img src={profile} alt="" className={style.picedit} />
+                    <p className={style.photodesc}>
+                      {" "}
+                      Update your photo manually, if the photo is not set the
+                      default Avatar will be the same as your login email
+                      account.
+                    </p>
+                  </div>
+                  <Settingform />
                 </div>
-                <Settingform />
+              </div>
+              <div className={style.innerdivv}>
+                <h6 className={style.h6settings}>Change password</h6>
+                <Settingpassword />
+              </div>
+
+              <Button
+                title={"Deactive account"}
+                btnClass={style.editingbuton}
+                btndiv={style.btndivv}
+              />
+
+              <div className={style.copyright}>
+                <TextMap
+                  desc={" © 2023 Uxper. All Right Reserved."}
+                  descclass={style.descsetting}
+                />
               </div>
             </div>
-            <div className={style.innerdivv}>
-              <h6 className={style.h6settings}>Change password</h6>
-              <Settingpassword />
-            </div>
-        
-
-          <Button
-            title={"Deactive account"}
-            btnClass={style.editingbuton}
-            btndiv={style.btndivv}
-          />
-
-          <div className={style.copyright}>
-            <TextMap
-              desc={" © 2023 Uxper. All Right Reserved."}
-              descclass={style.descsetting}
-            />
-          </div>
+          )}
         </div>
-            }
-        </div>
-        {active1 &&
-        <div>
+        {active1 && (
+          <div>
             <div className={style.divv}>
-                <Payout />
+              <Payout />
             </div>
-            <Button 
-          title={"Save"}  
-          btndiv={style.btnsetting}
-         
-          
-          />
-        <div className={style.copyright}>
-          <TextMap
-            desc={" © 2023 Uxper. All Right Reserved."}
-            descclass={style.descsetting}
-          />
-        </div>
-        </div>
-        
-        }
+            <Button title={"Save"} btndiv={style.btnsetting} />
+            <div className={style.copyright}>
+              <TextMap
+                desc={" © 2023 Uxper. All Right Reserved."}
+                descclass={style.descsetting}
+              />
+            </div>
+          </div>
+        )}
       </div>
-      
     </LayoutStyle>
   );
 };

@@ -1,0 +1,213 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
+  }
+  
+  .sidebar.open {
+    width: 250px;
+  }
+  
+  .button {
+    @media (max-width:500px) {
+      
+        background: #fff;
+       margin-left: 20px;
+       padding-top: 2%;
+        z-index: 1;
+    }
+   
+  }
+.flexbar{
+ 
+}
+  .main1 {
+    padding: 2% 3% 2% 3%;
+  
+    width: 93%;
+    align-items: center;
+    display: flex;
+  
+  }
+  .main {
+     width: 76%;
+      display: flex;
+     align-items: center;
+      gap: 40px;
+    
+    @media screen and (max-width:800px) {
+      gap: 20px !important;
+      display: flex !important;
+      align-items: center !important;
+    }
+    @media screen and (max-width:500px) {
+     gap: 5px !important;
+     display: flex !important;
+     align-items: center !important;
+   }
+  
+  }
+  .imaff{
+    @media (max-width:500px) {
+      display: none;
+    }
+  }
+  .logoimg {
+   
+    height: 30px;
+    
+  }
+  
+   .link {
+    display: grid;
+    padding: 1% 0% 0% 20%;
+    gap: 10px;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+   
+  }
+  
+  .divcont{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nam{
+    text-decoration: none;
+   
+    
+  }
+  .name {
+    font-size: calc(12px + (21 - 12) * (100vw - 445px) / (1440 - 445));
+    font-weight: 500;
+    width: fit-content;
+   
+    // line-height: 40px;
+    text-decoration: none;
+    color: #555555;
+  }
+  .optionsBox {
+    position: absolute;
+    // z-index: 0;
+    width: 150px;
+    background: $Tertiary-color;
+    border-radius: 10px;
+    line-height: 5px;
+    padding: 1%;
+    cursor: pointer;
+  }
+  
+  .list {
+    @include fonth6;
+    font-weight: 500;
+    line-height: 10px;
+    text-decoration: none;
+    color: $fifth-color;
+    &:hover {
+      color: $Primary-color;
+    }
+  }
+  .optionBox {
+    display: grid;
+    width: 40%;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    z-index: 0;
+    background: $Tertiary-color;
+    border-radius: 10px;
+    line-height: 5px;
+    padding: 1%;
+    gap: 1px;
+    cursor: pointer;
+  }
+  .buton{
+    // margin-top: 20px !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+   
+  }
+  
+  .butondiv {
+      width: 100px !important;
+    
+  }
+  
+  .btn {
+    
+    color: $fifth-color !important;
+    background: none !important;
+    font-size: calc(11px + (16 - 11) * (100vw - 320px) / (1440 - 320)) !important;
+    &:hover {
+      color: $Primary-color !important;
+    }
+  }
+  .bundiv {
+    width: 100px !important;
+  }
+  .divheadersetting {
+     width:60%;
+    display: flex;
+    align-items: center;
+     gap: 10px;
+     padding-left:30% ;
+     @media (max-width:800px) {
+      padding-left: 10% !important;
+     }
+    
+  }
+  .pname {
+    font-size: calc(12px + (21 - 12) * (100vw - 445px) / (1440 - 445));
+  
+    width: fit-content !important;
+    font-weight: 500;
+    line-height: 10px;
+    text-decoration: none;
+    color: #555555;
+    cursor: pointer;
+    &:hover {
+      color: $Primary-color;
+    }
+  }
+  .dietting {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .optionBox {
+    width: 15%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 75%;
+    z-index: 1;
+    background: $Tertiary-color;
+    border-radius: 10px;
+    // line-height: 5px;
+    padding: 1%;
+    cursor: pointer;
+  }
+  .clock{
+    padding-top: 5% !important;
+  }
+  .navstyle{
+    text-decoration: none;
+  }
+  
+  

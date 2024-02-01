@@ -16,24 +16,30 @@
     position: fixed;
     border-right: 1px solid #fff;
     top: 0px;
-    height: 100vh;
-   
+//     // height: 100vh;
+   @media (max-width:500px) {
+    display: none;
+   }
 }
 .headdiv{
 
     flex: 1;
     margin-left: 270px;
+    @media (max-width:500px) {
+        margin-left: 0px !important;
+    }
 }
 .buttonsetting{
-    margin-left:200px !important;
-    // margin-right: 40px;
-    width: 300px !important;
+
+ 
 }
 .loginset{
-    padding-left: 40% !important;
+   
+   
+    width: fit-content !important;
 }
 .headername{
-    display: flex !important;
-    align-items: center;
-    gap: 10% !important;
+    width: 100% !important;
+   
+ 
 }

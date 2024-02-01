@@ -4,24 +4,30 @@ import pic from "../../assets/images/iconsearch.png";
 import icon from "../../assets/images/iconloading.gif";
 import style from "./country.module.scss";
 import Button from "../buttons";
+// import SideHeader from "../side-header";
 
 const CountrySearch = () => {
   const { register, handleSubmit } = useForm();
 
   return (
     <>
+    <div className={style.main}>
       <div className={style.container}>
-        <img src={pic} alt="search-icon" className={style.img} />
+       
 
         <form
           onSubmit={handleSubmit((data) => console.log(data))}
           className={style.box}
         >
+            <div className={style.fleximg}>
+            <img src={pic} alt="search-icon" className={style.img} />
           <input
             {...register("input")}
             className={style.inbox}
             placeholder="Jobs title or keywords"
           />
+          </div>
+          <div className={style.fleximg}>
           <img src={icon} alt="search-icon" className={style.icon} />
           <select
             {...register("country")}
@@ -39,6 +45,7 @@ const CountrySearch = () => {
             <option value="uae">UAE</option>
             <option value="russia">RUSSIA</option>
           </select>
+          </div>
         </form>
         <Button title={"Search"} btndiv={style.btn}/>
       </div>
@@ -48,6 +55,8 @@ const CountrySearch = () => {
         <p className={style.p}>Data Visualization,</p>
         <p className={style.p}>Business Manager</p>
       </div>
+      </div>
+     
     </>
   );
 };

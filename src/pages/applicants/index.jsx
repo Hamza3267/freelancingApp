@@ -15,7 +15,7 @@ const Applicant = () => {
       <div className={style.maincontainer}>
         <div className={style.subcontainer}>
           <h2 className={style.titleeh}>All applicants</h2>
-          <JobForm selectsetting={style.select} inputset={style.inputt} openn={true} />
+          <JobForm selectsetting={style.select} inputset={style.inputt} openn={true}  sortdivinput={style.sortportion}/>
           <div className={style.inercontainer}>
             <div className={style.heading}>
               <text className={style.headingname}>NAME</text>
@@ -30,7 +30,7 @@ const Applicant = () => {
                   <img src={cam} alt="" className={style.img} />
                 </div>
                 <div>
-                  <div>
+                  <div className={style.textdivh3}>
                     <text className={style.h3con}>User not logged in</text>
                   </div>
 
