@@ -258,7 +258,7 @@ const Home = () => {
             title={"Trusted by leading brands and startups"}
             paragraph={"Here’s what they say about us"}
             titleclass={style.edittitle}
-            paragraphclass={style.paracont}
+            paragraphclass={style.paraccont}
           />
         </div>
 

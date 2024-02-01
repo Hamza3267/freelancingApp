@@ -89,6 +89,8 @@
   border-bottom: none;
   @media (max-width: 500px) {
     height: 40px !important;
+    border-radius: 0px !important;
+    background:#fff !important;
   }
 }
 .btn {

@@ -316,8 +316,19 @@
   }
 }
 .paracont {
+  
   text-align: center;
   @media (max-width: 500px) {
+    line-height: 1 !important;
+    width: 200px !important;
+  }
+}
+.paraccont{
+ 
+  text-align: center;
+  @media (max-width: 500px) {
+    margin-top: 40px !important;
+    line-height: 1 !important;
     width: 200px !important;
   }
 }
