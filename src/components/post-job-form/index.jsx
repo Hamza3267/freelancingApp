@@ -573,7 +573,7 @@ const PostForm = () => {
           </div>
         </div>
 
-        <div>
+        <div className={style.salarydiv}>
           <h6 className={style.basicc}>About this job</h6>
           <div className={style.profiledesc}>
             <div className={style.piccc}>

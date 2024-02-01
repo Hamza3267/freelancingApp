@@ -13,6 +13,9 @@
      width: 145%;
      height: max-content;
       border-radius: 6px;
+      @media (max-width:500px) {
+        width: 100% !important;
+      }
    }
    .label{
     font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
@@ -74,6 +77,9 @@
     width: 145%;
     height: max-content;
      border-radius: 6px;
+     @media (max-width:500px) {
+      width: 80% !important;
+    }
    }
    .inerinputrange{
     font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
@@ -204,6 +210,9 @@
    .main{
     display: flex;
     gap: 240px;
+    @media (max-width:500px) {
+      display: grid !important;
+    }
    }
    .profiledesc{
     padding: 10%;
@@ -264,4 +273,5 @@
   display: flex;
   align-items: center;
   gap: 200px;
+ 
 }
