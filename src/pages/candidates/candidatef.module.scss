@@ -2,11 +2,13 @@
 @import "../../styles/fontsize.scss";
 
 .maincontainer {
-  height: 1050px;
+  width: 100%;
+  height: max-content;
   background-color: #f4f4f4;
 }
 .subcontainer {
-  padding: 2% 3% 0% 3%;
+  height: max-content;
+   padding: 5px;
 }
 .titleeh {
   font-size: calc(18px + (28 - 18) * (100vw - 320px) / (1440 - 320)) !important;
@@ -26,7 +28,7 @@
   margin-top: 30px;
   padding: 2%;
   background: #fff;
-  height: 300px;
+ 
 }
 .sortportion{
   @media (max-width:500px) {

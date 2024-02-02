@@ -3,12 +3,17 @@
 
 .maincontainer {
   width:100%;
+  // padding: 10px;
     height: max-content;
     background-color: #f4f4f4;
+    // @media (max-width:500px) {
+    //   width: 100% !important;
+    // }
   }
   .subcontainer {
-    // width: 100%;
-    padding: 5px 10px;
+      // width: 100%;
+     padding: 10px;
+    // margin: 5px;
   }
   .titleeh {
     font-size: calc(18px + (28 - 18) * (100vw - 320px) / (1440 - 320)) !important;
