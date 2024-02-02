@@ -6,12 +6,16 @@
   background-color: #f4f4f4;
 }
 .subdiv {
-  padding: 0.1% 0% 0% 5%;
+  padding: 5px 50px 5px 50px;
+  // @media (max-width:500px) {
+  //   padding: 5px 30px 5px 30px !important;
+  // }
 }
 .titlee {
   font-size: calc(18px + (28 - 18) * (100vw - 320px) / (1440 - 320)) !important;
   color: #111111;
   font-weight: 500 !important;
+  margin-left: 10px;
  
 }
 .titleeh {
@@ -25,31 +29,28 @@
 }
 .divmap {
 
-  padding-top: 5%;
+  //  padding: 5px 10px ;
   display: flex;
-  gap: 10px;
-  border-radius: 10px;
-   width: 23% ;
-   max-width: 100%;
-  height: 90px;
-  background: #fff;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  border-radius: 10px;
+    width: 100% ;
+   max-width: 100%;
+  background: #fff;
   cursor: pointer;
   transition: box-shadow 0.3s;
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  @media (max-width:800px) {
-    padding-top: 10%;
-    width: 80% !important;
-  }
-  @media (max-width:500px) {
-    padding-top: 10%;
-    width: 90% !important;
-  }
+
+  // @media (max-width:500px) {
+  // // justify-content: center !important;
+  // // gap: 50px;
+  // }
 }
 .mappsetdiv {
+ 
+  width: 100%;
   display: flex;
   gap: 10px;
   @media (max-width:800px) {
@@ -62,7 +63,7 @@
   }
 }
 .titlesetting {
-  font-size: calc(10px + (14 - 10) * (100vw - 320px) / (1440 - 320)) !important;
+  font-size: calc(16px + (16 - 16) * (100vw - 320px) / (1440 - 320)) !important;
   font-weight: 500 !important;
   color: #999 !important;
   letter-spacing: inherit !important;
@@ -70,7 +71,7 @@
 }
 .parasetting {
   display: block !important;
-  font-size: calc(32px + (46 - 32) * (100vw - 445px) / (1440 - 445)) !important;
+  font-size: calc(38px + (46 - 38) * (100vw - 445px) / (1440 - 445)) !important;
   font-weight: 500 !important;
   line-height: 0.2 !important;
   color: #111111 !important;
@@ -79,23 +80,22 @@
   margin-top: -50px;
 }
 .portion2 {
-  padding: 2% 0% 0% 5%;
-  width: 90%;
+  // padding: 5px 5px;
+  width: 100%;
   background: #fff;
   border-radius: 10px;
   margin-top: 2%;
   height: max-content;
 }
 .chart {
-  padding-top: 2%;
-  padding-right: 5%;
+  padding-top: 5px;
+  padding-right: 10px;
 }
 .flexportion2typeselect {
   display: flex;
-  // align-items: center;
-  justify-content: space-between;
-  padding-right: 6%;
-  padding-top: 3%;
+  align-items: center;
+  justify-content: space-around;
+
 }
 .pageview {
   margin-top: -40px;
@@ -108,29 +108,30 @@
   outline-style: none;
 }
 .comments {
-  background: #fff;
-  width: 60%;
+  
+background: #fff;
+  width: 100%;
 height: max-content;
   border-radius: 10px;
   margin-top: 2%;
   @media (max-width:500px) {
-    width: 95% !important;
-    height: 650px;
+   
   }
 }
-.commentbox {
-  padding: 0px 0% 0% 4%;
-}
+// .commentbox {
+ 
+// }
 .flexibility {
   display: flex;
   gap: 10px;
-  padding-right: 4.6%;
+ 
   @media (max-width:500px) {
     display: grid;
   }
 }
 .commentmain {
-  height: 550px;
+
+  margin-left: 10px;
 }
 .titlename {
   font-size: calc(16px + (18 - 16) * (100vw - 445px) / (1440 - 445)) !important;
@@ -174,7 +175,7 @@ height: max-content;
 }
 .flexcomment {
   width: fit-content;
-  padding-left: 2%;
+  // padding-left: 2%;
   
   margin-top: -40px;
   display: flex;
@@ -216,11 +217,12 @@ height: max-content;
 .lastcommentsetting {
   display: flex;
   align-items: center;
-  padding-left: 2%;
+  // padding-left: 2%;
 }
 .divbtn {
-  width: 80% !important;
+  width: 60% !important;
   margin: 0 auto !important;
+  padding-bottom: 10px;
 }
 .butonseting {
   border-radius: 10px !important;

@@ -7,19 +7,25 @@
       display: block;
   }
 }
-.main1 {
-  padding: 2% 3% 2% 3%;
+.maincontainerr{
+  width: 100%;
+  background: #fff;
 
-  width: 93%;
+}
+.main1 {
+ 
+  padding:10px 150px 10px 40px;
+   display: flex;
   align-items: center;
-  display: flex;
-  // @media (max-width:500px) {
-  //   display: none;
-  // }
+  justify-content: space-between;
+
+   @media (max-width:500px) {
+   padding:  10px 100px 20px 100px;
+   }
 
 }
 .main {
-   width: 76%;
+
     display: flex;
    align-items: center;
     gap: 40px;
@@ -40,8 +46,8 @@
   }
 }
 .logoimg {
- 
-  height: 30px;
+ width: 100%;
+  height: 50px;
   
 }
 
@@ -73,11 +79,9 @@
   
 }
 .name {
-  font-size: calc(12px + (21 - 12) * (100vw - 445px) / (1440 - 445));
+  font-size: calc(16px + (21 - 16) * (100vw - 445px) / (1440 - 445));
   font-weight: 500;
-  width: fit-content;
- 
-  // line-height: 40px;
+
   text-decoration: none;
   color: #555555;
 }
@@ -102,19 +106,19 @@
     color: $Primary-color;
   }
 }
-.optionBox {
-  display: grid;
-  width: 40%;
-  grid-template-columns: repeat(2, 1fr);
-  position: absolute;
-  z-index: 0;
-  background: $Tertiary-color;
-  border-radius: 10px;
-  line-height: 5px;
-  padding: 1%;
-  gap: 1px;
-  cursor: pointer;
-}
+// .optionBox {
+//   display: grid;
+//   width: 40%;
+//   grid-template-columns: repeat(2, 1fr);
+//   position: absolute;
+//   z-index: 0;
+//   background: $Tertiary-color;
+//   border-radius: 10px;
+//   line-height: 5px;
+//   padding: 1%;
+//   gap: 1px;
+//   cursor: pointer;
+// }
 .buton{
   // margin-top: 20px !important;
   width: 100%;
@@ -152,27 +156,30 @@
     color: $Primary-color !important;
   }
 }
-.bundiv {
-  width: 100px !important;
-}
+
 .divheadersetting {
-   width:60%;
+    width:100%;
   display: flex;
   align-items: center;
-   gap: 10px;
-   padding-left:30% ;
-   @media (max-width:800px) {
-    padding-left: 10% !important;
-   }
+   gap: 50px;
+  
+  
    @media (max-width:500px) {
-    margin-left: 30%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
    }
   
+}
+.bundiv{
+  @media (max-width:500px) {
+    width:100px !important;
+  }
 }
 .pname {
   font-size: calc(12px + (21 - 12) * (100vw - 445px) / (1440 - 445));
 
-  width: fit-content !important;
+  // width: fit-content !important;
   font-weight: 500;
   line-height: 10px;
   text-decoration: none;
@@ -183,7 +190,7 @@
   }
 }
 .dietting {
-  width: fit-content;
+  
   display: flex;
   align-items: center;
   gap: 10px;
@@ -196,7 +203,8 @@
   align-items: center;
   flex-direction: column;
   position: absolute;
-  left: 75%;
+  left: 70%;
+  top: 5%;
   z-index: 1;
   background: $Tertiary-color;
   border-radius: 10px;
@@ -204,7 +212,8 @@
   padding: 1%;
   cursor: pointer;
   @media (max-width:500px) {
-    left: 45%;
+    left: 25%;
+    top: 20%;
    width: 50%;
   }
 }

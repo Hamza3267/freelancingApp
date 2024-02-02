@@ -27,7 +27,7 @@ const PostJob = () => {
               btnClass={style.btnset3}
             />
           </div>
-          <div>
+          <div className={style.mainform}>
             <PostForm />
           </div>
         </div>

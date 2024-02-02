@@ -1,52 +1,37 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
-
-.nameee {
-  width: 100%;
-}
-.flextop {
-  display: flex;
-  align-items: center;
-  width: 30%;
-}
-.contact {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10%;
-}
-.imgggg {
-  height: 250px;
-  width: 250px;
+.griddisplay{
+  display: grid;
 }
 
 .maindiv {
-  margin-top: -35px;
-  height: max-content;
-  padding-bottom: 3%;
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  padding-bottom: 10px;
 }
 .searchdiv {
+  @media (max-width:500px) {
+    
+  height: max-content;
+  padding: 20px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 6%;
-  @media (max-width:500px) {
-    margin-left: -100px;
-    
   }
-  @media (max-width:330px) {
-    margin-left: -130px;
-    
+}
+.flexhead{
+ 
+  display: flex;
+  justify-content: center;
+}
+.head{
+  @media (max-width:500px) {
+    display: flex;
+    justify-content: center;
   }
 }
 .title {
@@ -54,25 +39,25 @@
   color: $Tertiary-color !important;
   text-align: center !important;
   font-weight: 600 !important;
-  line-height: 5 !important;
-  font-size: 40px !important;
+  // line-height: 5 !important;
+  font-size: calc(22px + (42 - 22) * (100vw - 445px) / (1440 - 445)) !important;
 
 
-  @media screen and (max-width: 500px) {
+  // @media screen and (max-width: 500px) {
   
-   width: 80% !important;
-    font-size: 23px  !important;
-    line-height: 3 !important;
-    text-align: center !important;
-    margin-left: 50px;
-  }
-  @media screen and (max-width: 330px) {
-    text-align: center !important;
-    font-size: 20px !important ;
-    line-height: 3 !important;
-    // margin-top: 10px !important;
-    margin-left: 18px !important;
-  }
+  //  width: 80% !important;
+  //   font-size: 23px  !important;
+  //   line-height: 3 !important;
+  //   text-align: center !important;
+  //   margin-left: 50px;
+  // }
+  // @media screen and (max-width: 330px) {
+  //   text-align: center !important;
+  //   font-size: 20px !important ;
+  //   line-height: 3 !important;
+  //   // margin-top: 10px !important;
+  //   margin-left: 18px !important;
+  //}
 
 }
 

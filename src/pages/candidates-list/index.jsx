@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 import Layout from "../../components/layout/Layout";
 import TextMap from "../../components/text-mapping";
-import Employee from '../../components/employee-card'
+import Employee from "../../components/employee-card";
 import Search from "../../components/form-search";
 import Selectform from "../../components/select-form";
 
@@ -26,60 +26,56 @@ const Candidate = () => {
       },
     }
   );
-  
+
   const overlaystyle = {
     backgroundImage: `url(${backgroundimg})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
   };
   const [selectedValue, setSelectedValue] = useState("");
- 
 
   return (
     <>
-    
- 
-
-   <Layout>
-      <div style={overlaystyle} className={style.maindiv}>
-        <div>
-        <TextMap
-          title={"Hire people for your business"}
-          titleclass={style.title}
-        />
-      </div>
-        <div className={style.searchdiv}>
-          <Search          
-          />
-        </div>
-      </div>
-      <div className={style.midportion}>
-        <div className={style.sideform}>
-          <Selectform
-            setSelectedValue={setSelectedValue}
-            handleSubmit={handleSubmit}
-            setValue={setValue}
-            reset={reset}
-            register={register}
-            watch={watch}
-            getValues={getValues}
-           
-          />
+      <Layout>
+        <div style={overlaystyle} className={style.maindiv}>
+          <div className={style.head}>
+            <TextMap
+              title={"Hire people for your business"}
+              titleclass={style.title}
+            />
+          </div>
+          <div className={style.flexhead}>
+            <div className={style.searchdiv}>
+              <Search />
+            </div>
+          </div>
         </div>
 
-        <div className={style.blockdiv}>
-          <Employee
-            carousalitemset={style.cardset}
-            boxset={style.box}
-            btntextflex={style.flexibility}
-            selectedValue={selectedValue}
-            gridMode={style.gridsetting}
-            buttons={true}
-            carousall={style.widthsettingblock}
-            
-          />
+        <div className={style.midportion}>
+          <div className={style.sideform}>
+            <Selectform
+              setSelectedValue={setSelectedValue}
+              handleSubmit={handleSubmit}
+              setValue={setValue}
+              reset={reset}
+              register={register}
+              watch={watch}
+              getValues={getValues}
+            />
+          </div>
+
+          <div className={style.blockdiv}>
+            <Employee
+              carousalitemset={style.cardset}
+              boxset={style.box}
+              btntextflex={style.flexibility}
+              selectedValue={selectedValue}
+              gridMode={style.gridsetting}
+              buttons={true}
+              carousall={style.widthsettingblock}
+            />
+          </div>
         </div>
-      </div>
       </Layout>
     </>
   );

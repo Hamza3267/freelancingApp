@@ -2,24 +2,25 @@
 @import "../../styles/fontsize.scss";
 
 .maindivv {
+  width: 100%;
   background: #f4f4f4;
   display: flex;
-  padding-left: 2%;
-  @media screen and (max-width: 500px) {
-    width: 90%;
-  }
+  // padding: 10px;
+  gap: 20px;
+  justify-content: space-between;
+
 }
 
 .maincontainer {
   background: #f4f4f4;
-  padding: 4% 2% 2% 2%;
+   padding: 10px;
 }
 .subdiv {
   height: auto;
   background: #fff;
   border-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  width: 100%;
+   padding: 10px;
 }
 .picsetting {
   width: 64px;
@@ -199,22 +200,22 @@
 
 .portion2 {
   margin-top: 10px;
-  height: auto;
+  height: max-content;
   background: #fff;
   border-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  width: 100%;
+   padding: 10px;
 }
 .videooo {
   width: 100% !important;
 }
 .portion3 {
   margin-top: 10px;
-  height: auto;
+  height: max-content;
   background: #fff;
   border-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  width: 100%;
+   padding: 10px;
 }
 .btninner {
   color: $Primary-color !important;
@@ -226,12 +227,13 @@
   width: 20% !important;
 }
 .portion4 {
-  margin-top: 10px;
-  height: auto;
+  
+  margin-top: 5px;
+  height: max-content;
   background: #fff;
   border-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  width: 100%;
+   padding: 10px;
 }
 .tie {
   font-size: calc(18px + (24 - 18) * (100vw - 445px) / (1440 - 445)) !important;
@@ -240,7 +242,7 @@
   color: #111111 !important;
 }
 .innerdiv4 {
-  padding-left: 3%;
+  padding-left: 10px;
 }
 .flexdivvvv {
   display: flex;
@@ -308,32 +310,32 @@
 }
 .portion5 {
   margin-top: 10px;
-  height: auto;
+  height: max-content;
   background: #fff;
   border-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  width: 100%;
+   padding: 10px;
 
   .divsettings {
-    padding: 0% 0% 0% 2.5%;
-    width: 100%;
+  padding: 10px;
+    // width: 100%;
   }
 }
 .portion6 {
   margin-top: 10px;
-  height: auto;
+  height: max-content;
   background: #fff;
   border-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  width: 100%;
+   padding: 10px;
 }
 .portion7 {
   margin-top: 10px;
-  height: auto;
+  height: max-content;
   background: #fff;
   border-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  width: 100%;
+   padding: 10px;
 }
 .butneditngs {
   border: none;
@@ -404,19 +406,21 @@
   border-bottom: 0.5px solid #e5e5e5;
 }
 .portion8 {
-  margin-top: 50px;
-  margin-right: 20px;
+  width: 30%;
+ padding: 10px;
+ margin-top: 10px;
   height: max-content;
   background: #fff;
   border-radius: 10px;
-  width: 50%;
+  // width: 50%;
   @media screen and (max-width: 800px) {
     display: none !important;
     background: none !important;
   }
 }
 .portion8subdiv {
-  padding-left: 8%;
+ 
+   padding: 10px;
 }
 .price {
   font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;

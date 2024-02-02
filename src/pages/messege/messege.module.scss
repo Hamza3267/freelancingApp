@@ -4,7 +4,7 @@
 .maincontainer {
   height: max-content;
   background-color: #f4f4f4;
-  //   padding-left: 2%;
+  
 }
 .subcontainer {
   padding: 2% 3% 0% 3%;
@@ -20,9 +20,13 @@
 .innerdiv {
   height: max-content;
   background: #fff;
+  max-width: 100%;
   width: 50%;
   border-radius: 10px;
   padding: 1%;
+  @media (max-width:500px) {
+    width: 100%;
+  }
 }
 .messages {
   height: max-content;

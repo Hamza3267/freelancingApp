@@ -99,7 +99,7 @@ const InfoCompany = () => {
         <>
           <div className={style.maindivv}>
             {candidateData.length > 0 && (
-              <div className={style.maindivv}>
+              <div className={style.mainnnnn}>
                 <div className={style.maincontainer} key={index}>
                   <div className={style.profile}>
                     <img src={pic1} alt="" className={style.imgsett} />

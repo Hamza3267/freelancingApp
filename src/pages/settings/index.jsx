@@ -64,9 +64,12 @@ const Setting = () => {
                 </div>
               </div>
               <div className={style.innerdivv}>
+              <div className={style.formdiv}>
                 <h6 className={style.h6settings}>Change password</h6>
                 <Settingpassword />
+                </div>
               </div>
+              
 
               <Button
                 title={"Deactive account"}

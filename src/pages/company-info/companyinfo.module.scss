@@ -4,31 +4,34 @@
 
 .navdiv {
   background: white;
-  padding: 0% 2% 2% 2%;
+  // padding: 0% 2% 2% 2%;
 }
 .maindivv {
-
+width: 100%;
   background: #f4f4f4;
-    display: flex;
-  padding-left: 2%;
-  @media (max-width:500px) {
-    width: 93% ;
-  }
-}
+ 
+  
 
+}
+.mainnnnn{
+  padding: 10px;
+  display: flex;
+ 
+  gap: 10px;
+}
 .maincontainer {
   background: #f4f4f4;
-  padding: 4% 2% 2% 2%;
+  // padding: 4% 2% 2% 2%;
  
  
 }
 .subdiv {
-  height: auto;
+  height: max-content;
   background: #fff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  width: 100%;
+  //  padding: 10px;
 }
 .picsetting {
   width: 64px !important;
@@ -136,7 +139,7 @@
   line-height: 1.5 !important;
   font-weight: 400 !important;
   border-bottom: 0.5px solid #e5e5e5 !important;
-  padding-bottom: 5% !important;
+  // padding-bottom: 5% !important;
 }
 .pic {
   width: 40% !important;
@@ -148,19 +151,18 @@
   height: auto;
   background: #fff;
   border-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  width: 100%;
+  // padding: 10px;
 }
 .portion3 {
   margin-top: 10px;
-  height: 740px;
-  width: fit-content;
-
-  overflow: hidden;
+  height: 500px;
+  width: 100%;
+  overflow: auto;
   background: #fff;
   border-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  
+  // padding: 10px;
 }
 .btninner {
   color: $Primary-color !important;
@@ -197,11 +199,11 @@
 }
 .portion4 {
   margin-top: 10px;
-  height: auto;
+  height: max-content;
   background: #fff;
   border-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  width: 100%;
+  // padding: 10px;
 }
 .tie {
   font-size: calc(18px + (24 - 18) * (100vw - 445px) / (1440 - 445)) !important;
@@ -280,11 +282,11 @@
 }
 .portion5 {
   margin-top: 10px;
-  height: auto;
+  height: max-content;
   background: #fff;
   border-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  width: 100%;
+  // padding: 10px;
 
   .divsettings {
     padding: 0% 0% 0% 2.5%;
@@ -293,19 +295,19 @@
 }
 .portion6 {
   margin-top: 10px;
-  height: auto;
+  height: max-content;
   background: #fff;
   border-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  width: 100%;
+  // padding: 10px;
 }
 .portion7 {
   margin-top: 10px;
-  height: auto;
+  height: max-content;
   background: #fff;
   border-radius: 10px;
-  width: 90%;
-  padding: 2%;
+  width: 100%;
+  // padding: 10px;
 }
 .butneditngs {
   border: none !important;
@@ -491,7 +493,7 @@
   border-top-left-radius: 10px !important;
 }
 .profile {
-  width: 94% !important;
+  width: 100% !important;
 }
 .logoediting{
   display: flex;

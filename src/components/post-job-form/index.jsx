@@ -42,7 +42,7 @@ const PostForm = () => {
   return (
     <form onSubmit={handleSubmit((dataa) => console.log(dataa))}>
       <div className={style.main}>
-        <div>
+        <div className={style.inercontainer}>
           <div className={style.innerdiv}>
             <h6 className={style.basic}>Basic info</h6>
 
@@ -573,7 +573,7 @@ const PostForm = () => {
           </div>
         </div>
 
-        <div className={style.salarydiv}>
+        <div className={style.salarydivcont}>
           <h6 className={style.basicc}>About this job</h6>
           <div className={style.profiledesc}>
             <div className={style.piccc}>

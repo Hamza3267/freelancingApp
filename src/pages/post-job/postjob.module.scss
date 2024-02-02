@@ -1,14 +1,18 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
+.mainform{
+  width: 100%;
+}
 .maincontainer {
+  width: 100%;
   height: max-content;
   background-color: #f4f4f4;
 //   padding-left: 2%;
 }
 .subcontainer {
    
-  padding: 2% 3% 0% 3%;
+  padding:5px 10px;
 }
 .titleeh {
   font-size: calc(18px + (28 - 18) * (100vw - 320px) / (1440 - 320)) !important;
@@ -23,9 +27,15 @@
   }
 .divsetting2{
 width: 14% !important;
+@media (max-width:500px) {
+  width: 20% !important;
+}
 }
 .divsetting3{
   width: 14% !important;
+  @media (max-width:500px) {
+    width: 20% !important;
+  }
   }
 .btnset1{
   font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445)) !important;

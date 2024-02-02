@@ -1,6 +1,15 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
+.inercontainer{
+  width: 100%;
+}
+.salarydivcont{
+  width: 100%;
+}
+.main1{
+  width: 100%;
+}
 .basic{
     font-size: calc(14px + (20 - 14) * (100vw - 320px) / (1440 - 320));
     color:#111111;
@@ -10,7 +19,7 @@
     padding: 0.5% 2% 1% 3%;
      height: max-content;
      background: #fff;
-     width: 145%;
+     width: 100%;
      height: max-content;
       border-radius: 6px;
       @media (max-width:500px) {
@@ -31,10 +40,10 @@
     font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
     outline-style: none;
     height: 45px;
-    width: 97%;
+     width: 97%;
     border: 1px solid #e5e5e5;
     border-radius: 6px;
-    padding-left: 3%;
+    // padding-left: 3%;
    
    }
    .labelss{
@@ -51,10 +60,10 @@
     font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
     outline-style: none;
     height: 50px;
-    width: 100%;
+     width: 97%;
     border: 1px solid #e5e5e5;
     border-radius: 6px;
-    padding-left: 3%;
+    // padding-left: 3%;
    }
    .labels{
     display: flex;
@@ -71,15 +80,15 @@
    }
    .salarydiv{
      margin-top: 10px;
-    padding: 0.1% 2% 1% 3%;
+    padding: 5px 10px;
     height: max-content;
     background: #fff;
-    width: 145%;
+    width: 100%;
     height: max-content;
      border-radius: 6px;
-     @media (max-width:500px) {
-      width: 80% !important;
-    }
+    //  @media (max-width:500px) {
+    //   width: 80% !important;
+    // }
    }
    .inerinputrange{
     font-size: calc(10px + (16 - 10) * (100vw - 445px) / (1440 - 445));
@@ -187,10 +196,10 @@
    }
    .salarydivvv{
     margin-top: 10px;
-    padding: 0.1% 4% 1% 4%;
+    padding: 5px 10px;
     height: max-content;
     background: #fff;
-    width: 142%;
+    width: 100%;
     height: max-content;
      border-radius: 6px;
    }
@@ -209,13 +218,14 @@
    }
    .main{
     display: flex;
-    gap: 240px;
+     gap: 50px;
     @media (max-width:500px) {
       display: grid !important;
+      gap: 0px !important;
     }
    }
    .profiledesc{
-    padding: 10%;
+    // padding: 10%;
     width: 100%;
     background: #fff;
     height: max-content;

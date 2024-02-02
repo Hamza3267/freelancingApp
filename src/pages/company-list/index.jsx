@@ -37,12 +37,16 @@ const Company = () => {
       
 <Layout>
       <div style={overlaystyle} className={style.maindiv}>
+        <div className={style.headset}>
         <TextMap
           title={"Companies Hiring Internationally"}
           titleclass={style.title}
         />
+        </div>
+        <div className={style.flexhead}>
         <div className={style.searchdiv}>
           <Search />
+        </div>
         </div>
       </div>
       <div className={style.midportion}>

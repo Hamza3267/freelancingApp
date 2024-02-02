@@ -2,7 +2,7 @@
 @import "../../styles/fontsize.scss";
 
 .maincontainer {
-  height: 1050px;
+  height: max-content;
   background-color: #f4f4f4;
 }
 .subcontainer {
@@ -36,7 +36,7 @@
   background: #fff;
   width: 100%;
   @media (max-width:500px) {
-    width:400px !important;
+    
     overflow-x: auto !important;
   }
 }
@@ -64,7 +64,7 @@
   font-size: calc(14px + (10 - 10) * (100vw - 445px) / (1440 - 445));
 }
 .mainnnn {
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 27%;

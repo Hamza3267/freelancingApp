@@ -33,11 +33,12 @@
    
     height: max-content;
     background: #fff;
-    width: 75%;
+    max-width: 100%;
+    width: 55%;
     height: max-content;
     border-radius: 10px;
     @media (max-width:500px) {
-      width: 94% !important;
+      width: 100% !important;
      }
    
   }
@@ -45,17 +46,17 @@
    margin-top: 20px;
     background: #fff;
     max-width: 100%;
-    width: 71%;
+    width: 55%;
     height: max-content;
     border-radius: 10px;
-    padding: 2%;
+   
    @media (max-width:500px) {
-    width: 90% !important;
+    width: 100% !important;
    }
    
   }
   .formdiv{
-     padding: 0.5% 0% 0% 5%;
+     padding:1px  10px;
  
    
   }

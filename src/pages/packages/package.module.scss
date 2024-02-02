@@ -21,8 +21,7 @@
     height: max-content;
     background: #fff;
     width: 100%;
-    @media (max-width:500px) {
-      width: 400px;
+    @media (max-width:500px) {   
       overflow-x: auto;
     }
   }
@@ -32,7 +31,7 @@
     gap: 120px;
     border-bottom: 1px solid #e5e5e5;
     @media (max-width:500px) {
-      gap: 80px;
+      gap: 30px;
     }
   }
   .headingflex{
@@ -135,10 +134,10 @@
      }
   }
   .btnsetting{
-    padding-top: 2%;
+    padding-top: 10px;
     width: 25% !important;
     @media (max-width:500px) {
-      width: 50% !important;
+      width: 30% !important;
     }
 
   }

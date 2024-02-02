@@ -13,7 +13,7 @@ import Block from "../../components/blocks";
 import CardSlider from "../../components/card-slider";
 import PicCard from "../../components/pic-card";
 
-import blackpage from '../../assets/images/blackpage.png'
+import blackpage from "../../assets/images/blackpage.png";
 import girlpic from "../../assets/images/girlpoint.png";
 import homepic from "../../assets/images/home.webp";
 import backgroundpic from "../../assets/images/background.webp";
@@ -121,203 +121,205 @@ const hoverpicitems = [
 ];
 
 const Home = () => {
- 
   return (
     <>
-    
       <Layout>
-      <div style={overlyStyle} className={style.overlay}>
-        <div className={style.subdiv}>
-         
-          <div className={style.flexscreen}>
-            <div className={style.flextextcomponent}>
-              <TextBar />
-              <CountrySearch />
+        <div style={overlyStyle} className={style.overlay}>
+          <div className={style.subdiv}>
+            <div className={style.flexscreen}>
+              <div className={style.flextextcomponent}>
+                <TextBar />
+                <CountrySearch />
+              </div>
+              <MsgSlider />
             </div>
-            <MsgSlider />
           </div>
         </div>
-      
-      </div>
-      <div className={style.portion2}>
-        {pictextitems.map((e, index) => (
-          <div className={style.portio2}>
-            <PicText
-              title={e.tittle}
-              paragraph={e.para}
-              logo={e.logo}
-              key={index}
-            />
-          </div>
-        ))}
-      </div>
-
-      <div className={style.portion3}>
-        <TextMap
-          title={"Popular category"}
-          paragraph={"Find and hire professionals across all skills"}
-          titleclass={style.edittitle}
-          paragraphclass={style.paracont}
-        />
-        <div className={style.mapedit}>
-          {carditems.map((e, index) => (
-            <div className={style.mapdiv}>
+        <div className={style.portion2}>
+          {pictextitems.map((e, index) => (
+            <div className={style.portio2}>
               <PicText
-                maindivedit={style.pictext}
-                title={e.title}
-                paragraph={e.paragraph}
-                paraedit={style.paraed}
+                title={e.tittle}
+                paragraph={e.para}
+                titledit={style.titttttle}
+                paraedit={style.paraeditt}
                 logo={e.logo}
-                titledit={style.titleeee}
-                imgdivedit={style.borderedit}
-                pictureedit={style.picediting}
                 key={index}
               />
-           
             </div>
           ))}
         </div>
-        <Button
-          title={"View all categories"}
-          btndiv={style.btnedit}
-          btnClass={style.btndit}
-        />
-      </div>
 
-      <div className={style.portion4}>
-        <div className={style.textmove}>
+        <div className={style.portion3}>
           <TextMap
-            title={"Latest jobs"}
-            paragraph={"2020 jobs live – 293 added today."}
+            title={"Popular category"}
+            paragraph={"Find and hire professionals across all skills"}
             titleclass={style.edittitle}
             paragraphclass={style.paracont}
           />
-        </div>
-        <div className={style.divwidth}>
-          <Card />
-        </div>
-      </div>
-      <div className={style.portion5}>
-        <div className={style.p5editing}>
-          <TextMap
-            title={"Featured companies actively hiring "}
-            paragraph={"Over 100 million jobs"}
-            titleclass={style.titclas}
-            paragraphclass={style.parclas}
-          />
+          <div className={style.mapedit}>
+            {carditems.map((e, index) => (
+              <div className={style.mapdiv}>
+                <PicText
+                  maindivedit={style.pictext}
+                  title={e.title}
+                  paragraph={e.paragraph}
+                  paraedit={style.paraed}
+                  logo={e.logo}
+                  titledit={style.titleeee}
+                  imgdivedit={style.borderedit}
+                  pictureedit={style.picediting}
+                  key={index}
+                />
+              </div>
+            ))}
+          </div>
           <Button
             title={"View all categories"}
             btndiv={style.btnedit}
             btnClass={style.btndit}
           />
         </div>
-        <Block flexx={style.carosaldivset} dots={true} />
-      </div>
-      <div className={style.portion6}>
-        <div className={style.flexsubdiv}>
-          <div className={style.imagecont}>
-          <img src={girlpic} alt="girl" className={style.picedit} />
-          </div>
-          <div className={style.textmapping}>
-            <div className={style.textcompdiv}>
+
+        <div className={style.portion4}>
+          <div className={style.textmove}>
             <TextMap
-              title={
-                "Discover why more companies are using Civi to make hiring easy"
-              }
-              paragraph={
-                "Faucibus sed diam lorem nibh nibh risus dui ultricies purus eget convallis auctor massa."
-              }
-              titleclass={style.tittleedit}
-              paragraphclass={style.paraeedit}
-            />
-            </div>
-            <div className={style.nummap}>
-              {numberitems.map((e, index) => (
-                <div className={style.innerdiv}>
-                <TextMap
-                  key={index}
-                  title={e.num}
-                  paragraph={e.para}
-                  titleclass={style.editingtext}
-                  paragraphclass={style.editingpara}
-                />
-                </div>
-              ))}
-            </div>
-            <Button
-              title={"Post your job for FREE"}
-              btndiv={style.btndivedit}
+              title={"Latest jobs"}
+              paragraph={"2020 jobs live – 293 added today."}
+              titleclass={style.edittitle}
+              paragraphclass={style.paracont}
             />
           </div>
+          <div className={style.divwidth}>
+            <Card />
+          </div>
         </div>
-      </div>
-
-      <div className={style.portion7}>
-        <div className={style.flexcontainer}>
-          <TextMap
-            title={"Trusted by leading brands and startups"}
-            paragraph={"Here’s what they say about us"}
-            titleclass={style.edittitle}
-            paragraphclass={style.paraccont}
-          />
+        <div className={style.portion5}>
+          <div className={style.p5editing}>
+            <TextMap
+              title={"Featured companies actively hiring "}
+              paragraph={"Over 100 million jobs"}
+              titleclass={style.titclas}
+              paragraphclass={style.parclas}
+            />
+            <Button
+              title={"View all categories"}
+              btndiv={style.btnedit}
+              btnClass={style.btndit}
+            />
+          </div>
+          <Block flexx={style.carosaldivset} dots={true} />
         </div>
-
-        <CardSlider />
-      </div>
-
-      <div className={style.poriton8}>
-        <div className={style.subbdiv}>
-          <div className={style.flexbox}>
-            <div className={style.flextext}>
-              <TextMap
-                title={"EMPLOYERS"}
-                paragraph={"Looking to post a job?"}
-                desc={
-                  "Find professionals from around the world and across all skills."
-                }
-                titleclass={style.titlredit}
-                paragraphclass={style.paraediting}
-                descclass={style.decedit}
-              />
+        <div className={style.portion6}>
+          <div className={style.flexsubdiv}>
+            <div className={style.imagecont}>
+              <img src={girlpic} alt="girl" className={style.picedit} />
+            </div>
+            <div className={style.textmapping}>
+              <div className={style.textcompdiv}>
+                <TextMap
+                  title={
+                    "Discover why more companies are using Civi to make hiring easy"
+                  }
+                  paragraph={
+                    "Faucibus sed diam lorem nibh nibh risus dui ultricies purus eget convallis auctor massa."
+                  }
+                  titleclass={style.tittleedit}
+                  paragraphclass={style.paraeedit}
+                />
+              </div>
+              <div className={style.nummap}>
+                {numberitems.map((e, index) => (
+                  <div className={style.innerdiv}>
+                    <TextMap
+                      key={index}
+                      title={e.num}
+                      paragraph={e.para}
+                      titleclass={style.editingtext}
+                      paragraphclass={style.editingpara}
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className={style.btneeditt}>
               <Button
                 title={"Post your job for FREE"}
                 btndiv={style.btndivedit}
+               
               />
-            </div>
-            <div>
-              <img src={homepic} alt="" className={style.pic} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className={style.portion9}>
-        <div className={style.flexcontainer}>
-          <TextMap
-            title={"Latest from our blog"}
-            paragraph={"Get interesting insights, articles, and news"}
-            titleclass={style.edittitle}
-            paragraphclass={style.paracoont}
+
+        <div className={style.portion7}>
+          <div className={style.flexcontainer}>
+            <TextMap
+              title={"Trusted by leading brands and startups"}
+              paragraph={"Here’s what they say about us"}
+              titleclass={style.edittitle}
+              paragraphclass={style.paraccont}
+            />
+          </div>
+
+          <CardSlider />
+        </div>
+
+        <div className={style.poriton8}>
+          <div className={style.subbdiv}>
+            <div className={style.flexbox}>
+              <div className={style.flextext}>
+                <TextMap
+                  title={"EMPLOYERS"}
+                  paragraph={"Looking to post a job?"}
+                  desc={
+                    "Find professionals from around the world and across all skills."
+                  }
+                  titleclass={style.titlredit}
+                  paragraphclass={style.paraediting}
+                  descclass={style.decedit}
+                />
+                <Button
+                  title={"Post your job for FREE"}
+                  btndiv={style.btndivedit}
+                />
+              </div>
+              <div>
+                <img src={homepic} alt="" className={style.pic} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={style.portion9}>
+         
+            <TextMap
+              title={"Latest from our blog"}
+              paragraph={"Get interesting insights, articles, and news"}
+              titleclass={style.edittitle}
+              paragraphclass={style.paracoont}
+            />
+         
+          <div className={style.mappingcard}>
+            {hoverpicitems.map((e, index) => (
+               <div className={style.containerrrrr}>
+              <PicCard
+                pic={e.pic}
+                date={e.date}
+                learn={e.learn}
+                para={e.para}
+                key={index}
+              />
+                </div>
+            ))}
+          </div>
+        
+          <Button
+            title={"View more articles"}
+            btndiv={style.btnd}
+            btnClass={style.butun}
           />
         </div>
-        <div className={style.mappingcard}>
-          {hoverpicitems.map((e, index) => (
-            <PicCard
-              pic={e.pic}
-              date={e.date}
-              learn={e.learn}
-              para={e.para}
-              key={index}
-            />
-          ))}
-        </div>
-        <Button
-          title={"View more articles"}
-          btndiv={style.btnd}
-          btnClass={style.butun}
-        />
-      </div>
       </Layout>
-    
     </>
   );
 };

@@ -75,9 +75,9 @@
   }
 }
 .maindivediting{
-  display: grid !important;
-  align-items: center !important;
-  justify-content: center !important;
+     @media (max-width:500px) {
+        display: grid !important;
+      }
 }
 .butontexteit {
   display: flex;

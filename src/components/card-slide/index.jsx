@@ -78,7 +78,7 @@ const Card = ({ cardmainsetting, btntextflex, maincont }) => {
     setCurrentSlide(index);
   };
   const slideTransform = `translateX(-${
-    currentSlide * (3700 / totalSlides)
+    currentSlide * (5500 / totalSlides)
   }px)`;
   return (
     <>

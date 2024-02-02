@@ -6,7 +6,6 @@
   @media (max-width: 500px) {
     height: 380px !important;
     width: fit-content;
-   
   }
 }
 .blackdiv {
@@ -66,11 +65,12 @@
   }
 }
 .portion2 {
-  padding-top: 1%;
+  width: 100%;
+  padding-top: 10px;
   height: max-content;
-  display: grid;
-  align-items: center;
-  justify-content: center;
+  display: grid !important;
+  align-items: center !important;
+  justify-content: center !important;
   grid-template-columns: repeat(3, 1fr);
 
   @media screen and (max-width: 800px) {
@@ -82,14 +82,16 @@
   }
 }
 .portio2 {
-  padding-left: 7%;
-  height: 100px;
+  padding: 10px;
+  height: max-content;
   border-bottom: 1px solid #e5e5e5;
 }
 .borerline {
   border-bottom: rgb(255, 255, 255);
 }
 .portion3 {
+  // padding: 10px ;
+  width: 100%;
   height: max-content;
   display: flex;
   flex-direction: column;
@@ -120,9 +122,11 @@
   border-radius: 20px;
   height: 130px;
   display: flex;
-  width: 350px;
+  width: 80%;
   align-items: center;
-  padding-left: 6%;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px 5px;
   background: #edf2ef;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
@@ -131,22 +135,25 @@
   }
 
   @media (max-width: 500px) {
-    width: 70%;
-    margin-left: 50px !important;
+    width: 100%;
+   
   }
 }
 .mapedit {
   height: max-content;
   display: grid;
-  width: 100%;
+
+  width: 70%;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 10px;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
   @media screen and (max-width: 500px) {
+     width: 100% !important;
+   
     height: 300px;
     overflow: auto;
     grid-template-columns: repeat(1, 1fr);
@@ -168,19 +175,24 @@
   }
 }
 .portion4 {
+  width: 100%;
+  // padding: 10px;
+  overflow-x: hidden;
   height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  overflow: hidden;
+
 }
 .textmove {
   display: flex;
   justify-content: center;
 }
 .divwidth {
-  padding: 2.5%;
+  // padding: 2.5%;
+  width: 100%;
+  margin: 0 auto ;
 }
 .carosaldivset {
   display: flex !important;
@@ -217,87 +229,91 @@
 }
 .flexsubdiv {
   display: flex;
-  padding: 6%;
+  align-items: center;
+  justify-content: center;
+  // padding: 10px;
+  gap: 30px;
+  @media (max-width:500px) {
+    gap: 0px !important;
+  }
 }
 .textmapping {
-  padding-left: 5%;
-  width: 50%;
+  // padding-left: 5%;
+  // width: 50%;
+}
+.titttttle {
+  font-size: calc(15px + (18 - 15) * (100vw - 445px) / (1440 - 445)) !important;
+}
+.paraeditt {
+  font-size: calc(15px + (15 - 15) * (100vw - 445px) / (1440 - 445)) !important;
 }
 .tittleedit {
   font-size: calc(20px + (28 - 20) * (100vw - 445px) / (1440 - 445)) !important;
   line-height: 30px !important;
   text-align: center !important;
-  @media (max-width: 500px) {
-    line-height: 17px !important;
-    width: 300px !important;
-  }
-  @media (max-width: 350px) {
-    line-height: 20px !important;
-    width: 260px !important;
-    text-align: center !important;
-  }
+ 
 }
 .paraeedit {
-  width: 100% !important;
+  
   font-size: calc(14px + (18 - 14) * (100vw - 445px) / (1440 - 445)) !important;
   color: #555555 !important;
   line-height: 30px !important;
   margin-top: 60px;
-  @media (max-width: 500px) {
-    line-height: 20px !important;
-    width: 300px !important;
-    text-align: center !important;
-  }
-  @media (max-width: 350px) {
-    line-height: 20px !important;
-    width: 260px !important;
-    text-align: center !important;
-  }
+  text-align: center !important;
+
 }
 .paraedit {
   margin-top: 60px;
   line-height: 30px !important;
 }
 .nummap {
+ 
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   height: fit-content !important;
 
-  width: 100%;
-  margin: 0 auto;
-
-  @media (max-width: 500px) {
-    padding-left: 30%;
-  }
 }
 .innerdiv {
-  width: 100%;
+  @media (max-width:500px) {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+      height: min-content;
+  }
 
-  height: 100px;
 }
 .editingtext {
   font-size: calc(30px + (46 - 30) * (100vw - 445px) / (1440 - 445)) !important;
   color: $Primary-color !important;
-  margin: 0 auto;
+  
   // line-height: 1;
 }
 .editingpara {
-  width: 100% !important;
+  // width: 100% !important;
   font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445)) !important;
-  margin-top: 30px !important;
+  // margin-top: 30px !important;
 
-  @media (max-width: 500px) {
-    width: 100px !important;
-  }
+  // @media (max-width: 500px) {
+  //   width: 100px !important;
+  // }
 }
 .btndivedit {
+ align-self: center !important;
   width: 45% !important;
-  @media (max-width: 500px) {
-    padding-left: 26%;
+
+}
+.btneeditt{
+  @media (max-width:500px) {
+    display: flex;
+    justify-content: center;
   }
+
 }
 .portion7 {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -308,43 +324,39 @@
 .edittitle {
   font-size: calc(20px + (36 - 20) * (100vw - 445px) / (1440 - 445)) !important;
   font-weight: 600 !important;
-  line-height: 85% !important;
+   line-height: 1 !important;
   text-align: center;
   @media (max-width: 500px) {
-    width: 200px !important;
-    line-height: 1 !important;
+   
+   
   }
 }
 .paracont {
-  
   text-align: center;
   @media (max-width: 500px) {
     line-height: 1 !important;
     width: 200px !important;
   }
 }
-.paraccont{
- 
-  text-align: center;
+.paraccont {
+  text-align: center !important;
+  line-height: 4 !important;
   @media (max-width: 500px) {
-    margin-top: 40px !important;
-    line-height: 1 !important;
-    width: 200px !important;
+    margin-top: 60px !important;
+     margin: 0 auto;
+  line-height: 1 !important;
+    // width: 200px !important;
   }
 }
 .paracoont {
- 
   text-align: center !important;
   @media (max-width: 500px) {
     
-    width: 200px !important;
+   margin-top: 50px !important;
     line-height: 1 !important;
-
   }
 }
-.flexcontainer {
-  width: 35%;
-}
+
 .poriton8 {
   height: max-content;
   padding: 10% 3% 7% 3%;
@@ -388,38 +400,41 @@
   padding-top: 8.5%;
 }
 .portion9 {
-  padding-left: 6%;
+ width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: max-content;
 }
+.containerrrrr{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
 .mappingcard {
-
+ 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width:500px) {
-    
+  @media (max-width: 500px) {
     grid-template-columns: repeat(1, 1fr);
-   margin-left: 60px !important;
+    // margin-left: 60px !important;
   }
-  @media (max-width:400px) {
-    
+  @media (max-width: 400px) {
     grid-template-columns: repeat(1, 1fr);
-   margin-left: 41px !important;
+    // margin-left: 41px !important;
   }
 }
 .btnd {
   width: 20% !important;
   padding-top: 1%;
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     width: 50% !important;
   }
 }
