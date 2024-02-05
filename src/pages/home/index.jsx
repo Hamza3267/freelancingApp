@@ -150,6 +150,7 @@ const Home = () => {
           ))}
         </div>
         <div className={style.portion3}>
+          <div className={style.subcontainerportion3}>
           <TextMap
             title={"Popular category"}
             paragraph={"Find and hire professionals across all skills"}
@@ -178,6 +179,7 @@ const Home = () => {
             btndiv={style.btnedit}
             btnClass={style.btndit}
           />
+        </div>
         </div>
         <div className={style.portion4}>
           <div className={style.textmove}>
