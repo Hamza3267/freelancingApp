@@ -272,7 +272,7 @@ const InfoCandidate = () => {
                       <Image img={pic2} imgsetting={style.pic} />
                     </div>
                   </div>
-                  <div className={style.portion7}>
+                  <div className={style.portion6}>
                     <TextMap title={"Honors & awards"} titleclass={style.tie} />
                     <div className={style.divsettings}>
                       <div className={style.dotgol}>
@@ -287,7 +287,7 @@ const InfoCandidate = () => {
                       </div>
                     </div>
                   </div>
-                  <div className={style.portion7}>
+                  <div className={style.portionreview}>
                     <TextMap title={"Review"} titleclass={style.tie} />
                     <div className={style.flexbstar}>
                       <div className={style.flexbtnstar}>

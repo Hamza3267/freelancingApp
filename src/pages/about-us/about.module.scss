@@ -1,44 +1,6 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
-.blackdiv {
-  height: 30px;
-  width: 98%;
-  background: black;
-  z-index: 2;
-  // position: fixed;
-  display: flex;
-  padding-left: 2%;
-  align-items: center;
-}
-.firstbell {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.nameee {
-  width: 100%;
-}
-.flextop {
-  display: flex;
-  align-items: center;
-  width: 30%;
-}
-.contact {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
-.navset {
-  padding-left: 3%;
-  padding-bottom: 2%;
-  border-bottom: 0.5px solid #e5e5e5;
-}
 .portion1 {
   padding-top: 3%;
 }
@@ -47,41 +9,44 @@
 }
 .title {
   width: 100% !important;
-  font-size: calc(16px + (16 - 16) * (100vw - 445px) / (1440 - 445)) !important ;
+  font-size: calc(
+    16px + (16 - 16) * (100vw - 445px) / (1440 - 445)
+  ) !important ;
   font-weight: 600 !important;
   letter-spacing: 0.5px !important;
   text-align: center !important;
   line-height: 1 !important;
 }
 .title1 {
- 
-  font-size: calc(16px + (18 - 16) * (100vw - 445px) / (1440 - 445)) !important ;
+  font-size: calc(
+    16px + (18 - 16) * (100vw - 445px) / (1440 - 445)
+  ) !important ;
   font-weight: 600 !important;
   letter-spacing: 0.5px !important;
   text-align: center !important;
   line-height: 1 !important;
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     width: 20% !important;
     margin-left: 180px;
   }
 }
 .title2 {
- 
-  font-size: calc(16px + (18 - 16) * (100vw - 445px) / (1440 - 445)) !important ;
+  font-size: calc(
+    16px + (18 - 16) * (100vw - 445px) / (1440 - 445)
+  ) !important ;
   font-weight: 600 !important;
   letter-spacing: 0.5px !important;
   text-align: center !important;
   line-height: 1 !important;
-  @media (max-width:500px) {
-   
+  @media (max-width: 500px) {
     width: 40% !important;
-     margin-left: 100px;
+    margin-left: 100px;
   }
 }
 .parag {
   font-size: calc(18px + (29 - 18) * (100vw - 320px) / (1440 - 320)) !important;
 
-   width: 80% !important;
+  width: 80% !important;
   text-align: center !important;
   margin: 0 auto !important;
   color: #111111 !important;
@@ -113,7 +78,6 @@
   }
 }
 .portion2 {
-  // height: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,10 +118,9 @@
     border-top: none !important;
     height: max-content !important;
     display: grid !important;
-   
+
     margin-left: 100px;
     grid-template-columns: repeat(2, 1fr);
-   
   }
 
   .innermapdiv {
@@ -192,17 +155,16 @@
   height: max-content;
   width: 100%;
 }
-.portion3subdiv{
+.portion3subdiv {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
   width: 100%;
-
 }
 .mappingcard {
-  margin-top:10px;
+  margin-top: 10px;
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
@@ -315,7 +277,6 @@
     @media (max-width: 500px) {
       display: grid;
     }
-
     .textwidth {
       padding-left: 3% !important;
     }
@@ -335,11 +296,10 @@
   font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445)) !important;
   font-weight: 500 !important;
   line-height: 2 !important;
- 
 }
-.textmapdiv{
+.textmapdiv {
   @media (max-width: 500px) {
-    padding-left:130px !important;
+    padding-left: 130px !important;
   }
 }
 .paradescribe {
@@ -355,7 +315,7 @@
 
 .picbtnwidth {
   width: 30% !important;
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     margin: 0 auto;
   }
 }
@@ -378,7 +338,7 @@
   line-height: 1 !important;
   padding-left: 5% !important;
   margin-top: -55px !important;
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     margin: 0 auto;
     margin-top: -100px !important;
   }
@@ -391,15 +351,13 @@
   padding-top: 5%;
 }
 .lasttitle {
- 
-
   font-size: calc(16px + (18 - 16) * (100vw - 320px) / (1440 - 320)) !important;
   color: $Tertiary-color !important;
   font-weight: 500;
   text-align: center !important;
 
   line-height: 1 !important;
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     width: 60% !important;
     margin-left: 100px !important;
   }
@@ -416,7 +374,7 @@
 
 .btndsett {
   width: 20% !important;
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     width: 30% !important;
   }
 }
@@ -469,9 +427,7 @@
 .textmapedit {
   width: 40%;
 }
-.mapediting {
-  // padding-left: 1%;
-}
+
 .t {
   font-size: calc(12px + (18 - 12) * (100vw - 445px) / (1440 - 445)) !important;
   line-height: 22px !important;

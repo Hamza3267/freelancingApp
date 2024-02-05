@@ -28,7 +28,6 @@ const overlyStyle = {
   backgroundImage: `url(${backgroundpic})`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  // height: "max-content",
   overflow: "hidden",
 };
 
@@ -124,6 +123,7 @@ const Home = () => {
   return (
     <>
       <Layout>
+        
         <div style={overlyStyle} className={style.overlay}>
           <div className={style.subdiv}>
             <div className={style.flexscreen}>
@@ -149,7 +149,6 @@ const Home = () => {
             </div>
           ))}
         </div>
-
         <div className={style.portion3}>
           <TextMap
             title={"Popular category"}
@@ -180,7 +179,6 @@ const Home = () => {
             btnClass={style.btndit}
           />
         </div>
-
         <div className={style.portion4}>
           <div className={style.textmove}>
             <TextMap
@@ -242,16 +240,14 @@ const Home = () => {
                 ))}
               </div>
               <div className={style.btneeditt}>
-              <Button
-                title={"Post your job for FREE"}
-                btndiv={style.btndivedit}
-               
-              />
+                <Button
+                  title={"Post your job for FREE"}
+                  btndiv={style.btndivedit}
+                />
               </div>
             </div>
           </div>
         </div>
-
         <div className={style.portion7}>
           <div className={style.flexcontainer}>
             <TextMap
@@ -264,7 +260,6 @@ const Home = () => {
 
           <CardSlider />
         </div>
-
         <div className={style.poriton8}>
           <div className={style.subbdiv}>
             <div className={style.flexbox}>
@@ -291,34 +286,34 @@ const Home = () => {
           </div>
         </div>
         <div className={style.portion9}>
-         
-            <TextMap
-              title={"Latest from our blog"}
-              paragraph={"Get interesting insights, articles, and news"}
-              titleclass={style.edittitle}
-              paragraphclass={style.paracoont}
-            />
-         
+          <TextMap
+            title={"Latest from our blog"}
+            paragraph={"Get interesting insights, articles, and news"}
+            titleclass={style.edittitle}
+            paragraphclass={style.paracoont}
+          />
+
           <div className={style.mappingcard}>
             {hoverpicitems.map((e, index) => (
-               <div className={style.containerrrrr}>
-              <PicCard
-                pic={e.pic}
-                date={e.date}
-                learn={e.learn}
-                para={e.para}
-                key={index}
-              />
-                </div>
+              <div className={style.containerrrrr}>
+                <PicCard
+                  pic={e.pic}
+                  date={e.date}
+                  learn={e.learn}
+                  para={e.para}
+                  key={index}
+                />
+              </div>
             ))}
           </div>
-        
+
           <Button
             title={"View more articles"}
             btndiv={style.btnd}
             btnClass={style.butun}
           />
         </div>
+      
       </Layout>
     </>
   );

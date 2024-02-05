@@ -5,9 +5,9 @@
   width: 100%;
   background: #f4f4f4;
   display: flex;
-  // padding: 10px;
+  //  padding: 100px;
   gap: 20px;
-  justify-content: space-between;
+  justify-content: center;
 
 }
 
@@ -19,8 +19,8 @@
   height: auto;
   background: #fff;
   border-radius: 10px;
-  width: 100%;
-   padding: 10px;
+  // width: 100%;
+    padding: 10px;
 }
 .picsetting {
   width: 64px;
@@ -204,7 +204,7 @@
   background: #fff;
   border-radius: 10px;
   width: 100%;
-   padding: 10px;
+  //  padding: 10px;
 }
 .videooo {
   width: 100% !important;
@@ -215,7 +215,7 @@
   background: #fff;
   border-radius: 10px;
   width: 100%;
-   padding: 10px;
+  //  padding: 10px;
 }
 .btninner {
   color: $Primary-color !important;
@@ -228,15 +228,15 @@
 }
 .portion4 {
   
-  margin-top: 5px;
+  margin-top: 10px;
   height: max-content;
   background: #fff;
   border-radius: 10px;
   width: 100%;
-   padding: 10px;
+    padding: 5px;
 }
 .tie {
-  font-size: calc(18px + (24 - 18) * (100vw - 445px) / (1440 - 445)) !important;
+  font-size: calc(22px + (24 - 22) * (100vw - 445px) / (1440 - 445)) !important;
   letter-spacing: 1px !important;
   font-weight: 500 !important;
   color: #111111 !important;
@@ -305,7 +305,7 @@
 .last {
   font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
   color: #555555;
-  margin-top: 2px;
+   margin-top: -7px;
   width: 100%;
 }
 .portion5 {
@@ -314,7 +314,7 @@
   background: #fff;
   border-radius: 10px;
   width: 100%;
-   padding: 10px;
+  //  padding: 10px;
 
   .divsettings {
   padding: 10px;
@@ -327,15 +327,21 @@
   background: #fff;
   border-radius: 10px;
   width: 100%;
-   padding: 10px;
+  //  padding: 10px;
 }
-.portion7 {
-  margin-top: 10px;
+.portionreview {
+   margin-top: 10px;
   height: max-content;
   background: #fff;
   border-radius: 10px;
   width: 100%;
-   padding: 10px;
+  //  padding: 10px;
+  @media (max-width:500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .butneditngs {
   border: none;
@@ -407,7 +413,7 @@
 }
 .portion8 {
   width: 30%;
- padding: 10px;
+//  padding: 10px;
  margin-top: 10px;
   height: max-content;
   background: #fff;

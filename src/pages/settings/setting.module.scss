@@ -4,10 +4,8 @@
 .maincontainer {
   height: max-content;
   background-color: #f4f4f4;
-//   padding-left: 2%;
 }
 .subcontainer {
-   
   padding: 2% 3% 0% 3%;
 }
 .titleeh {
@@ -18,134 +16,127 @@
   letter-spacing: 1px;
   font-family: Inter;
 }
-.h6setting{
+.h6setting {
   font-size: calc(10px + (20 - 10) * (100vw - 320px) / (1440 - 320)) !important;
   color: #111111;
   font-weight: 500 !important;
 }
-.h6photo{
+.h6photo {
   font-size: calc(10px + (16 - 10) * (100vw - 320px) / (1440 - 320)) !important;
   color: #111111;
   font-weight: 500 !important;
   line-height: 0;
 }
 .innerdiv {
-   
-    height: max-content;
-    background: #fff;
-    max-width: 100%;
-    width: 55%;
-    height: max-content;
-    border-radius: 10px;
-    @media (max-width:500px) {
-      width: 100% !important;
-     }
-   
-  }
-  .innerdivv {
-   margin-top: 20px;
-    background: #fff;
-    max-width: 100%;
-    width: 55%;
-    height: max-content;
-    border-radius: 10px;
-   
-   @media (max-width:500px) {
+  height: max-content;
+  background: #fff;
+  max-width: 100%;
+  width: 55%;
+  height: max-content;
+  border-radius: 10px;
+  @media (max-width: 500px) {
     width: 100% !important;
-   }
-   
   }
-  .formdiv{
-     padding:1px  10px;
- 
-   
-  }
-  .mainhead {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-     padding-bottom: 2%;
-  }
-  .name1 {
-    font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
-    color: #999999;
-    font-weight: 500;
-    cursor: pointer;
-    &:hover {
-      color: $Primary-color;
-    }
-  }
-  .name2 {
-    font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
-    color: #999999;
-    font-weight: 500;
-    cursor: pointer;
-    &:hover {
-      color: $Primary-color;
-    }
-  }
-  .namecolor{
-    font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
-    color: #111111;
-    font-weight: 500;
-    cursor: pointer;
-    border-bottom: 3px solid black;
-  }
+}
+.innerdivv {
+  margin-top: 20px;
+  background: #fff;
+  max-width: 100%;
+  width: 55%;
+  height: max-content;
+  border-radius: 10px;
 
-.picedit{
-height: 150px;
-padding: 1%;
-border: 1px dotted #555555;
+  @media (max-width: 500px) {
+    width: 100% !important;
   }
-  .photodesc{
-    font-size: calc(12px + (14 - 12) * (100vw - 445px) / (1440 - 445));
-    color: #999999;
-    width: 50%;
+}
+.formdiv {
+  padding: 1px 10px;
+}
+.mainhead {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 2%;
+}
+.name1 {
+  font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
+  color: #999999;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    color: $Primary-color;
   }
-  .flexprofile{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+}
+.name2 {
+  font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
+  color: #999999;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    color: $Primary-color;
   }
-  .h6settings{
-    font-size: calc(10px + (22 - 10) * (100vw - 320px) / (1440 - 320)) !important;
-    color: #111111;
-    font-weight: 500 !important;
-  }
-  .descsetting {
-    font-family: sans-serif !important;
-    font-size: calc(12px + (18 - 12) * (100vw - 445px) / (1440 - 445)) !important;
-    color: #999999 !important;
-    line-height: 4 !important;
-   
-  }
-  .copyright {
-    display: flex;
-     align-items:last baseline ;
-    justify-content: flex-end;
-    // margin-top: -20px;
-     margin-right: 50px;
-  } 
-  .editingbuton{
-    border: none !important;
-    background: none !important;
-    color: red !important;
-    font-weight: 500 !important;
-    font-size: calc(12px + (16 - 12) * (100vw - 445px) / (1440 - 445)) !important;
-    cursor: pointer;
-    display: flex !important;
-    justify-content: flex-start !important;
-    padding-top: 15%;
-  }
-  .btndivv{
-    width: 30%;
-  }
-  .divv{
-    padding: 2%;
-  }
-  .btnsetting{
-     padding-left: 2%;
-    width: 12% !important;
+}
+.namecolor {
+  font-size: calc(10px + (20 - 10) * (100vw - 445px) / (1440 - 445));
+  color: #111111;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 3px solid black;
+}
 
-  }
+.picedit {
+  height: 150px;
+  padding: 1%;
+  border: 1px dotted #555555;
+}
+.photodesc {
+  font-size: calc(12px + (14 - 12) * (100vw - 445px) / (1440 - 445));
+  color: #999999;
+  width: 50%;
+}
+.flexprofile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.h6settings {
+  font-size: calc(10px + (22 - 10) * (100vw - 320px) / (1440 - 320)) !important;
+  color: #111111;
+  font-weight: 500 !important;
+}
+.descsetting {
+  font-family: sans-serif !important;
+  font-size: calc(12px + (18 - 12) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #999999 !important;
+  line-height: 4 !important;
+}
+.copyright {
+  display: flex;
+  align-items: last baseline;
+  justify-content: flex-end;
+  // margin-top: -20px;
+  margin-right: 50px;
+}
+.editingbuton {
+  border: none !important;
+  background: none !important;
+  color: red !important;
+  font-weight: 500 !important;
+  font-size: calc(12px + (16 - 12) * (100vw - 445px) / (1440 - 445)) !important;
+  cursor: pointer;
+  display: flex !important;
+  justify-content: flex-start !important;
+  padding-top: 15%;
+}
+.btndivv {
+  width: 30%;
+}
+.divv {
+  padding: 2%;
+}
+.btnsetting {
+  padding-left: 2%;
+  width: 12% !important;
+}

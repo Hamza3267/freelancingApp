@@ -2,19 +2,12 @@
 @import "../../styles/fontsize.scss";
 
 .maincontainer {
-
   width: 100%;
   height: max-content;
-   background-color: #f4f4f4;
-
+  background-color: #f4f4f4;
 }
 .subcontainer {
-    width: 100%;
-  @media (max-width:500px) {
-   
-   
-   // margin-left: 60px;
- }
+  padding: 30px;
 }
 .titleeh {
   font-size: calc(25px + (28 - 25) * (100vw - 320px) / (1440 - 320)) !important;
@@ -24,37 +17,25 @@
   padding-bottom: 2% !important;
   letter-spacing: 1px;
   font-family: Inter;
-  @media (max-width:500px) {
-    width: 70%;
-    margin-left: 100px;
-    
-  }
-}
-.jobformdiv{
-  @media (max-width:500px) {
-   
-     
-    // margin-left: 60px;
-  }
 
 }
+
 .innerdiv {
   margin-top: 30px;
   height: max-content;
   background: #fff;
   width: 100%;
-  @media (max-width:500px) {
-      // width: 50%;
+  @media (max-width: 500px) {
     overflow: auto !important;
   }
 }
-.setselectfield{
-  @media (max-width:500px) {
+.setselectfield {
+  @media (max-width: 500px) {
     width: 270px !important;
   }
 }
-.sortportion{
-  @media (max-width:500px) {
+.sortportion {
+  @media (max-width: 500px) {
     width: 250px !important;
   }
 }
@@ -72,28 +53,27 @@
   font-size: calc(14px + (10 - 10) * (100vw - 445px) / (1440 - 445));
 }
 .mainnnn {
-  width: 100%;
+  // width: 100%;
   display: flex;
   align-items: center;
-  gap: 32%;
+  gap: 30%;
   padding: 10px;
   border-bottom: 0.5px solid #e5e5e5;
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     gap: 41% !important;
   }
 }
 .head {
   display: flex;
   align-items: center;
-  gap: 40%;
-  @media (max-width:500px) {
+  gap: 110px;
+  @media (max-width: 500px) {
     gap: 42% !important;
   }
 }
 .padding {
-  padding: 2%;
+  padding:10px;
   width: 98%;
-
 }
 .svgdiv {
   display: flex;
@@ -101,7 +81,7 @@
   gap: 40px;
   width: 100%;
   border-bottom: 0.5px solid #e5e5e5;
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     gap: 80px;
   }
 }
@@ -155,12 +135,11 @@
 }
 
 .copyright {
-  
   width: 100%;
   display: flex;
-   justify-content: flex-end;
-  // margin-top: -20px;
-   margin-right: 50px;
+  justify-content: flex-end;
+
+  margin-right: 50px;
 }
 .descsetting {
   font-family: sans-serif !important;
@@ -188,9 +167,9 @@
   color: #999999;
   font-size: calc(12px + (18 - 12) * (100vw - 445px) / (1440 - 445));
 }
-.lasttet{
+.lasttet {
   color: #999999;
-  font-size: calc(12px + (20 - 12) * (100vw - 445px) / (1440 - 445)); 
+  font-size: calc(12px + (20 - 12) * (100vw - 445px) / (1440 - 445));
 }
 .lastcont {
   display: flex;

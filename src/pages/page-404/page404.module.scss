@@ -1,12 +1,10 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
-.imgdiv{
-
-  @media (max-width:500px) {
-   
+.imgdiv {
+  @media (max-width: 500px) {
     display: flex;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
 }
 .nameee {
@@ -33,16 +31,14 @@ justify-content: center;
   height: 600px;
 }
 .text {
- 
   font-size: calc(32px + (42 - 32) * (100vw - 445px) / (1440 - 445)) !important;
   font-weight: 600 !important;
   text-align: center;
- 
-  @media (max-width:500px) {
+
+  @media (max-width: 500px) {
     text-align: center;
-    // margin: 0 auto;
-   width: 80% !important; 
-   margin-left: 50px !important;
+    width: 80% !important;
+    margin-left: 50px !important;
   }
 }
 .para {
@@ -139,7 +135,7 @@ justify-content: center;
 .footer {
   border-top: 0.5px solid #e5e5e5;
 }
-.pic{
- width: 100%;
- margin: 0 auto;
+.pic {
+  width: 100%;
+  margin: 0 auto;
 }

@@ -3,7 +3,7 @@
 
 .form{
     display: grid;
-   
+   height: max-content;
     @media screen and (max-width:500px) {
         display: none !important;
         background:  none !important;

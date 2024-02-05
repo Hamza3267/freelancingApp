@@ -1,81 +1,75 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
-.selectoptions{
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  @media (max-width:500px) {
-    display: grid ;
+.selectoptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width: 500px) {
+    display: grid;
   }
 }
-.selectbox{
-    width: 120px;
-    height: 50px;
-    font-size:15px ;
-    padding-left: 2%;
-    outline-style: none;
-    border: 0.5px solid #e5e5e5;
-    border-radius: 5px;
-    color: #555555;
-  
+.selectbox {
+  width: 120px;
+  height: 50px;
+  font-size: 15px;
+  padding-left: 2%;
+  outline-style: none;
+  border: 0.5px solid #e5e5e5;
+  border-radius: 5px;
+  color: #555555;
 }
-.selectboox{
-    width: 100%;
-    height: 45px;
-    font-size:15px ;
-    padding-left: 1%;
-    outline-style: none;
-    border: 0.5px solid #e5e5e5;
-    border-radius: 5px;
+.selectboox {
+  width: 100%;
+  height: 45px;
+  font-size: 15px;
+  padding-left: 1%;
+  outline-style: none;
+  border: 0.5px solid #e5e5e5;
+  border-radius: 5px;
 }
-.input{
-    width: 200px;
-    height: 34px;
-    font-size:15px ;
-    padding-left: 3%;
-    outline-style: none;
-    border: none; 
+.input {
+  width: 200px;
+  height: 34px;
+  font-size: 15px;
+  padding-left: 3%;
+  outline-style: none;
+  border: none;
 }
-.inputdiv{
-    width: 100%;
-    height: 50px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #e5e5e5;
-    border-radius: 5px;
-    &:hover{
-         border: 0.5px solid $Primary-color;
-        outline-color:  $Primary-color !important;
-    }
+.inputdiv {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  &:hover {
+    border: 0.5px solid $Primary-color;
+    outline-color: $Primary-color !important;
+  }
 }
-.boxflex{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    @media (max-width:500px) {
-        display: grid;
-    }
+.boxflex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @media (max-width: 500px) {
+    display: grid;
+  }
 }
-.label{
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: normal;
-    letter-spacing: inherit;
-    color: #999999;
-    width: 80%;
-  
+.label {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: inherit;
+  color: #999999;
+  width: 80%;
 }
-.sortitmes{
-    width: 18%;
-display: flex;
-align-items: center;
-gap: 3px;
-// @media (max-width:500px) {
-//     width: 50% !important;
-// }
+.sortitmes {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
