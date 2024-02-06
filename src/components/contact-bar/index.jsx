@@ -30,8 +30,7 @@ const ContactBar = () => {
             <text
               className={style.name}
               style={{
-                color: "white",
-                paddingLeft: "1%",
+                color: "white",              
                 fontSize: "14px",
                 fontWeight: "400",
               }}

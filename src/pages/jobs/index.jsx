@@ -137,15 +137,12 @@ const Jobs = () => {
                 </div>
               </div>
               <div className={style.numlst}>
-                <div>
+                <div className={style.pagenum}>
                   <text className={style.lasttet}>
                     <span style={{ color: "#007456" }}>1</span> 2 3{" "}
                   </text>
                 </div>
-                <div
-                  className={style.lastarrowdiv}
-                  style={{ marginRight: "19%" }}
-                >
+                <div className={style.lastarrowdiv}>
                   <img src={black} alt="" className={style.lastarrow} />
                 </div>
               </div>

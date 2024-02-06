@@ -136,6 +136,7 @@ const Home = () => {
           </div>
         </div>
         <div className={style.portion2}>
+          <div className={style.portion2sub}>
           {pictextitems.map((e, index) => (
             <div className={style.portio2}>
               <PicText
@@ -148,6 +149,7 @@ const Home = () => {
               />
             </div>
           ))}
+          </div>
         </div>
         <div className={style.portion3}>
           <div className={style.subcontainerportion3}>

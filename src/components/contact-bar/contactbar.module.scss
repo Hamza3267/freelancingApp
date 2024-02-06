@@ -10,6 +10,7 @@
 
 }
 .firstbell {
+ 
    width: fit-content;
   display: flex;
   align-items: center;
@@ -55,13 +56,10 @@
 .active {
   animation-play-state: running;
 }
-.namediv{
-  width: 97%;
- 
-}
+
 .nameee {
 
- width: 150px !important;
+  width: 150px !important;
 font-size: 12px;
   @media (max-width: 500px) {
 
@@ -70,7 +68,7 @@ font-size: 12px;
 }
 .namee {
 
- width: 150px !important;
+  width: 150px !important;
 font-size: 12px;
   @media (max-width: 500px) {
 

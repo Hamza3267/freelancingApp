@@ -167,9 +167,13 @@
   color: #999999;
   font-size: calc(12px + (18 - 12) * (100vw - 445px) / (1440 - 445));
 }
+.pagenum{
+  width: 100px;
+ 
+}
 .lasttet {
   color: #999999;
-  font-size: calc(12px + (20 - 12) * (100vw - 445px) / (1440 - 445));
+  font-size: calc(18px + (20 - 18) * (100vw - 445px) / (1440 - 445));
 }
 .lastcont {
   display: flex;
@@ -187,15 +191,22 @@
   align-items: center;
   gap: 10px;
   width: 12%;
+  padding: 5px;
   cursor: pointer;
+  @media (max-width:500px) {
+    width: 100% !important;
+  }
 }
 .lastarrowdiv {
   border: 1px solid #999999;
   border-radius: 10px;
-  width: 30%;
+  width: max-content;
+  @media (max-width:500px) {
+    width: fit-content;
+  }
 }
 .lastarrow {
-  padding: 16%;
-  padding-left: 20%;
+  padding: 10px;
+ 
   height: 20px;
 }

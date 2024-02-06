@@ -1,7 +1,7 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
-.mainpage{
+.mainpage {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,11 +41,13 @@
 }
 .portion2 {
   width: 100%;
+}
+.portion2sub {
   padding-top: 10px;
   height: max-content;
-  display: grid !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(3, 1fr);
 
   @media screen and (max-width: 800px) {
@@ -71,7 +73,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 .borderedit {
   background: #007456 !important;
@@ -93,40 +94,31 @@
 .picediting {
   height: 30px !important;
 }
-.subcontainerportion3{
-   padding: 5px;
-
+.subcontainerportion3 {
+  padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .mapdiv {
- 
   border-radius: 20px;
   height: 130px;
   display: flex;
-    width: 300px;
+  width: 300px;
   align-items: center;
   justify-content: space-around;
-  // padding:10px;
   background: #edf2ef;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
   &:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
-//   @media screen and (max-width: 500px) {
-//     width: 70% !important;
-
- 
-//  }
 }
 .mapedit {
-  // border: 1px solid red;
   height: max-content;
   display: grid;
-    width: 100%;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 
@@ -135,7 +127,6 @@
     gap: 10px;
   }
   @media screen and (max-width: 500px) {
-   
     height: 300px;
     overflow: auto;
     grid-template-columns: repeat(1, 1fr);
@@ -173,7 +164,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-   width: 80%;
+  width: 80%;
   overflow: hidden;
   margin: 0 auto;
 }
